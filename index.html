@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html ng-app="ZDChannel" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<!-- CSS -->
+		<!-- lib -->
+		<link href="assets/lib/angular-material/angular-material.css" rel="stylesheet" type="text/css"/>
+		<link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<!-- app -->
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+	<!-- /CSS -->
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--<base href="/">-->
+
+</head>
+
+<body class="ng-cloak" ng-controller="MainCtrl" ng-init="init()">
+
+	<!-- HEADER -->
+	<site-header></site-header>
+	<!-- /HEADER -->
+
+	<section layout="row" class="container">
+
+    	<!-- loading -->
+		<div layout="column" ng-show="loading" flex>
+			<div layout="column" flex="100" style="text-align:center;">
+				<span ng-hide="pendingItems"><b ng-bind="msg"></b></span>
+			</div>
+			<div layout="row" flex="100" layout-align="space-around">
+				<md-progress-circular md-mode="indeterminate"></md-progress-circular>
+			</div>
+		</div>
+		<!-- /loading -->
+
+	    <!-- MAIN -->
+	    <md-content ng-if="chJson" flex layout-padding class="main-content">
+
+	    	<!-- files section -->
+	    	<section ng-controller="FilesCtrl">
+				<div layout="column" ng-show="fileLoading" flex>
+					<div layout="column" flex="100" style="text-align:center;">
+						<span ng-hide="pendingItems"><b>Scanning folder, please wait</b></span>
+						<span ng-show="pendingItems"><b>Found {{pendingItems.length}} new files</b></span>
+					</div>
+					<div layout="row" flex="100" layout-align="space-around">
+						<md-progress-circular md-mode="indeterminate"></md-progress-circular>
+					</div>
+				</div>
+	    	</section>
+	    	<!-- /files section -->
+
+		    <!-- items section -->
+		    <section ng-controller="ItemsCtrl" ng-init="initList()">
+
+		    	<!-- unpublished -->
+			    <md-content class="md-whiteframe-1dp section" ng-if="unpublished_items">
+			    	<h2>Unpublished {{media_type}}</h2>
+			    	<hr/>
+			    	<p>these {{media_type}} are not yet published, please click on them to confirm & publish</p>
+			    	<ul>
+			    		<li ng-if="item.published === false"
+			    			ng-repeat="item in chJson[media_type] | orderBy:'-date_added' track by $index">
+			    			<a href="/{{site_address}}/edit.html?item={{item[item_id_name]}}z={{item[item_file_name]}}f={{item.file_name}}">{{item.zip_name}}</a>
+			    		</li>
+			    	</ul>
+			    </md-content>
+			    <!-- /unpublished -->
+
+			    <!-- items -->
+			    <md-content id="items-section" class="md-whiteframe-1dp section" ng-hide="loading">
+			    	<h2>{{media_type}} online</h2>
+			    	<hr/>
+				    <ul class="item-list">
+				    	<li ng-if="item.published !== false"
+				    		ng-repeat="item in chJson[media_type] | orderBy:'-date_added' track by $index">
+				    		<!-- item info -->
+				    		<div class="item-info">
+						    	<span ng-click="openVideoPreviewDialog(item)" class="title">{{item.title}} • </span>
+								<span ng-if="item.genre">{{item.genre}} • </span>
+								<span ng-if="item.zip_size">{{item.zip_size|filesize}} • </span>
+								<span><i am-time-ago="item.date_added"></i></span>
+							</div>
+							<!-- /item info -->
+							<!-- item options menu -->
+							<div class="item-options" ng-if="owner">
+								<span ng-click="deleteItem(item)" class="glyphicon glyphicon-trash"></span>
+								<a href="/{{site_address}}/edit.html?item={{item[item_id_name]}}z={{item.zip_name}}f={{item.file_name}}">
+								<span class="glyphicon glyphicon-pencil"></span></a>
+								<span ng-click="openVideoPreviewDialog(item)" class="glyphicon glyphicon-eye-open"></span>
+							</div>
+							<!-- /item options menu -->
+				    	</li>
+				    </ul>
+				    <a ng-hide="chJson[media_type]" href="/{{site_address}}/upload.html">no {{media_type}} yet, upload now!</a>
+			    </md-content>
+			    <!-- /items -->
+
+		    </section>
+		    <!-- / items section -->
+
+	    </md-content>
+	    <!-- /MAIN -->
+
+	</section>
+
+	<!-- JS -->
+
+		<!-- jquery -->
+		<script type="text/javascript" src="assets/lib/jquery/jquery.min.js"></script>
+
+		<!-- angular -->
+		<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/angular/angular-route.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/angular/angular-animate.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/angular/angular-aria.min.js"></script>
+		<script type="text/javascript" src="assets/lib/angular-sanitize/angular-sanitize.min.js"></script>
+		<script type="text/javascript" src="assets/lib/angular-material/angular-material.min.js"></script>
+		<script type="text/javascript" src="assets/lib/moment/moment.js"></script>
+		<script type="text/javascript" src="assets/lib/angular-moment/angular-moment.min.js"></script>
+    	<script type="text/javascript" src="assets/lib/dropzone/dropzone.js"></script>	
+
+		<!-- zeronet -->
+		<script type="text/javascript" src="assets/lib/zeronet/ZeroFrame.js"></script>
+		<script type="text/javascript" src="assets/lib/zeronet/ZeroChat.js"></script>
+
+		<!-- app -->
+		<script type="text/javascript" src="app/application.js"></script>		
+		<script type="text/javascript" src="app/core/controllers/main.ctrl.js"></script>
+		<script type="text/javascript" src="app/core/controllers/items.ctrl.js"></script>
+		<script type="text/javascript" src="app/core/controllers/files.ctrl.js"></script>
+		<script type="text/javascript" src="app/core/directives/site-header.directive.js"></script>
+		<script type="text/javascript" src="app/core/directives/my-channel.directive.js"></script>
+		<script type="text/javascript" src="app/core/directives/dropzone.directive.js"></script>
+		<script type="text/javascript" src="app/core/directives/edit-item.directive.js"></script>
+		<script type="text/javascript" src="app/core/filters/file-size.filter.js"></script>
+
+	<!-- /JS -->  
+
+</body>
+
+</html>

@@ -1,0 +1,423 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* MIXINS */
+/* /MIXINS */
+/* COLORS */
+/* /COLORS */
+/** GENERAL **/
+*:focus,
+*:hover {
+  outline: none !important;
+  text-decoration: none;
+}
+html {
+  background-color: #f7f7f7;
+}
+body {
+  background-color: #f7f7f7;
+  color: #333;
+}
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+hr {
+  margin-top: 8px;
+  padding: 0;
+}
+button.md-button {
+  cursor: pointer;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+button.md-button label,
+button.md-button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+  font-weight: normal;
+}
+videogular,
+[videogular] {
+  max-height: 400px;
+}
+.md-whiteframe-1dp {
+  background-color: white;
+}
+.md-select-value *:first-child {
+  margin-top: -6px;
+  font-weight: bold;
+}
+.md-select-value .md-select-icon {
+  margin-top: -6px;
+}
+/** /GENERAL **/
+/** TEMPLATE **/
+.main-content {
+  background-color: #f7f7f7;
+}
+.main-content md-content + md-content {
+  margin-top: 16px;
+}
+#my-channel-section {
+  margin-bottom: 16px;
+}
+#video-upload-section .video-upload-top {
+  height: 90px;
+}
+#video-upload-section form {
+  padding-left: 16px;
+}
+#video-upload-section canvas {
+  width: 100%;
+}
+#video-upload-section .tags-container {
+  padding-bottom: 16px;
+}
+#video-upload-section .tags-container .tag {
+  display: block;
+  padding: 5px 25px 5px 5px;
+  background: #337ab7;
+  float: left;
+  color: white;
+  position: relative;
+  margin-right: 8px;
+}
+#video-upload-section .tags-container .tag .glyphicon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 20px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  background: white;
+  color: #337ab7;
+  cursor: pointer;
+}
+.header {
+  padding: 4px;
+  min-height: 150px;
+}
+.header .how-to-btn button {
+  min-width: 30px;
+  width: 20px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 25px;
+}
+.header .site-logo {
+  width: 194px;
+  height: 51px;
+  float: left;
+  margin-right: 10px;
+  clear: both;
+}
+.header .site-logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header .site-title {
+  float: left;
+  width: 100%;
+}
+.header .site-title h3,
+.header .site-title div {
+  float: left;
+  width: 100%;
+}
+.header .site-title h3 {
+  clear: both;
+  margin: 10px 0 0 0;
+  padding: 0;
+  float: left;
+}
+.header .site-title h3 small {
+  color: white;
+}
+.header .site-title div.sub-title small {
+  float: left;
+  width: 100%;
+  display: block;
+  font-size: 12px;
+}
+.header a {
+  color: white;
+}
+.header a:hover {
+  text-decoration: none;
+}
+.header .pull-right {
+  float: right;
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.header ul li {
+  float: left;
+  margin-right: 5px;
+}
+section.container {
+  margin-top: 8px;
+}
+/** /TEMPLATE **/
+/** SECTIONS **/
+#upload-section {
+  background-color: transparent;
+}
+#upload-section .upload-container .poster-upload {
+  margin-bottom: 16px;
+}
+#upload-section .upload-container .poster-upload img {
+  padding: 0;
+  width: 100%;
+}
+#upload-section .upload-container ul.file-details li {
+  padding: 0;
+  list-style-type: none;
+}
+.section {
+  padding: 12px;
+}
+#my-channel-section .section-title,
+#my-channel-section .section-body,
+#my-channel-section hr {
+  float: left;
+  width: 100%;
+}
+#my-channel-section .section-title h2 {
+  float: left;
+  margin-right: 8px;
+}
+#my-channel-section .section-title a {
+  margin: 8px 0 0 0;
+  float: right;
+  cursor: pointer;
+}
+#my-channel-section .section-body figure img {
+  width: 100%;
+}
+#my-channel-section .section-body figure button {
+  width: 100%;
+  height: auto;
+  position: relative;
+  border: 0;
+  padding: 0;
+  min-height: 120px;
+  margin-bottom: 20px;
+}
+#my-channel-section .section-body figure button img {
+  width: 100%;
+  height: auto;
+}
+#my-channel-section .section-body figure button p {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+#my-channel-section .section-body .channel-info {
+  padding: 0 8px;
+}
+#my-channel-section .section-body .channel-info article {
+  padding: 0;
+}
+#my-channel-section .section-body .channel-info md-input-container {
+  padding: 0;
+}
+#items-section .label {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #337ab7;
+  font-size: 100%;
+}
+#items-section .item-list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  float: left;
+  width: 100%;
+}
+#items-section .item-list li {
+  width: 100%;
+  float: left;
+  padding: 8px;
+  background-color: #f7f7f7;
+  color: #337ab7;
+}
+#items-section .item-list li .item-info {
+  float: left;
+}
+#items-section .item-list li .item-info .title {
+  font-weight: bold;
+}
+#items-section .item-list li .item-options {
+  float: right;
+}
+#items-section .item-list li:nth-child(even) {
+  background-color: #337ab7;
+  color: white;
+}
+#items-section .item-list li:nth-child(even) a {
+  color: white;
+}
+.edit-item-view md-content {
+  background-color: transparent;
+}
+.edit-item-view .md-whiteframe-1dp {
+  background-color: white;
+}
+.edit-item-view aside .item-details {
+  display: block;
+  float: left;
+  height: auto;
+  flex: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  box-sizing: content-box;
+}
+.edit-item-view aside .thumb-image-section {
+  display: block;
+  float: left;
+  height: auto;
+  flex: 0;
+  margin-top: 8px;
+  padding: 8px;
+  box-sizing: content-box;
+}
+.edit-item-view aside .thumb-image-section #dropzone {
+  width: 100%;
+  height: 150px;
+}
+.edit-item-view aside .thumb-image-section img {
+  width: 100%;
+}
+/* GAME VIEW PAGE */
+#dosbox-section {
+  padding: 0;
+  position: relative;
+}
+#dosbox-section .dosbox-container {
+  width: 100%;
+  height: 400px;
+}
+#dosbox-section .dosbox-container .dosbox-canvas,
+#dosbox-section .dosbox-container .dosbox-overlay,
+#dosbox-section .dosbox-container .dosbox-loader {
+  width: 100%;
+  height: 100%;
+}
+#dosbox-section .dosbox-container .dosbox-overlay {
+  background-size: cover;
+}
+#dosbox-section .dosbox-container .dosbox-start {
+  text-decoration: none;
+  margin-bottom: -25px;
+}
+#dosbox-section .dosbox-container .dosbox-start span {
+  display: table;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 5px 5px 5px;
+  border: 2px solid #f80;
+  text-transform: uppercase;
+}
+#dosbox-section .fullscreen-btn {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  padding: 4px 6px 2px 6px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  border-radius: 2px;
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#dosbox-section .fullscreen-btn:hover {
+  opacity: 1;
+}
+#dosbox-section.full .dosbox-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+#dosbox-section.full .dosbox-exit-fullscreen {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border: 1px solid white;
+  width: 150px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100000;
+  opacity: 0.5;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#dosbox-section.full .dosbox-exit-fullscreen a {
+  color: white;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#dosbox-section.full .dosbox-exit-fullscreen a:hover {
+  text-decoration: none;
+}
+#dosbox-section.full .dosbox-exit-fullscreen:hover {
+  opacity: 1;
+}

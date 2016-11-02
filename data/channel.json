@@ -1,0 +1,19 @@
+{
+	"next_item_id": 2,
+	"channel": {
+		"name": "PPLOAD Channel",
+		"description": "Clone this channel template to create your own ppload network channel type"
+	},
+	"items": [
+		{
+			"title": "muds-mean-ugly-dirty-sport",
+			"zip_name": "muds-mean-ugly-dirty-sport.zip",
+			"zip_size": 1280089,
+			"file_name": "m-u-d-s/MUDS.EXE",
+			"item_id": 1,
+			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
+			"date_added": 1478108364903,
+			"published": true
+		}
+	]
+}

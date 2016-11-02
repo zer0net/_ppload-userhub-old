@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html ng-app="ZDChannel" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<!-- CSS -->
+		<!-- lib -->
+		<link href="assets/lib/angular-material/angular-material.css" rel="stylesheet" type="text/css"/>
+		<link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<!-- app -->
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+	<!-- /CSS -->
+
+	<!-- HTML5 Shim -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--<base href="/">-->
+
+</head>
+
+<body class="ng-cloak" ng-controller="MainCtrl" ng-init="init()">
+
+	<!-- HEADER -->
+	<site-header></site-header>
+	<!-- /HEADER -->
+
+	<!-- MAIN -->
+	<section class="container edit-item-view" layout="column" 
+		ng-controller="ItemsCtrl" ng-if="chJson" ng-init="getItem()">
+
+		<!-- loading -->
+		<div layout="column" ng-show="loading" flex>
+			<div layout="column" flex="100" style="text-align:center;"><b ng-bind="msg"></b></div>
+			<div layout="row" flex="100" layout-align="space-around">
+				<md-progress-circular md-mode="indeterminate"></md-progress-circular>
+			</div>
+		</div>
+		<!-- /loading -->
+
+		<!-- edit item section -->
+		<md-content class="edit-item-section" edit-item  ng-init="init()" ng-hide="loading" ng-if="item" layout="row" flex>
+
+			<!-- item details -->
+			<aside flex="30" layout="column" layout-padding>
+				<ul class="item-details md-whiteframe-1dp" flex="100">
+					<li class="item-property" ng-repeat="property in itemProperties">
+						<b class="key">{{property.key}}:</b> 
+						<span class="value" ng-if="property.type === 'normal'">{{property.value}}</span>
+						<span class="value" ng-if="property.type === 'size'">{{property.value|filesize}}</span>
+						<span class="value" ng-if="property.type === 'date'"><span am-time-ago="property.value"></span></span>
+					</li>
+				</ul>
+				<div class="thumb-image-section md-whiteframe-1dp" flex="100">
+					<!-- item image -->
+					<img ng-src="{{item.img}}" ng-hide="img" ng-if="item.img" style="margin-bottom:8px;"/>
+					<!-- /item image -->
+					<!-- image upload -->
+					<image-upload></image-upload>
+					<!-- /image upload -->
+				</div>
+			</aside>
+			<!-- /item details -->
+
+			<!-- item main -->
+            <md-content class="item-main" layout="row" flex="70">
+            	<section flex="100" layout="column" layout-padding>
+
+            		<!-- item form -->
+            		<div class="md-whiteframe-1dp item-info">
+					    <md-tabs md-dynamic-height md-border-bottom>
+					      <md-tab label="Basic Info">
+					        <md-content class="md-padding" layout="column">
+						        <md-input-container>
+						          <label>Title</label>
+						          <input ng-model="item.title"/>
+						        </md-input-container>
+						        <md-input-container>
+						          <label>Executable File Name</label>
+						          <input executable-file-input ng-model="item.file_name"/>
+						        </md-input-container>
+					        </md-content>
+					      </md-tab>
+					      <md-tab label="{{item_type}} Info">
+					        <md-content class="md-padding" layout="column">
+						        <div flex="100" layout="row">
+							        <md-input-container flex="70">
+							        	<label>Publisher</label>
+							        	<input ng-model="item.publisher"/>
+							        </md-input-container>
+							        <md-input-container flex="10">
+							        	<label>Year</label>
+							        	<input ng-model="item.year"/>
+							        </md-input-container>
+							        <md-input-container flex="20">
+							        	<label>Genre</label>
+							        	<md-select ng-model="item.genre">
+							        		<md-option ng-repeat="genre in genres" ng-bind="genre" ng-value="genre"></md-option>
+							            </md-select>
+							        </md-input-container>
+						        </div>
+						        <md-input-container flex="100">
+						          <label>Description</label>
+						          <textarea ng-model="item.description"></textarea>
+						        </md-input-container>
+					        </md-content>
+					      </md-tab>
+					    </md-tabs>
+	                </div>
+	                <!-- /item form -->
+
+	                <!-- item player -->
+					<dosbox></dosbox>
+					<!-- item player -->
+
+					<!-- update item button -->
+		            <md-button flex="100" style="margin: 16px 0;" class="md-primary md-raised edgePadding pull-right" ng-click="onUpdateItem(item)">
+		            	<label>Update {{item_type}}</label>
+		            </md-button>
+		            <!-- /update item button -->
+
+				</section>
+            </md-content>
+            <!-- /item main -->
+		</md-content>
+		<!-- /edit item section -->
+
+	</section>
+	<!-- /MAIN -->
+
+	<!-- JS -->
+
+		<!-- dosbox -->
+		<script type="text/javascript" src="assets/lib/js-dos/js-dos.js"></script>
+
+		<!-- jszip -->
+		<script type="text/javascript" src="assets/lib/jszip/dist/jszip.min.js"></script>
+		<script type="text/javascript" src="assets/lib/jszip/dist/jszip.utils.js"></script>
+	
+		<!-- jquery -->
+		<script type="text/javascript" src="assets/lib/jquery/jquery.min.js"></script>
+
+		<!-- zeronet -->
+		<script type="text/javascript" src="assets/lib/zeronet/ZeroFrame.js"></script>
+		<script type="text/javascript" src="assets/lib/zeronet/ZeroChat.js"></script>
+
+		<!-- angular -->
+		<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/angular/angular-route.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/angular/angular-animate.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/angular/angular-aria.min.js"></script>
+		<script type="text/javascript" src="assets/lib/angular-sanitize/angular-sanitize.min.js"></script>
+		<script type="text/javascript" src="assets/lib/angular-material/angular-material.min.js"></script>
+		<script type="text/javascript" src="assets/lib/dropzone/dropzone.js"></script>
+		<script type="text/javascript" src="assets/lib/moment/moment.js"></script>
+		<script type="text/javascript" src="assets/lib/angular-moment/angular-moment.min.js"></script>
+
+		<!-- app core -->
+		<script type="text/javascript" src="app/application.js"></script>		
+		<script type="text/javascript" src="app/core/controllers/main.ctrl.js"></script>
+		<script type="text/javascript" src="app/core/controllers/items.ctrl.js"></script>
+		<script type="text/javascript" src="app/core/directives/site-header.directive.js"></script>
+		<script type="text/javascript" src="app/core/directives/my-channel.directive.js"></script>
+		<script type="text/javascript" src="app/core/directives/edit-item.directive.js"></script>
+		<script type="text/javascript" src="app/core/directives/image-upload.directive.js"></script>
+		<script type="text/javascript" src="app/core/directives/dropzone.directive.js"></script>
+		<script type="text/javascript" src="app/core/filters/file-size.filter.js"></script>
+
+		<!-- app module -->
+		<script type="text/javascript" src="app/games/directives/dosbox.directive.js"></script>
+		<script type="text/javascript" src="app/game/directives/executable-file-input.directive.js"></script>
+
+
+	<!-- /JS -->  
+
+</body>
+
+</html>
