@@ -1,5 +1,10 @@
-var app = angular.module('ZDChannel',[
+var app = angular.module('Channel',[
 	'ngMaterial',
 	'ngSanitize',
-	'angularMoment'
+	'angularMoment',
+    'com.2fdevs.videogular',
+    'com.2fdevs.videogular.plugins.controls',
+    'com.2fdevs.videogular.plugins.overlayplay',
+    'com.2fdevs.videogular.plugins.buffering',
+    'com.2fdevs.videogular.plugins.poster'
 ]);

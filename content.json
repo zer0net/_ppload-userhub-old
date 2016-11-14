@@ -10,48 +10,52 @@
    "size": 10
   },
   "app/application.js": {
-   "sha512": "8c3c34a48131a21278d815f27f03552d2f07fc09748ff362f4e5c03ccc827b53",
-   "size": 89
+   "sha512": "ccbefb22a2ae13cf8a46e83bb17b0ad9247349b80a9aeb4be604ebf6db481f78",
+   "size": 302
   },
   "app/core/controllers/files.ctrl.js": {
    "sha512": "c4b1a34349b755458f8a2caf44679df4edbb9003b7bf387ac1f20161f56ccb96",
    "size": 3203
   },
   "app/core/controllers/items.ctrl.js": {
-   "sha512": "c2f64727d767d008e4557d06b2beec479161404d40032605deca7a52587a1540",
-   "size": 4919
+   "sha512": "c2cd72902d9fb3cea5587afca902cb83926a2f3fcd9693e5445f0b2422399b7f",
+   "size": 7049
   },
   "app/core/controllers/main.ctrl.js": {
-   "sha512": "fb59130ae3df459684f13576b2ce6d3f05f6d6fc2d5c082cfb4f521c7cca673e",
-   "size": 4263
+   "sha512": "05edfa590bd3b75a401e505ce91ee35a9ed6662249024804c624321cbf282031",
+   "size": 4642
   },
   "app/core/directives/create-item.directive.js": {
-   "sha512": "ec3da48cbb70e8b6dcfe850a5249aa44e0b4f72cd403173cc7856514bf0a96e5",
-   "size": 1187
+   "sha512": "6e7b6449e45cfc8803be120c81a779261a0b75667224bd7457141b693ecae4b4",
+   "size": 657
   },
   "app/core/directives/dropzone.directive.js": {
    "sha512": "626290079050c1f03761c43ad7255dfc62c528c719fbc606b327f606bb1d78e9",
    "size": 428
   },
   "app/core/directives/edit-item.directive.js": {
-   "sha512": "4bec9008092fe54d9530718c0932687c3adaab2d312abdb77229ff6a75c9ec1f",
-   "size": 1057
+   "sha512": "fa33d3a0175314dc6f54bd876ee571997e97567f92c29bc3f03975fc2b5e05eb",
+   "size": 552
   },
   "app/core/directives/file-upload.directive.js": {
-   "sha512": "37a396286758ad37321239b15c212342a2938424822151d6edc8072555020921",
-   "size": 2669
+   "sha512": "55d2d165f9089f44ff17383773afc52b85149d929762afcef1935aee6a1b8eba",
+   "size": 2207
   },
   "app/core/directives/image-upload.directive.js": {
-   "sha512": "10aba1f4a8462b11ce476e404987809563432856dc5dfe8ebb5cdbf00af443b9",
-   "size": 1004
+   "sha512": "356ec57eada0b531e23672225710506c3e121885cff33c1b941cbe1533e5b2d1",
+   "size": 1009
+  },
+  "app/core/directives/item-form.directive.js": {
+   "sha512": "783d635f60d005b0a92e6ddfeab9727139b39bb293b38ad9c2b5b2bf19834f88",
+   "size": 1274
   },
   "app/core/directives/my-channel.directive.js": {
-   "sha512": "456ae0160350f968ce9071fcc42a319b90f12922156f8646eef0b3d875eb85cf",
-   "size": 1676
+   "sha512": "0ab1be55aee2f2a9914c406dc5fa707c12fac2bd02195c23b7a898ee4f598017",
+   "size": 1709
   },
   "app/core/directives/site-header.directive.js": {
-   "sha512": "07eacac94c98146ebb156cb494ee726d3c652ae580cd605cbb2583925d7f959c",
-   "size": 6500
+   "sha512": "676bac6623860ac96e0013300cc3873460c8d82cb81a52487a672c68fc825ed3",
+   "size": 6555
   },
   "app/core/directives/tag-input.directive.js": {
    "sha512": "70b900d891d9a53754107843a707ec902460a71b588e56441ec38f927ca567e7",
@@ -62,20 +66,40 @@
    "size": 435
   },
   "app/games/directives/dosbox.directive.js": {
-   "sha512": "d68b41af7e84742474b67c9c1f082bca91a1148e6ab48bc29b32dc99cb179c98",
-   "size": 1859
+   "sha512": "dd19652410d164aadd88ccc6c83c9cb16019c5221a87235b16945ee42b7e138e",
+   "size": 2181
   },
   "app/games/directives/executable-file-input.directive.js": {
    "sha512": "d5f058fc6a86adb5f34fd0222e5676134efcb83f89826833d6621e05cec57b44",
    "size": 471
+  },
+  "app/games/directives/game-interface.directive.js": {
+   "sha512": "d0678e39db5d964ed667f497205941a4c9cf52f8ebf0dbd71eaca0507beff9e5",
+   "size": 2490
+  },
+  "app/games/directives/game-list.directive.js": {
+   "sha512": "a89a96334a58234eeb579e55066ec9d147dd1bff70c4f46200f33ff7b4d4d04e",
+   "size": 2950
+  },
+  "app/videos/directives/video-interface.directive.js": {
+   "sha512": "c51def485b29395bf67076fb43c120f7186ba9bab5534fd3fcf9f9b5a0e4efa4",
+   "size": 1747
+  },
+  "app/videos/directives/video-list.directive.js": {
+   "sha512": "ba7b8ecd8e5a28de90fe367a1ea81e26d6a644f295654622d12819fd107778a0",
+   "size": 1368
+  },
+  "app/videos/directives/video-player.directive.js": {
+   "sha512": "c68c631682e9b4391cf2a6a5004d76f9ec6b6ca46149c689f5ecd892a1a0725b",
+   "size": 1942
   },
   "assets/css/elements.css": {
    "sha512": "a4cdf78a6b7696149581e6d07d0164d81e919f4becab37e49980a7c22ed3b918",
    "size": 314
   },
   "assets/css/style.css": {
-   "sha512": "d5712984ba622f95b83f906afced8aab37ee0fbf62268bf79f38486586fe811e",
-   "size": 8674
+   "sha512": "5a07e76f2a58f10738c223c25fce933d1b5f2ece578c9af99dfc10eec18c783b",
+   "size": 8781
   },
   "assets/img/videorama-zero.png": {
    "sha512": "234b9804a449b25d1bade757b097f15ac087b40b4d64513b0f9e2fe98f4c9dfd",
@@ -86,927 +110,1263 @@
    "size": 6313
   },
   "assets/less/style.less": {
-   "sha512": "42cbfc4382cf7e3df68b31283196e453a70d4859ef3c67ad7ff1ccbae4b18a49",
-   "size": 6436
+   "sha512": "81bdacb6d562540ba1d08a7f06e77410870709b365150e08ec0585586c3f4f11",
+   "size": 6795
   },
-  "assets/lib/angular-identicon/angular-identicon.min.js": {
+  "assets/lib/core/angular-identicon/angular-identicon.min.js": {
    "sha512": "d53e365d7bc0d0665b9fd816f98e7edf53b3fc380ecd5c4155d4e3f63964292c",
    "size": 4291
   },
-  "assets/lib/angular-material/angular-material.css": {
+  "assets/lib/core/angular-material/angular-material.css": {
    "sha512": "c527b85044267f8ba9f9204be48d7c3b00ce76d5e5bbc6e180e77f7817928335",
    "size": 426902
   },
-  "assets/lib/angular-material/angular-material.min.js": {
+  "assets/lib/core/angular-material/angular-material.min.js": {
    "sha512": "ee2935c75e3b0bfa5286013af076f58655f02d16d3a45442e0a867c3bd4b4a44",
    "size": 291954
   },
-  "assets/lib/angular-moment/CHANGELOG.md": {
+  "assets/lib/core/angular-moment/CHANGELOG.md": {
    "sha512": "7aa316f864809a63de947157a37f079176bba24067a3fdabff250d5c2f28fc57",
    "size": 9588
   },
-  "assets/lib/angular-moment/CONTRIBUTING.md": {
+  "assets/lib/core/angular-moment/CONTRIBUTING.md": {
    "sha512": "b859da0d7c8be3000bd70fcd68a59b9b3c935ffa5b7632bd41d5b709bcedbc91",
    "size": 2072
   },
-  "assets/lib/angular-moment/Gruntfile.js": {
+  "assets/lib/core/angular-moment/Gruntfile.js": {
    "sha512": "a788250230e693d3976d62bfdac730cb096b835f3bef0d6eab2fac827d95a31d",
    "size": 937
   },
-  "assets/lib/angular-moment/LICENSE": {
+  "assets/lib/core/angular-moment/LICENSE": {
    "sha512": "8257a4d3654ff2d893b00b7e635537c1b1447b0fc89b3bc23d5fda2dc94cd4c7",
    "size": 1099
   },
-  "assets/lib/angular-moment/README.md": {
+  "assets/lib/core/angular-moment/README.md": {
    "sha512": "aab363fdc54090a4d60cff10594a101d51ae5b7d282956f332e1072e1e2513dc",
    "size": 5872
   },
-  "assets/lib/angular-moment/angular-moment.js": {
+  "assets/lib/core/angular-moment/angular-moment.js": {
    "sha512": "4376cb1359c2fe51d9cfa3fb1a125a425a3a8a78fbb2d32e0ffe41cc96b6953b",
    "size": 19478
   },
-  "assets/lib/angular-moment/angular-moment.min.js": {
+  "assets/lib/core/angular-moment/angular-moment.min.js": {
    "sha512": "780b24f2c31451bd3cbb47f725cbee27ff3452aaaf0d54930d19679270046b56",
    "size": 4934
   },
-  "assets/lib/angular-moment/angular-moment.min.js.map": {
+  "assets/lib/core/angular-moment/angular-moment.min.js.map": {
    "sha512": "423b34586545cf595f12dd6e1d40965dc77b0e4f04ba7c9a7cf1437c74ab443c",
    "size": 6722
   },
-  "assets/lib/angular-moment/angular-moment.nuspec": {
+  "assets/lib/core/angular-moment/angular-moment.nuspec": {
    "sha512": "a9b35dbbb89611f52625c8e94019ff605aa31ed5441d4800b282ac82e169b544",
    "size": 1109
   },
-  "assets/lib/angular-moment/bower.json": {
+  "assets/lib/core/angular-moment/bower.json": {
    "sha512": "e65dc6458c431065a8d4df631fbd81b6ceb9c9ab42d5549fb84093bdd5f210d7",
    "size": 522
   },
-  "assets/lib/angular-moment/karma.conf.js": {
+  "assets/lib/core/angular-moment/karma.conf.js": {
    "sha512": "5a530f186995601ed7f95cde0111f4587edcb88e503207ae0a89891f9714acb1",
    "size": 877
   },
-  "assets/lib/angular-moment/package.json": {
+  "assets/lib/core/angular-moment/package.json": {
    "sha512": "af29c2495b6765b04c0c1318cc8e9abbd2528f02844535d568a59f2948828405",
    "size": 897
   },
-  "assets/lib/angular-moment/tests.js": {
+  "assets/lib/core/angular-moment/tests.js": {
    "sha512": "3da5f70734eda36b9726ebd41f285706a49d31f81ee42a3d0fc7000de137c0d6",
    "size": 33887
   },
-  "assets/lib/angular-sanitize/LICENSE.md": {
+  "assets/lib/core/angular-sanitize/LICENSE.md": {
    "sha512": "88795f3408d70f5a78e04c399351731ff161a49f0727f0cf3d048964a8aa14cb",
    "size": 1074
   },
-  "assets/lib/angular-sanitize/README.md": {
+  "assets/lib/core/angular-sanitize/README.md": {
    "sha512": "fcb21f8dfd4818893f89f1cc6b97c35472809e7f86c8a1c1c65dc0d158b2b156",
    "size": 2051
   },
-  "assets/lib/angular-sanitize/angular-sanitize.js": {
+  "assets/lib/core/angular-sanitize/angular-sanitize.js": {
    "sha512": "877ed70e08e6fa8e5e3be35492cc3f71628e54f46f8e49d1209e320b6921313f",
    "size": 26833
   },
-  "assets/lib/angular-sanitize/angular-sanitize.min.js": {
+  "assets/lib/core/angular-sanitize/angular-sanitize.min.js": {
    "sha512": "24f4da1b52cb36fd0ff96c65d38be6b30d7728620b19f6b39307d983fdd35509",
    "size": 5861
   },
-  "assets/lib/angular-sanitize/angular-sanitize.min.js.map": {
+  "assets/lib/core/angular-sanitize/angular-sanitize.min.js.map": {
    "sha512": "49bd2b153c58635160bad1bba67f085d8d650636401c93d862c0d082a7024b2c",
    "size": 10301
   },
-  "assets/lib/angular-sanitize/bower.json": {
+  "assets/lib/core/angular-sanitize/bower.json": {
    "sha512": "1dab18606047e845c1f9a79faefb877d2c545eecf73ea5a2bd7c9790b4046ee2",
    "size": 174
   },
-  "assets/lib/angular-sanitize/index.js": {
+  "assets/lib/core/angular-sanitize/index.js": {
    "sha512": "7ce6e41231b923681e3ea023eddc0eb98b0a66ad87673cd2018b3b06bc73f138",
    "size": 62
   },
-  "assets/lib/angular-sanitize/package.json": {
+  "assets/lib/core/angular-sanitize/package.json": {
    "sha512": "1d914dfa8ee2f07fd0d5973d95d710fc9fe95d2fc6166991f4923a7d632005dc",
    "size": 704
   },
-  "assets/lib/angular/angular-animate.min.js": {
+  "assets/lib/core/angular/angular-animate.min.js": {
    "sha512": "dff68236699f7bc995143e4f54d9122c13ee7b654086b32d70fd316b57306656",
    "size": 25599
   },
-  "assets/lib/angular/angular-aria.min.js": {
+  "assets/lib/core/angular/angular-aria.min.js": {
    "sha512": "e2c51e87bfb2c64459dcc3194ad65ae9aa62102fda2c2b5d5c83c9d05157caa3",
    "size": 3773
   },
-  "assets/lib/angular/angular-route.min.js": {
+  "assets/lib/core/angular/angular-route.min.js": {
    "sha512": "aa68f619dcde2d2f356fb0ac4eef3853bc004afef41c9042d525ce151704ee3a",
    "size": 4389
   },
-  "assets/lib/angular/angular.min.js": {
+  "assets/lib/core/angular/angular.min.js": {
    "sha512": "7c60d0ded2382947ccdf961b8427717d4f30d2593f88c9fdd0a3211595bd9f42",
    "size": 148199
   },
-  "assets/lib/bootstrap/bootstrap.min.css": {
+  "assets/lib/core/bootstrap/bootstrap.min.css": {
    "sha512": "e8c5daf01eae68ed7c1e277a6e544c7ad108a0fa877fb531d6d9f2210769b7da",
    "size": 121200
   },
-  "assets/lib/bootstrap/css/bootstrap-theme.css": {
+  "assets/lib/core/bootstrap/css/bootstrap-theme.css": {
    "sha512": "72d6d433d5564a6108482d39216bcf68ee1b08f8fbcf3af30ca7d787400c1e52",
    "size": 26132
   },
-  "assets/lib/bootstrap/css/bootstrap-theme.css.map": {
+  "assets/lib/core/bootstrap/css/bootstrap-theme.css.map": {
    "sha512": "29fb34a587af9a4acb185ff3614c0d05afb29c4a759df232bc500553d76a80be",
    "size": 47706
   },
-  "assets/lib/bootstrap/css/bootstrap-theme.min.css": {
+  "assets/lib/core/bootstrap/css/bootstrap-theme.min.css": {
    "sha512": "b6aba9e6de57c895e5bd7f1bfc4f69234b30180e00ba0b3316abdd58049adbfe",
    "size": 23409
   },
-  "assets/lib/bootstrap/css/bootstrap-theme.min.css.map": {
+  "assets/lib/core/bootstrap/css/bootstrap-theme.min.css.map": {
    "sha512": "35c4094dd35a6d01fecb850fc58f6815e9bd188e70bc5f2aa52d90030d3daea8",
    "size": 25648
   },
-  "assets/lib/bootstrap/css/bootstrap.css": {
+  "assets/lib/core/bootstrap/css/bootstrap.css": {
    "sha512": "a658bd68aabbe7c3cc76caa3340f80bb8089ed96ad2c20978a79e549fbf4db7c",
    "size": 146010
   },
-  "assets/lib/bootstrap/css/bootstrap.css.map": {
+  "assets/lib/core/bootstrap/css/bootstrap.css.map": {
    "sha512": "54232cbdef261553779d60d4c83cd84124147588fbebd3bef6ee0d1cb82473c2",
    "size": 389287
   },
-  "assets/lib/bootstrap/css/bootstrap.min.css": {
+  "assets/lib/core/bootstrap/css/bootstrap.min.css": {
    "sha512": "e8c5daf01eae68ed7c1e277a6e544c7ad108a0fa877fb531d6d9f2210769b7da",
    "size": 121200
   },
-  "assets/lib/bootstrap/css/bootstrap.min.css.map": {
+  "assets/lib/core/bootstrap/css/bootstrap.min.css.map": {
    "sha512": "abb1a70ad42986762144fb8700d0adea6130e7a611cf9e978e51248a4e00b775",
    "size": 542194
   },
-  "assets/lib/bootstrap/fonts/glyphicons-halflings-regular.eot": {
+  "assets/lib/core/bootstrap/fonts/glyphicons-halflings-regular.eot": {
    "sha512": "efc910c96b9f5c58ea11a84577cf60ae995503b1ee670bb7e7d4a413b7403769",
    "size": 20127
   },
-  "assets/lib/bootstrap/fonts/glyphicons-halflings-regular.svg": {
+  "assets/lib/core/bootstrap/fonts/glyphicons-halflings-regular.svg": {
    "sha512": "c2e77eab327af1469097c31bc0daf820c066b0222059d8ff0ecebca974b62b75",
    "size": 108738
   },
-  "assets/lib/bootstrap/fonts/glyphicons-halflings-regular.ttf": {
+  "assets/lib/core/bootstrap/fonts/glyphicons-halflings-regular.ttf": {
    "sha512": "2b066e06506ef20d69698d37cdec552176ef3f64a1151a99a1d02d72d39ce12c",
    "size": 45404
   },
-  "assets/lib/bootstrap/fonts/glyphicons-halflings-regular.woff": {
+  "assets/lib/core/bootstrap/fonts/glyphicons-halflings-regular.woff": {
    "sha512": "f5366ab255afefe3fe06150e8509e776b5618ff50fe3e0fa8e4d715d645b1e44",
    "size": 23424
   },
-  "assets/lib/bootstrap/fonts/glyphicons-halflings-regular.woff2": {
+  "assets/lib/core/bootstrap/fonts/glyphicons-halflings-regular.woff2": {
    "sha512": "3811804f56ec3c82f0bef35de0a9250e546a1e357fb59e2784f610d638fec355",
    "size": 18028
   },
-  "assets/lib/bootstrap/js/bootstrap.js": {
+  "assets/lib/core/bootstrap/js/bootstrap.js": {
    "sha512": "850780aed292053275b1e8118f24680e1e34f6d77bd0ba32eb6bac041dfe3b1e",
    "size": 69707
   },
-  "assets/lib/bootstrap/js/bootstrap.min.js": {
+  "assets/lib/core/bootstrap/js/bootstrap.min.js": {
    "sha512": "8b3b64a1bb2f9e329f02d4cd7479065630184ebaed942ee61a9ff9e1ce34c28c",
    "size": 37045
   },
-  "assets/lib/bootstrap/js/npm.js": {
+  "assets/lib/core/bootstrap/js/npm.js": {
    "sha512": "81bc329ad688d411fcf3decb28454238ec478c192b6ac19a3ee07e9939556cf1",
    "size": 484
   },
-  "assets/lib/dropzone/dropzone.js": {
+  "assets/lib/core/dropzone/dropzone.js": {
    "sha512": "5e16c509713762cd14365e2affe6c9d376ea0e6f1268553631dc41dca5fd6111",
    "size": 64399
   },
-  "assets/lib/identicon/LICENSE": {
+  "assets/lib/core/identicon/LICENSE": {
    "sha512": "bcd3eb16725e53658fa26c3fa96cfca2f265f011112605c2defd82392371262f",
    "size": 1283
   },
-  "assets/lib/identicon/README.md": {
+  "assets/lib/core/identicon/README.md": {
    "sha512": "b098aa33ae56e3d6a05d8bd090459044060ed1980f136ef703a3f88cceb84481",
    "size": 2498
   },
-  "assets/lib/identicon/bower.json": {
+  "assets/lib/core/identicon/bower.json": {
    "sha512": "bbee8d26c5ed5d01c5fe10460f1ba3d8b470a61bf4b38b287cf17661fde828e0",
    "size": 379
   },
-  "assets/lib/identicon/demo.html": {
+  "assets/lib/core/identicon/demo.html": {
    "sha512": "e1171efc416af6d3590a10d3ba2a93c5e81ead42411081a8adc02fb2b4ecb631",
    "size": 3093
   },
-  "assets/lib/identicon/gulpfile.js": {
+  "assets/lib/core/identicon/gulpfile.js": {
    "sha512": "4c41635071402933414d06923491ded3b5095407660897e7d1151f4c866190fe",
    "size": 1406
   },
-  "assets/lib/identicon/identicon.js": {
+  "assets/lib/core/identicon/identicon.js": {
    "sha512": "e6f007a35edce0eb5a4c0a694060077d1c35140088004320f4ed6e77bcbfae04",
    "size": 4902
   },
-  "assets/lib/identicon/package.json": {
+  "assets/lib/core/identicon/package.json": {
    "sha512": "947e267c8af3be864fed0d8e9f48c4a6280fdbfd0617202aa8a793a668380a22",
    "size": 533
   },
-  "assets/lib/identicon/pnglib.js": {
+  "assets/lib/core/identicon/pnglib.js": {
    "sha512": "1e059de5d431d732ce4c6eff6209b8afbbaebbcd3b5c8a887e0686a04006424c",
    "size": 6497
   },
-  "assets/lib/jquery/jquery.min.js": {
+  "assets/lib/core/jquery/jquery.min.js": {
    "sha512": "ab3ad9a98fe431508461ebbf8029bc536f34d16cfef8b4c62b8a62b56fe2b30a",
    "size": 86351
   },
-  "assets/lib/js-dos/js-dos.js": {
-   "sha512": "ca81983761560d3c83c2acab20c4bec543f1af1bb4188113887a29cf522346db",
-   "size": 27035
-  },
-  "assets/lib/jszip/CHANGES.md": {
-   "sha512": "478413c8b7559b52d55f3263b2c8b22b16c4f7621726a55e5f58d0e5cccb612e",
-   "size": 6687
-  },
-  "assets/lib/jszip/Gruntfile.js": {
-   "sha512": "f9fc2abb61c272ccafa35d4f532cfde25e55feb2c07abe364a621203525d75be",
-   "size": 4954
-  },
-  "assets/lib/jszip/LICENSE.markdown": {
-   "sha512": "47e0901519d1424a31f2660246c8f2c5c17cbf604071a04e092ce36f8b9ae8e8",
-   "size": 33738
-  },
-  "assets/lib/jszip/README.markdown": {
-   "sha512": "f2981443c8eb9ebd5122ee9cdf98a6b932c5f0c2ccfb5d0c02cd30550d3b9fef",
-   "size": 1006
-  },
-  "assets/lib/jszip/_config.yml": {
-   "sha512": "363506e4590718684e46670291a9cf972479e5c748a39f1a97761a3d6f93eb6e",
-   "size": 427
-  },
-  "assets/lib/jszip/bower.json": {
-   "sha512": "49f5be9e67497971e027fafe1ca1441917bf730515f10c8142ca92668a5dd7cf",
-   "size": 439
-  },
-  "assets/lib/jszip/component.json": {
-   "sha512": "44e0d8c8dde7fd88a0cc3c9f483311c26caa585c1a39a579a52701a19cf5b384",
-   "size": 335
-  },
-  "assets/lib/jszip/dist/jszip.js": {
-   "sha512": "283fbea889376463563c7bbbb76c548e88d2f0e64fb81de2f335c7a60ef1b0c2",
-   "size": 363877
-  },
-  "assets/lib/jszip/dist/jszip.min.js": {
-   "sha512": "c41ef8038b679a04638c37c92daedc59fcb933f2dfa305fbc841abadb2ecb367",
-   "size": 101716
-  },
-  "assets/lib/jszip/dist/jszip.utils.js": {
-   "sha512": "b00aa418d69014accebb3a3990026d2619206ff4df37d8de445a84b23431c143",
-   "size": 4482
-  },
-  "assets/lib/jszip/docs/APPNOTE.TXT": {
-   "sha512": "e720ec438c28f5805b83ad423133bc886c27bd0951cdaf0e520416a36930cd06",
-   "size": 145222
-  },
-  "assets/lib/jszip/docs/references.txt": {
-   "sha512": "dd9bb54717369739a58f8147345a3e444e1cac01aa0cd5044702e1ad49da349c",
-   "size": 577
-  },
-  "assets/lib/jszip/documentation/_layouts/default.html": {
-   "sha512": "7f077549bf003910d9ed939e245f5d20aba29d47d1586db6ed28c2c67f9d38df",
-   "size": 9606
-  },
-  "assets/lib/jszip/documentation/api_jszip.md": {
-   "sha512": "8640b7a300e23a5e0384b675f4abcf6742cc83c12ae9af5924f1c62652dc1e51",
-   "size": 606
-  },
-  "assets/lib/jszip/documentation/api_jszip/constructor.md": {
-   "sha512": "723952a0c3be28e8348c83572500ddd72b56a1d02f9eaf4e8527c9865309c207",
-   "size": 323
-  },
-  "assets/lib/jszip/documentation/api_jszip/external.md": {
-   "sha512": "f714984eabe53183968280ed5c42041f57b343b3119723ab247ee37fa388c0f1",
-   "size": 602
-  },
-  "assets/lib/jszip/documentation/api_jszip/file_data.md": {
-   "sha512": "b6153dda5330c706e4de633e22c657c61ac5d066eecbc591b3c4b7c11c2c7e20",
-   "size": 4815
-  },
-  "assets/lib/jszip/documentation/api_jszip/file_name.md": {
-   "sha512": "f3af1ebcf879091513da071cf0e42d7db4abe1c166a836d35417c979f086362a",
-   "size": 1270
-  },
-  "assets/lib/jszip/documentation/api_jszip/file_regex.md": {
-   "sha512": "4bcd90035e975b72c5c528e1da59aa22939234bd2fa84751733c07c1943b44ba",
-   "size": 1302
-  },
-  "assets/lib/jszip/documentation/api_jszip/filter.md": {
-   "sha512": "152d658834ac43daba09691327be61b8c4abe79bf6307efae59fcd41649c9cf4",
-   "size": 1128
-  },
-  "assets/lib/jszip/documentation/api_jszip/folder_data.md": {
-   "sha512": "2f7ced016495883a9ce2c94c700b24e89497e9f55dd613c18d07bb23d430895f",
-   "size": 800
-  },
-  "assets/lib/jszip/documentation/api_jszip/folder_regex.md": {
-   "sha512": "1edcd439ca3f7fe05b018e78a307ee7c9cb990fdf4f0572492286838176e2e9f",
-   "size": 974
-  },
-  "assets/lib/jszip/documentation/api_jszip/for_each.md": {
-   "sha512": "87f8e3566cd5723f29f4bd1f9c93121d68d5c2f02819318b5e92f13047ab8397",
-   "size": 1251
-  },
-  "assets/lib/jszip/documentation/api_jszip/generate_async.md": {
-   "sha512": "fafb5dd4412116c6ecc0371ecb7e96c8ec469f8b4a650503316a967e06f87f11",
-   "size": 7599
-  },
-  "assets/lib/jszip/documentation/api_jszip/generate_internal_stream.md": {
-   "sha512": "12802c60266d424bb4766380637ce870be3c22c15b9c78c481dcb4b37c65d875",
-   "size": 1022
-  },
-  "assets/lib/jszip/documentation/api_jszip/generate_node_stream.md": {
-   "sha512": "f4a5c5d2fee9b3fd213b267e21c2a45bc11efd5a07eaeface10c6fe87900c65d",
-   "size": 1222
-  },
-  "assets/lib/jszip/documentation/api_jszip/load_async.md": {
-   "sha512": "5e875ea0c6569991a2ba878ab244b717d1b4747d9b29222152a9ac351f03c85e",
-   "size": 3451
-  },
-  "assets/lib/jszip/documentation/api_jszip/load_async_object.md": {
-   "sha512": "6cd8c9528fc75386edb3aceaa853753ed42a0d1e3746b067bb0781c809c0193f",
-   "size": 362
-  },
-  "assets/lib/jszip/documentation/api_jszip/remove.md": {
-   "sha512": "0e034623020b5b94d2b1649b150047fb0395ced227ba3a9030f8a522f892805b",
-   "size": 693
-  },
-  "assets/lib/jszip/documentation/api_jszip/support.md": {
-   "sha512": "d89adeb7ae956362011419bd8938d9c6a5f425ac7819a1f0eb1bcc527198e510",
-   "size": 690
-  },
-  "assets/lib/jszip/documentation/api_jszip/version.md": {
-   "sha512": "e52c017eddc1c763897d0f30d0af4b6a2b9cd8de8230c78901a554449c902f8a",
-   "size": 145
-  },
-  "assets/lib/jszip/documentation/api_streamhelper.md": {
-   "sha512": "e74167ac42b576139944d521a2befefa1a81dc84d12caaae1942180ef349c4db",
-   "size": 560
-  },
-  "assets/lib/jszip/documentation/api_streamhelper/accumulate.md": {
-   "sha512": "74aded42a8aba88ce3cbbf8e505d80f7d9f02a3a00df336649169896070062ae",
-   "size": 1031
-  },
-  "assets/lib/jszip/documentation/api_streamhelper/on.md": {
-   "sha512": "eaa788f78411be0f713a7ce9e581e25b953e315ebef850833cfc82aa5206ecae",
-   "size": 1296
-  },
-  "assets/lib/jszip/documentation/api_streamhelper/pause.md": {
-   "sha512": "973500d46ae70c91b789ebd60e41ce2fcb8e3286b6b0b6cc8230ec239c1ec0db",
-   "size": 566
-  },
-  "assets/lib/jszip/documentation/api_streamhelper/resume.md": {
-   "sha512": "c881f4b81764326ebefb2fc908bba208b5512524c9a522df683149ffee88d726",
-   "size": 400
-  },
-  "assets/lib/jszip/documentation/api_zipobject.md": {
-   "sha512": "5b2a0516517075fc01c350b8158e0f218d916854e9aa7f23df4414a840eeb4ce",
-   "size": 1117
-  },
-  "assets/lib/jszip/documentation/api_zipobject/async.md": {
-   "sha512": "5f107f2958fc1c56a72ad89b087e27c9ee67ce10cdc4e9a918fb5664f73afe14",
-   "size": 1257
-  },
-  "assets/lib/jszip/documentation/api_zipobject/internal_stream.md": {
-   "sha512": "71c7d41db711221e0a51eb8895fad78b10d055b3343d589e1931462d6e1396e7",
-   "size": 717
-  },
-  "assets/lib/jszip/documentation/api_zipobject/node_stream.md": {
-   "sha512": "c418aec90ec177a0dab82d63c7654f5caa38774d7cafbc7ba944b5dc3a538781",
-   "size": 1026
-  },
-  "assets/lib/jszip/documentation/contributing.md": {
-   "sha512": "424de0dea86f06cf9d24e2257a6ad351c96f6bcb8cba29c7ef3c99039882897d",
-   "size": 2078
-  },
-  "assets/lib/jszip/documentation/css/main.css": {
-   "sha512": "149143ed5fa3ad7bc2cfe3176688b81901284e0e605676092eaa27573fd51da6",
-   "size": 578
-  },
-  "assets/lib/jszip/documentation/css/pygments.css": {
-   "sha512": "205c61668bb2395ee6a1810d37bfa534d1f22953619a1c1610ee323374bd1b99",
-   "size": 3270
-  },
-  "assets/lib/jszip/documentation/examples.md": {
-   "sha512": "d93877b71f31fb971c3134c5a694ce2b14547aee642614f6dc45fdadf37b1f56",
-   "size": 3255
-  },
-  "assets/lib/jszip/documentation/examples/download-zip-file.html": {
-   "sha512": "fcc6ad4dad6be1415981d4ecbc77082bd040a5933ccc39c5a563b8247bc72bba",
-   "size": 1736
-  },
-  "assets/lib/jszip/documentation/examples/downloader.html": {
-   "sha512": "d2829bef62f513295c4b914984dda6281c186c26a5164d23700f9d362fa132b4",
-   "size": 1603
-  },
-  "assets/lib/jszip/documentation/examples/downloader.js": {
-   "sha512": "2230ea29fcac252ccdf38278e65c84fc69be4c829abeb1978fa3520e09a33d1f",
-   "size": 2865
-  },
-  "assets/lib/jszip/documentation/examples/get-binary-files-ajax.html": {
-   "sha512": "27ae9310eb0127c790adcb5b00304dd3558dfde3bb6472cf2ea4769cd2d6eb7f",
-   "size": 2000
-  },
-  "assets/lib/jszip/documentation/examples/read-local-file-api.html": {
-   "sha512": "1d86407a25462a95085e35a9df13856ba80649e5ca8a0582f7219567b2136e54",
-   "size": 1949
-  },
-  "assets/lib/jszip/documentation/faq.md": {
-   "sha512": "eb529402ea21e028c4d079a974fb7da000d800ede19ce8de572be2df53294db0",
-   "size": 675
-  },
-  "assets/lib/jszip/documentation/howto/read_zip.md": {
-   "sha512": "6e909427b5f2cfbf55140159345e7b9dd66e9ea134959fd3192bd9a68982a591",
-   "size": 5355
-  },
-  "assets/lib/jszip/documentation/howto/write_zip.md": {
-   "sha512": "44223e89764fdf95cfe27806357852a48f3a590c08bcba780948af612918287c",
-   "size": 3487
-  },
-  "assets/lib/jszip/documentation/limitations.md": {
-   "sha512": "13cb9bdd1df7490affc8512d7f04b36a8bdfd38f5f5809150a862e507097db83",
-   "size": 4375
-  },
-  "assets/lib/jszip/documentation/upgrade_guide.md": {
-   "sha512": "adc53aace15f36099c088fe46a8bfaef7001885a0f95b2e3277b0dab3691a8a3",
-   "size": 4864
-  },
-  "assets/lib/jszip/index.html": {
-   "sha512": "1645480a735ce8e25a6a36457babdf0851927255702ef63ca9aab901315c5ff9",
-   "size": 4297
-  },
-  "assets/lib/jszip/lib/base64.js": {
-   "sha512": "18da3ba3221cc00ec931c767d9de6d8cc7a93cab978b9c47424f3839bd51a88f",
-   "size": 3382
-  },
-  "assets/lib/jszip/lib/compressedObject.js": {
-   "sha512": "be66fbe03feb844892f83e6f09579b2562b525292e108aa5a76dea35807aef47",
-   "size": 2905
-  },
-  "assets/lib/jszip/lib/compressions.js": {
-   "sha512": "ada5b89839406488a403795a5ef98ecf3a7f3feda4e48270f991464b538aaddd",
-   "size": 368
-  },
-  "assets/lib/jszip/lib/crc32.js": {
-   "sha512": "ac00b69342c971de964cb74612c3e0c53e22bae11912fe4f56834f0ebfb20b0b",
-   "size": 1964
-  },
-  "assets/lib/jszip/lib/defaults.js": {
-   "sha512": "7337b3eb4ca2e0c712b2f0df8827a1ecac75d5d9d7c66af7f411d3ab4da648cf",
-   "size": 284
-  },
-  "assets/lib/jszip/lib/external.js": {
-   "sha512": "e078b25bbaf08266a49ee4c4cc459b0d2d1c5b1bf8e45f971fa5d819a89b6cbd",
-   "size": 459
-  },
-  "assets/lib/jszip/lib/flate.js": {
-   "sha512": "ec7b7498cc464a05d095e86b3c114a67075268d4e13584be4c7d5a38c64f5db2",
-   "size": 1876
-  },
-  "assets/lib/jszip/lib/generate/ZipFileWorker.js": {
-   "sha512": "caacaea3fc1fbc314e5bb3bd757a5bb37c3762216c2c8d17034a4a9314eba348",
-   "size": 17899
-  },
-  "assets/lib/jszip/lib/generate/index.js": {
-   "sha512": "0a79b05041decedf4b2540ad649137f7dbe49eede081b4366a2b80138ee546ab",
-   "size": 1999
-  },
-  "assets/lib/jszip/lib/index.js": {
-   "sha512": "f4042736060b13e02594bf1426a7a2f49cf4c70314529d2a5bc34ef7cf84e03d",
-   "size": 1347
-  },
-  "assets/lib/jszip/lib/license_header.js": {
-   "sha512": "42602aaca9a7f71551f332c99f9add7e2897258f5009c31321b571ae48d9d7e9",
-   "size": 392
-  },
-  "assets/lib/jszip/lib/load.js": {
-   "sha512": "0057d3f09b233f428f23455cb48a267dde538257041579c928c14c8161d3c4c7",
-   "size": 2827
-  },
-  "assets/lib/jszip/lib/nodejs/NodejsStreamInputAdapter.js": {
-   "sha512": "f545ec7fa044ea94d64cba1e23b55601077b13fd97f49be5bd8bf9ce2aeefa32",
-   "size": 1845
-  },
-  "assets/lib/jszip/lib/nodejs/NodejsStreamOutputAdapter.js": {
-   "sha512": "7768deb90d7c7ddd5c1ae55075799a4e1a6bff9f213282294a6b3d4cb330c449",
-   "size": 1045
-  },
-  "assets/lib/jszip/lib/nodejsUtils.js": {
-   "sha512": "1bc8d0c9cf36856e1fd75cc2c5165ca024df7540e7c2b544f245c3f936d26e5b",
-   "size": 1033
-  },
-  "assets/lib/jszip/lib/object.js": {
-   "sha512": "7ed6b32e3e27796a9bf3a0048ca168a0c73f7a3ce045eb4d913c637868a9832b",
-   "size": 12526
-  },
-  "assets/lib/jszip/lib/readable-stream-browser.js": {
-   "sha512": "e67ac207e414d42df1181c3d5e7a42b29549650b5b10f65f67104561db2f79db",
-   "size": 427
-  },
-  "assets/lib/jszip/lib/reader/ArrayReader.js": {
-   "sha512": "0f16cb463f1d97e48f54ee656c284ce361a59d55f386409b09b69a326352b117",
-   "size": 1575
-  },
-  "assets/lib/jszip/lib/reader/DataReader.js": {
-   "sha512": "88c4f83e5847d0082c5e80ba45b6d9ebbe64d9d9280584d6e609a35f93cd1a99",
-   "size": 3693
-  },
-  "assets/lib/jszip/lib/reader/NodeBufferReader.js": {
-   "sha512": "8dba3a391cebbbcec01cadff54b2e2b9f8a549e02320e7fdfca9d5b090f1d850",
-   "size": 519
-  },
-  "assets/lib/jszip/lib/reader/StringReader.js": {
-   "sha512": "b3fd9dec3020209422dee26562b37c644a9d06d879db5632936ca63310cb88b9",
-   "size": 1020
-  },
-  "assets/lib/jszip/lib/reader/Uint8ArrayReader.js": {
-   "sha512": "2b28ae9f859f811d84fb63adb0382596397761bc6031de8a7392641910cd21ff",
-   "size": 652
-  },
-  "assets/lib/jszip/lib/reader/readerFor.js": {
-   "sha512": "6dbd897fcde9f4d4566d3ce704742100baa8c9f399af3abac8c7a627e69affc8",
-   "size": 945
-  },
-  "assets/lib/jszip/lib/signature.js": {
-   "sha512": "6c68ac0c0f0e4d87cbcd2f96646695bef21d95a097525e25866c65c3853955a9",
-   "size": 294
-  },
-  "assets/lib/jszip/lib/stream/ConvertWorker.js": {
-   "sha512": "ef3b9545e3d8a57b335065f02cb3c25d85185562b9b54cd1734aef74d79d332e",
-   "size": 648
-  },
-  "assets/lib/jszip/lib/stream/Crc32Probe.js": {
-   "sha512": "9036edc04ab4df8aebba519459c6b69ce06d0685a96c5be8b1fe9d5c966ac6bb",
-   "size": 562
-  },
-  "assets/lib/jszip/lib/stream/DataLengthProbe.js": {
-   "sha512": "d4ee8782e95d487be80c3fe7d9ee3c340b10990cb2b57d20e853268cdc09973c",
-   "size": 829
-  },
-  "assets/lib/jszip/lib/stream/DataWorker.js": {
-   "sha512": "6a2f943569c2bac86b65d4bb698b053aeea2d1f03e3405a0be5bad65fa971eea",
-   "size": 2776
-  },
-  "assets/lib/jszip/lib/stream/GenericWorker.js": {
-   "sha512": "83345b164709df2a00bc9362f5da286694825fd4ee80949c6b171f981023f6a9",
-   "size": 8183
-  },
-  "assets/lib/jszip/lib/stream/StreamHelper.js": {
-   "sha512": "e9f59d6783ec2514e26fcb673d05d562f2653a82f593cd3410119c89f2194b62",
-   "size": 6880
-  },
-  "assets/lib/jszip/lib/support.js": {
-   "sha512": "99e386628b31d581310480f6aa119aa0bc0bf5ec59bd1c623368d54bfae0e9f2",
-   "size": 1097
-  },
-  "assets/lib/jszip/lib/utf8.js": {
-   "sha512": "a916368c04a1902d5b6103fa8bf7a7d5f9318327eb5b0930c7f7a21c2dd5cf7a",
-   "size": 8101
-  },
-  "assets/lib/jszip/lib/utils.js": {
-   "sha512": "ef4cab6b087b4f3fbaadb47203ce69967dbf324f26f03c26cc319d6bb233933f",
-   "size": 15355
-  },
-  "assets/lib/jszip/lib/zipEntries.js": {
-   "sha512": "a01477019169b50039075525d40228dd260e70abdb00fdf59e2c1041452d13c1",
-   "size": 11900
-  },
-  "assets/lib/jszip/lib/zipEntry.js": {
-   "sha512": "e1d81421d21e7e4dac6723930b9b943ee8fbbc5b48eaa90164e2d1ed1d3d9f52",
-   "size": 11264
-  },
-  "assets/lib/jszip/lib/zipObject.js": {
-   "sha512": "99296b6829f57d3902e39d646508834d0d1bb3c96a4c2db82a4b517541ef2756",
-   "size": 4209
-  },
-  "assets/lib/jszip/package.json": {
-   "sha512": "ac759ed2bc2a21caabd1511f8ece7a1c8764705e44b7d72fd894a879ce8d5e6a",
-   "size": 1585
-  },
-  "assets/lib/jszip/test/asserts/constructor.js": {
-   "sha512": "a3219d537bef5321b9e5bfe771e9a362a2c3d5457aeec0ea37a63e226b5e67be",
-   "size": 491
-  },
-  "assets/lib/jszip/test/asserts/delete.js": {
-   "sha512": "b44f870ed5b9b56055c48624ffff8766aff8dcc39fadd8c8adb314edcd406e40",
-   "size": 4712
-  },
-  "assets/lib/jszip/test/asserts/deprecated.js": {
-   "sha512": "56e6cfa270bc6ef0d6c547ced0ab2a55136cbacd254d2364da68fe6f2b7b81b4",
-   "size": 1308
-  },
-  "assets/lib/jszip/test/asserts/external.js": {
-   "sha512": "ef7ffc18cef5ff7960992be162154723ab5122305b168314e890f659ef0eaea8",
-   "size": 4108
-  },
-  "assets/lib/jszip/test/asserts/file.js": {
-   "sha512": "cf2c251cf539354f1b836cf05c147c916e82f045fc26082d7e3c69f6ce04ed6e",
-   "size": 35924
-  },
-  "assets/lib/jszip/test/asserts/filter.js": {
-   "sha512": "fea0b0687b099b4700edb8785d55cac04ac0d8bdf41e2803b216c9ce2835b861",
-   "size": 1869
-  },
-  "assets/lib/jszip/test/asserts/foreach.js": {
-   "sha512": "5ff5785addd52e3b062903212a038f1264234f778b5c293cca539827ef7c69bb",
-   "size": 1446
-  },
-  "assets/lib/jszip/test/asserts/generate.js": {
-   "sha512": "4d084507b730ef49b71cfa513343739fdca60069a289ebcb05ca1ab7f136e684",
-   "size": 14660
-  },
-  "assets/lib/jszip/test/asserts/load.js": {
-   "sha512": "41c919c188d25783db662fcc218ef85dd77af33443020836cee4b0c3791bef40",
-   "size": 31535
-  },
-  "assets/lib/jszip/test/asserts/permissions.js": {
-   "sha512": "5623bf1222211fd7d8d964f844c1a61a39e589627240850c6226e96b04c0e2ee",
-   "size": 6347
-  },
-  "assets/lib/jszip/test/asserts/stream.js": {
-   "sha512": "21739804944fdcedb74d44b6f18e0dd4f9f1709716118be5451491b00e5d3938",
-   "size": 11684
-  },
-  "assets/lib/jszip/test/asserts/unicode.js": {
-   "sha512": "edeeb644eef739e84b635919de6833bbbce06eb84fd03a3595a86343994a4b29",
-   "size": 7643
-  },
-  "assets/lib/jszip/test/asserts/version.js": {
-   "sha512": "37914dc608849c900d51b8fccbe75cb5abee8936647fb55f086a98f8b9711aa7",
-   "size": 309
-  },
-  "assets/lib/jszip/test/helpers/browser-test-utils.js": {
-   "sha512": "803ee5805221e7456c469958fbd07a05fedadf491e82f9aec4da90cc81334039",
-   "size": 203
-  },
-  "assets/lib/jszip/test/helpers/node-test-utils.js": {
-   "sha512": "75b941f1506d91b37b465c2b1f3b11c4f91de8c3e88905e2942e2a2a401dc383",
-   "size": 1081
-  },
-  "assets/lib/jszip/test/helpers/test-utils.js": {
-   "sha512": "846d71733495cf7736a767d9effb391064c0881845aedbd39e8247f6583cef2e",
-   "size": 7835
-  },
-  "assets/lib/jszip/test/index.html": {
-   "sha512": "9dbd0b3968cd718494b1482a5f67528ea6537b2ca428c840364611fe6b726a4b",
-   "size": 3483
-  },
-  "assets/lib/jszip/test/jquery-1.8.3.min.js": {
-   "sha512": "bf28a9a446e50639a9592d7651f89511fc4e583e213f20a0dff3a44e1a7d73ce",
-   "size": 93637
-  },
-  "assets/lib/jszip/test/ref/all-stream.zip": {
-   "sha512": "51268abfc3775f17f0536f572c5806f06b214df1d1199d01b51e1c9ef5416d3d",
-   "size": 399
-  },
-  "assets/lib/jszip/test/ref/all.7zip.zip": {
-   "sha512": "6d2dfd0716d1a6a0b50400db06b0e418c21f61d56d900242079b2e58895ddbb3",
-   "size": 367
-  },
-  "assets/lib/jszip/test/ref/all.windows.zip": {
-   "sha512": "de6991ddf4021234df03a0d271d9243cec07632556a049b3c304664b7f38fd1c",
-   "size": 273
-  },
-  "assets/lib/jszip/test/ref/all.zip": {
-   "sha512": "80932ec8436324819e5dac04053b200fddcb8324e30ffb06ff3e40007409a79a",
-   "size": 367
-  },
-  "assets/lib/jszip/test/ref/all_appended_bytes.zip": {
-   "sha512": "a3a649df1c0be01ed6f3499fdabee01be695c33a620d5884ad929b3f4d3ff903",
-   "size": 379
-  },
-  "assets/lib/jszip/test/ref/all_missing_bytes.zip": {
-   "sha512": "fa2cb4446f297d954239c74dc54906d46eace5eefab43e85843739585be7123e",
-   "size": 335
-  },
-  "assets/lib/jszip/test/ref/all_prepended_bytes.zip": {
-   "sha512": "3fc03c122999126f2092051138112a8ed21e18c20cf1a9f98a8900dc2b6a68d3",
-   "size": 379
-  },
-  "assets/lib/jszip/test/ref/archive_comment.zip": {
-   "sha512": "3257302009804e5ad52ff2d488ac0ef8e94014cdc3fb0de68eafe973a9d420a8",
-   "size": 153
-  },
-  "assets/lib/jszip/test/ref/backslash.zip": {
-   "sha512": "12506271e8511106c3704c7e85ef589bb136543625ffc5f75ef94b91e2305176",
-   "size": 130
-  },
-  "assets/lib/jszip/test/ref/complex_files/AntarcticaTemps.ods": {
-   "sha512": "fe81f1c6755df281311d6f1cf5239c0d5138aa2065a509b1f71b36f4c1d25f57",
-   "size": 40538
-  },
-  "assets/lib/jszip/test/ref/complex_files/AntarcticaTemps.xlsx": {
-   "sha512": "469ea1dcdaac07d32156016d01ec0846191130df8358612e3b41568979d77cee",
-   "size": 31683
-  },
-  "assets/lib/jszip/test/ref/complex_files/Outlook2007_Calendar.xps": {
-   "sha512": "568828ac982e2708b1fa36baa60b87517e5641a1607da0e2c808d65743e9e81a",
-   "size": 188822
-  },
-  "assets/lib/jszip/test/ref/data_descriptor.zip": {
-   "sha512": "79556d034d72ab32be3311ef2d07c06b031a388a18b67a47d958009064ca54e6",
-   "size": 196
-  },
-  "assets/lib/jszip/test/ref/deflate-stream.zip": {
-   "sha512": "e08ba8270a0ec9d27ba1f9489cd31e8161719d1cc4fd2f974d99a4e92b979d94",
-   "size": 205
-  },
-  "assets/lib/jszip/test/ref/deflate.zip": {
-   "sha512": "085e1ae92f99673d9dcdd4d52ad1e1e39219b7b9249258544cbd1a854e40bfb3",
-   "size": 189
-  },
-  "assets/lib/jszip/test/ref/empty.zip": {
-   "sha512": "5e2f959f36b66df0580a94f384c5fc1ceeec4b2a3925f062d7b68f21758b8658",
-   "size": 22
-  },
-  "assets/lib/jszip/test/ref/encrypted.zip": {
-   "sha512": "841091980214809fccc8ddc34042c62df3f9055c014fdc0345f4760158bbc1a3",
-   "size": 156
-  },
-  "assets/lib/jszip/test/ref/extra_attributes.zip": {
-   "sha512": "a772f3163c12bfe85597abfcfd00175c7e9e8f271712546a012fa11661687a6d",
-   "size": 180
-  },
-  "assets/lib/jszip/test/ref/folder.zip": {
-   "sha512": "e8f3ddf68a6cee5f566aa4387210dd2374726c373a41be63626c0426ae7383a6",
-   "size": 112
-  },
-  "assets/lib/jszip/test/ref/image.zip": {
-   "sha512": "516445f73292ad67237e723b164f875e16deff43b7fcd116ebc7f7dbba25c1cb",
-   "size": 157
-  },
-  "assets/lib/jszip/test/ref/invalid/bad_decompressed_size.zip": {
-   "sha512": "813a38fb975e92270a0272a8d32aa96e08f63f25ae3b62821fb1e8f67798f964",
-   "size": 128
-  },
-  "assets/lib/jszip/test/ref/invalid/bad_offset.zip": {
-   "sha512": "22fc5b3abc60533e6439724b1b69475d125da6497e99b5afd6134fdae759fc6b",
-   "size": 128
-  },
-  "assets/lib/jszip/test/ref/invalid/compression.zip": {
-   "sha512": "b39caa06cfb71ac02ef6d8f0100d27fabfcdc01f578441777f4d3e727377b439",
-   "size": 189
-  },
-  "assets/lib/jszip/test/ref/invalid/crc32.zip": {
-   "sha512": "a00165a210f6a8502a16a6bcfa6f1c9108de5cc5280b3e70102e40c77a67d576",
-   "size": 128
-  },
-  "assets/lib/jszip/test/ref/local_encoding_in_name.zip": {
-   "sha512": "5b81ff0a0898f64967e7d5fbbd810604daf479f86121f9b2b4426d30c04c76ac",
-   "size": 350
-  },
-  "assets/lib/jszip/test/ref/nested.zip": {
-   "sha512": "680778cedee789901fa99cbae5bb9598aaebb12fb8d14917f6205b095eab0d30",
-   "size": 368
-  },
-  "assets/lib/jszip/test/ref/nested_data_descriptor.zip": {
-   "sha512": "98b20a1a7fc8d762b07cb69f958fc8ff56f5f9b32034f69cc5b18a2d6067f86f",
-   "size": 400
-  },
-  "assets/lib/jszip/test/ref/nested_zip64.zip": {
-   "sha512": "ecf4ab9ca518f11493bce1c001babc418a9859a17fb742a78e4bbd21ba09d9fb",
-   "size": 564
-  },
-  "assets/lib/jszip/test/ref/permissions/linux_7z.zip": {
-   "sha512": "abd3891f41274d9eab87537d06692be41b760b3e4fb22a352203eb99ff399d84",
-   "size": 666
-  },
-  "assets/lib/jszip/test/ref/permissions/linux_ark.zip": {
-   "sha512": "701519008ad5164e9127b3ff0252b99b2e67bdd8aebc5822c9aba04d875ed52a",
-   "size": 1030
-  },
-  "assets/lib/jszip/test/ref/permissions/linux_file_roller-ubuntu.zip": {
-   "sha512": "c0bb9faa2b97b9bfb4566a819779375d0c647592074c94df42e835bc05c892c5",
-   "size": 666
-  },
-  "assets/lib/jszip/test/ref/permissions/linux_file_roller-xubuntu.zip": {
-   "sha512": "02d6567aff8181b1068b0d2b336edc504f952b655e8b038ddd518aa6c3c6efeb",
-   "size": 1030
-  },
-  "assets/lib/jszip/test/ref/permissions/linux_zip.zip": {
-   "sha512": "05b89040a2c054cb13b93ad6e2c5c39a22fb7b9a54e677ef289d160ca99ff0a2",
-   "size": 1030
-  },
-  "assets/lib/jszip/test/ref/permissions/mac_finder.zip": {
-   "sha512": "3ed676a7deb920743867538bf91a7674b0dd25daf9ec202fe006ee04cbeaaa52",
-   "size": 862
-  },
-  "assets/lib/jszip/test/ref/permissions/windows_7z.zip": {
-   "sha512": "db34d56fae8745dca80766c638c53540e43951d07d7c5bc59fdfb25f2e158e5e",
-   "size": 1082
-  },
-  "assets/lib/jszip/test/ref/permissions/windows_compressed_folders.zip": {
-   "sha512": "05a06a3314a5fc3b535f80a4455bf02a43e806f619fe17b8d97140fe3ffc072e",
-   "size": 612
-  },
-  "assets/lib/jszip/test/ref/permissions/windows_izarc.zip": {
-   "sha512": "695f49278ad823fa85869ba17f918661c363e374f7e87311cd9a039c044dd0d5",
-   "size": 612
-  },
-  "assets/lib/jszip/test/ref/permissions/windows_winrar.zip": {
-   "sha512": "df3d0026d0ca95ebaa85f1489597085388ba23a7b1af52d1dbc51095d877c77c",
-   "size": 1082
-  },
-  "assets/lib/jszip/test/ref/pile_of_poo.zip": {
-   "sha512": "2367f9d87dc93c18bccd713163031851fd1ae70077193802a8f6c4fd44e4c54f",
-   "size": 276
-  },
-  "assets/lib/jszip/test/ref/slashes_and_izarc.zip": {
-   "sha512": "2f328f683ebbdc909472a0779c76ea40a56708c79803c0458fb78b6e62d790a9",
-   "size": 139
-  },
-  "assets/lib/jszip/test/ref/store-stream.zip": {
-   "sha512": "899ff84cd23ce4234d0c77565f390c5e1df47b3f2473924be2a457261711676d",
-   "size": 226
-  },
-  "assets/lib/jszip/test/ref/store.zip": {
-   "sha512": "ca600592aa78795859231fb2186848a57d1b05b4016920d79151619c7d192aad",
-   "size": 210
-  },
-  "assets/lib/jszip/test/ref/subfolder.zip": {
-   "sha512": "9791a873e888940dbbb42a60ca7aa202952139ec75f8cabc8770e6110f825e72",
-   "size": 222
-  },
-  "assets/lib/jszip/test/ref/text.zip": {
-   "sha512": "24a5162dbada9ce98506fa3c678e933bb2f635d0a76594d6edb403aab10135cc",
-   "size": 128
-  },
-  "assets/lib/jszip/test/ref/utf8.zip": {
-   "sha512": "f19235cddbab7dae2ab1a98d0eca1fdd477377bf8d8ae07a152b81bca4f1b153",
-   "size": 124
-  },
-  "assets/lib/jszip/test/ref/utf8_in_name.zip": {
-   "sha512": "c29a045a3e3682a668cca91793e1d29e7dde911243e196bc1a0f3d166c919cb4",
-   "size": 122
-  },
-  "assets/lib/jszip/test/ref/winrar_utf8_in_name.zip": {
-   "sha512": "2e7911a97df909a3a2db540f1cbc8fdd5dc539fe8583f83195dd4aa6b2eb72d5",
-   "size": 154
-  },
-  "assets/lib/jszip/test/ref/zip64.zip": {
-   "sha512": "64be5ac910fbbfc19ac5d38fd757533c58d16f850daedee9f1883026a9ad109d",
-   "size": 288
-  },
-  "assets/lib/jszip/test/ref/zip64_appended_bytes.zip": {
-   "sha512": "ca322dbba226063d21a0262f7ef0d6e79df929c014d322dbe81da7ce4a8facbb",
-   "size": 300
-  },
-  "assets/lib/jszip/test/ref/zip64_missing_bytes.zip": {
-   "sha512": "6778d1609b3bf8b633277c85486ab0a764a64f76094e6a828247ce30ec5f210b",
-   "size": 256
-  },
-  "assets/lib/jszip/test/ref/zip64_prepended_bytes.zip": {
-   "sha512": "9d4dc3c9446934779572a5b4648806be7ad4f2149401953a240f8f111e772caf",
-   "size": 300
-  },
-  "assets/lib/jszip/test/smile.gif": {
-   "sha512": "a88d615984cbe910eb231d9550d40b505c9fd22d658aa0da76c3be8d2bf97b70",
-   "size": 41
-  },
-  "assets/lib/jszip/vendor/FileSaver.js": {
-   "sha512": "c94e27341839171186f39378ab8c67c94ec3324eec66e329c10c9bbb3fc2536b",
-   "size": 7747
-  },
-  "assets/lib/moment/moment.js": {
+  "assets/lib/core/moment/moment.js": {
    "sha512": "651e54d33e16ab0ca2fafcfb9c06ef8de815921286358f588e4652c92258e6a7",
    "size": 104409
   },
-  "assets/lib/zeronet/ZeroChat.coffee": {
+  "assets/lib/core/zeronet/ZeroChat.coffee": {
    "sha512": "b4d9538aa3f09a18cb7336d20366c7e885a705a9b08583edba30ef656113625d",
    "size": 104
   },
-  "assets/lib/zeronet/ZeroChat.js": {
+  "assets/lib/core/zeronet/ZeroChat.js": {
    "sha512": "ee2130e7f7e72216a6f03d1d614c9ce80945115411ae57517ba3e65fdb5999a6",
    "size": 615
   },
-  "assets/lib/zeronet/ZeroFrame.coffee": {
+  "assets/lib/core/zeronet/ZeroFrame.coffee": {
    "sha512": "96a11e88429e2fa26c47f5d24bf52d030d506f1dfecb2a4e2c5e034cc5d07e31",
    "size": 1335
   },
-  "assets/lib/zeronet/ZeroFrame.js": {
+  "assets/lib/core/zeronet/ZeroFrame.js": {
    "sha512": "bc65f2262c309aa44e0c0a28789725fb847a3ec20a043c28fb4a29cd9973c31e",
    "size": 2976
+  },
+  "assets/lib/games/js-dos/js-dos.js": {
+   "sha512": "ca81983761560d3c83c2acab20c4bec543f1af1bb4188113887a29cf522346db",
+   "size": 27035
+  },
+  "assets/lib/games/jszip/CHANGES.md": {
+   "sha512": "478413c8b7559b52d55f3263b2c8b22b16c4f7621726a55e5f58d0e5cccb612e",
+   "size": 6687
+  },
+  "assets/lib/games/jszip/Gruntfile.js": {
+   "sha512": "f9fc2abb61c272ccafa35d4f532cfde25e55feb2c07abe364a621203525d75be",
+   "size": 4954
+  },
+  "assets/lib/games/jszip/LICENSE.markdown": {
+   "sha512": "47e0901519d1424a31f2660246c8f2c5c17cbf604071a04e092ce36f8b9ae8e8",
+   "size": 33738
+  },
+  "assets/lib/games/jszip/README.markdown": {
+   "sha512": "f2981443c8eb9ebd5122ee9cdf98a6b932c5f0c2ccfb5d0c02cd30550d3b9fef",
+   "size": 1006
+  },
+  "assets/lib/games/jszip/_config.yml": {
+   "sha512": "363506e4590718684e46670291a9cf972479e5c748a39f1a97761a3d6f93eb6e",
+   "size": 427
+  },
+  "assets/lib/games/jszip/bower.json": {
+   "sha512": "49f5be9e67497971e027fafe1ca1441917bf730515f10c8142ca92668a5dd7cf",
+   "size": 439
+  },
+  "assets/lib/games/jszip/component.json": {
+   "sha512": "44e0d8c8dde7fd88a0cc3c9f483311c26caa585c1a39a579a52701a19cf5b384",
+   "size": 335
+  },
+  "assets/lib/games/jszip/dist/jszip.js": {
+   "sha512": "283fbea889376463563c7bbbb76c548e88d2f0e64fb81de2f335c7a60ef1b0c2",
+   "size": 363877
+  },
+  "assets/lib/games/jszip/dist/jszip.min.js": {
+   "sha512": "c41ef8038b679a04638c37c92daedc59fcb933f2dfa305fbc841abadb2ecb367",
+   "size": 101716
+  },
+  "assets/lib/games/jszip/dist/jszip.utils.js": {
+   "sha512": "b00aa418d69014accebb3a3990026d2619206ff4df37d8de445a84b23431c143",
+   "size": 4482
+  },
+  "assets/lib/games/jszip/docs/APPNOTE.TXT": {
+   "sha512": "e720ec438c28f5805b83ad423133bc886c27bd0951cdaf0e520416a36930cd06",
+   "size": 145222
+  },
+  "assets/lib/games/jszip/docs/references.txt": {
+   "sha512": "dd9bb54717369739a58f8147345a3e444e1cac01aa0cd5044702e1ad49da349c",
+   "size": 577
+  },
+  "assets/lib/games/jszip/documentation/_layouts/default.html": {
+   "sha512": "7f077549bf003910d9ed939e245f5d20aba29d47d1586db6ed28c2c67f9d38df",
+   "size": 9606
+  },
+  "assets/lib/games/jszip/documentation/api_jszip.md": {
+   "sha512": "8640b7a300e23a5e0384b675f4abcf6742cc83c12ae9af5924f1c62652dc1e51",
+   "size": 606
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/constructor.md": {
+   "sha512": "723952a0c3be28e8348c83572500ddd72b56a1d02f9eaf4e8527c9865309c207",
+   "size": 323
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/external.md": {
+   "sha512": "f714984eabe53183968280ed5c42041f57b343b3119723ab247ee37fa388c0f1",
+   "size": 602
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/file_data.md": {
+   "sha512": "b6153dda5330c706e4de633e22c657c61ac5d066eecbc591b3c4b7c11c2c7e20",
+   "size": 4815
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/file_name.md": {
+   "sha512": "f3af1ebcf879091513da071cf0e42d7db4abe1c166a836d35417c979f086362a",
+   "size": 1270
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/file_regex.md": {
+   "sha512": "4bcd90035e975b72c5c528e1da59aa22939234bd2fa84751733c07c1943b44ba",
+   "size": 1302
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/filter.md": {
+   "sha512": "152d658834ac43daba09691327be61b8c4abe79bf6307efae59fcd41649c9cf4",
+   "size": 1128
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/folder_data.md": {
+   "sha512": "2f7ced016495883a9ce2c94c700b24e89497e9f55dd613c18d07bb23d430895f",
+   "size": 800
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/folder_regex.md": {
+   "sha512": "1edcd439ca3f7fe05b018e78a307ee7c9cb990fdf4f0572492286838176e2e9f",
+   "size": 974
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/for_each.md": {
+   "sha512": "87f8e3566cd5723f29f4bd1f9c93121d68d5c2f02819318b5e92f13047ab8397",
+   "size": 1251
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/generate_async.md": {
+   "sha512": "fafb5dd4412116c6ecc0371ecb7e96c8ec469f8b4a650503316a967e06f87f11",
+   "size": 7599
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/generate_internal_stream.md": {
+   "sha512": "12802c60266d424bb4766380637ce870be3c22c15b9c78c481dcb4b37c65d875",
+   "size": 1022
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/generate_node_stream.md": {
+   "sha512": "f4a5c5d2fee9b3fd213b267e21c2a45bc11efd5a07eaeface10c6fe87900c65d",
+   "size": 1222
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/load_async.md": {
+   "sha512": "5e875ea0c6569991a2ba878ab244b717d1b4747d9b29222152a9ac351f03c85e",
+   "size": 3451
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/load_async_object.md": {
+   "sha512": "6cd8c9528fc75386edb3aceaa853753ed42a0d1e3746b067bb0781c809c0193f",
+   "size": 362
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/remove.md": {
+   "sha512": "0e034623020b5b94d2b1649b150047fb0395ced227ba3a9030f8a522f892805b",
+   "size": 693
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/support.md": {
+   "sha512": "d89adeb7ae956362011419bd8938d9c6a5f425ac7819a1f0eb1bcc527198e510",
+   "size": 690
+  },
+  "assets/lib/games/jszip/documentation/api_jszip/version.md": {
+   "sha512": "e52c017eddc1c763897d0f30d0af4b6a2b9cd8de8230c78901a554449c902f8a",
+   "size": 145
+  },
+  "assets/lib/games/jszip/documentation/api_streamhelper.md": {
+   "sha512": "e74167ac42b576139944d521a2befefa1a81dc84d12caaae1942180ef349c4db",
+   "size": 560
+  },
+  "assets/lib/games/jszip/documentation/api_streamhelper/accumulate.md": {
+   "sha512": "74aded42a8aba88ce3cbbf8e505d80f7d9f02a3a00df336649169896070062ae",
+   "size": 1031
+  },
+  "assets/lib/games/jszip/documentation/api_streamhelper/on.md": {
+   "sha512": "eaa788f78411be0f713a7ce9e581e25b953e315ebef850833cfc82aa5206ecae",
+   "size": 1296
+  },
+  "assets/lib/games/jszip/documentation/api_streamhelper/pause.md": {
+   "sha512": "973500d46ae70c91b789ebd60e41ce2fcb8e3286b6b0b6cc8230ec239c1ec0db",
+   "size": 566
+  },
+  "assets/lib/games/jszip/documentation/api_streamhelper/resume.md": {
+   "sha512": "c881f4b81764326ebefb2fc908bba208b5512524c9a522df683149ffee88d726",
+   "size": 400
+  },
+  "assets/lib/games/jszip/documentation/api_zipobject.md": {
+   "sha512": "5b2a0516517075fc01c350b8158e0f218d916854e9aa7f23df4414a840eeb4ce",
+   "size": 1117
+  },
+  "assets/lib/games/jszip/documentation/api_zipobject/async.md": {
+   "sha512": "5f107f2958fc1c56a72ad89b087e27c9ee67ce10cdc4e9a918fb5664f73afe14",
+   "size": 1257
+  },
+  "assets/lib/games/jszip/documentation/api_zipobject/internal_stream.md": {
+   "sha512": "71c7d41db711221e0a51eb8895fad78b10d055b3343d589e1931462d6e1396e7",
+   "size": 717
+  },
+  "assets/lib/games/jszip/documentation/api_zipobject/node_stream.md": {
+   "sha512": "c418aec90ec177a0dab82d63c7654f5caa38774d7cafbc7ba944b5dc3a538781",
+   "size": 1026
+  },
+  "assets/lib/games/jszip/documentation/contributing.md": {
+   "sha512": "424de0dea86f06cf9d24e2257a6ad351c96f6bcb8cba29c7ef3c99039882897d",
+   "size": 2078
+  },
+  "assets/lib/games/jszip/documentation/css/main.css": {
+   "sha512": "149143ed5fa3ad7bc2cfe3176688b81901284e0e605676092eaa27573fd51da6",
+   "size": 578
+  },
+  "assets/lib/games/jszip/documentation/css/pygments.css": {
+   "sha512": "205c61668bb2395ee6a1810d37bfa534d1f22953619a1c1610ee323374bd1b99",
+   "size": 3270
+  },
+  "assets/lib/games/jszip/documentation/examples.md": {
+   "sha512": "d93877b71f31fb971c3134c5a694ce2b14547aee642614f6dc45fdadf37b1f56",
+   "size": 3255
+  },
+  "assets/lib/games/jszip/documentation/examples/download-zip-file.html": {
+   "sha512": "fcc6ad4dad6be1415981d4ecbc77082bd040a5933ccc39c5a563b8247bc72bba",
+   "size": 1736
+  },
+  "assets/lib/games/jszip/documentation/examples/downloader.html": {
+   "sha512": "d2829bef62f513295c4b914984dda6281c186c26a5164d23700f9d362fa132b4",
+   "size": 1603
+  },
+  "assets/lib/games/jszip/documentation/examples/downloader.js": {
+   "sha512": "2230ea29fcac252ccdf38278e65c84fc69be4c829abeb1978fa3520e09a33d1f",
+   "size": 2865
+  },
+  "assets/lib/games/jszip/documentation/examples/get-binary-files-ajax.html": {
+   "sha512": "27ae9310eb0127c790adcb5b00304dd3558dfde3bb6472cf2ea4769cd2d6eb7f",
+   "size": 2000
+  },
+  "assets/lib/games/jszip/documentation/examples/read-local-file-api.html": {
+   "sha512": "1d86407a25462a95085e35a9df13856ba80649e5ca8a0582f7219567b2136e54",
+   "size": 1949
+  },
+  "assets/lib/games/jszip/documentation/faq.md": {
+   "sha512": "eb529402ea21e028c4d079a974fb7da000d800ede19ce8de572be2df53294db0",
+   "size": 675
+  },
+  "assets/lib/games/jszip/documentation/howto/read_zip.md": {
+   "sha512": "6e909427b5f2cfbf55140159345e7b9dd66e9ea134959fd3192bd9a68982a591",
+   "size": 5355
+  },
+  "assets/lib/games/jszip/documentation/howto/write_zip.md": {
+   "sha512": "44223e89764fdf95cfe27806357852a48f3a590c08bcba780948af612918287c",
+   "size": 3487
+  },
+  "assets/lib/games/jszip/documentation/limitations.md": {
+   "sha512": "13cb9bdd1df7490affc8512d7f04b36a8bdfd38f5f5809150a862e507097db83",
+   "size": 4375
+  },
+  "assets/lib/games/jszip/documentation/upgrade_guide.md": {
+   "sha512": "adc53aace15f36099c088fe46a8bfaef7001885a0f95b2e3277b0dab3691a8a3",
+   "size": 4864
+  },
+  "assets/lib/games/jszip/index.html": {
+   "sha512": "1645480a735ce8e25a6a36457babdf0851927255702ef63ca9aab901315c5ff9",
+   "size": 4297
+  },
+  "assets/lib/games/jszip/lib/base64.js": {
+   "sha512": "18da3ba3221cc00ec931c767d9de6d8cc7a93cab978b9c47424f3839bd51a88f",
+   "size": 3382
+  },
+  "assets/lib/games/jszip/lib/compressedObject.js": {
+   "sha512": "be66fbe03feb844892f83e6f09579b2562b525292e108aa5a76dea35807aef47",
+   "size": 2905
+  },
+  "assets/lib/games/jszip/lib/compressions.js": {
+   "sha512": "ada5b89839406488a403795a5ef98ecf3a7f3feda4e48270f991464b538aaddd",
+   "size": 368
+  },
+  "assets/lib/games/jszip/lib/crc32.js": {
+   "sha512": "ac00b69342c971de964cb74612c3e0c53e22bae11912fe4f56834f0ebfb20b0b",
+   "size": 1964
+  },
+  "assets/lib/games/jszip/lib/defaults.js": {
+   "sha512": "7337b3eb4ca2e0c712b2f0df8827a1ecac75d5d9d7c66af7f411d3ab4da648cf",
+   "size": 284
+  },
+  "assets/lib/games/jszip/lib/external.js": {
+   "sha512": "e078b25bbaf08266a49ee4c4cc459b0d2d1c5b1bf8e45f971fa5d819a89b6cbd",
+   "size": 459
+  },
+  "assets/lib/games/jszip/lib/flate.js": {
+   "sha512": "ec7b7498cc464a05d095e86b3c114a67075268d4e13584be4c7d5a38c64f5db2",
+   "size": 1876
+  },
+  "assets/lib/games/jszip/lib/generate/ZipFileWorker.js": {
+   "sha512": "caacaea3fc1fbc314e5bb3bd757a5bb37c3762216c2c8d17034a4a9314eba348",
+   "size": 17899
+  },
+  "assets/lib/games/jszip/lib/generate/index.js": {
+   "sha512": "0a79b05041decedf4b2540ad649137f7dbe49eede081b4366a2b80138ee546ab",
+   "size": 1999
+  },
+  "assets/lib/games/jszip/lib/index.js": {
+   "sha512": "f4042736060b13e02594bf1426a7a2f49cf4c70314529d2a5bc34ef7cf84e03d",
+   "size": 1347
+  },
+  "assets/lib/games/jszip/lib/license_header.js": {
+   "sha512": "42602aaca9a7f71551f332c99f9add7e2897258f5009c31321b571ae48d9d7e9",
+   "size": 392
+  },
+  "assets/lib/games/jszip/lib/load.js": {
+   "sha512": "0057d3f09b233f428f23455cb48a267dde538257041579c928c14c8161d3c4c7",
+   "size": 2827
+  },
+  "assets/lib/games/jszip/lib/nodejs/NodejsStreamInputAdapter.js": {
+   "sha512": "f545ec7fa044ea94d64cba1e23b55601077b13fd97f49be5bd8bf9ce2aeefa32",
+   "size": 1845
+  },
+  "assets/lib/games/jszip/lib/nodejs/NodejsStreamOutputAdapter.js": {
+   "sha512": "7768deb90d7c7ddd5c1ae55075799a4e1a6bff9f213282294a6b3d4cb330c449",
+   "size": 1045
+  },
+  "assets/lib/games/jszip/lib/nodejsUtils.js": {
+   "sha512": "1bc8d0c9cf36856e1fd75cc2c5165ca024df7540e7c2b544f245c3f936d26e5b",
+   "size": 1033
+  },
+  "assets/lib/games/jszip/lib/object.js": {
+   "sha512": "7ed6b32e3e27796a9bf3a0048ca168a0c73f7a3ce045eb4d913c637868a9832b",
+   "size": 12526
+  },
+  "assets/lib/games/jszip/lib/readable-stream-browser.js": {
+   "sha512": "e67ac207e414d42df1181c3d5e7a42b29549650b5b10f65f67104561db2f79db",
+   "size": 427
+  },
+  "assets/lib/games/jszip/lib/reader/ArrayReader.js": {
+   "sha512": "0f16cb463f1d97e48f54ee656c284ce361a59d55f386409b09b69a326352b117",
+   "size": 1575
+  },
+  "assets/lib/games/jszip/lib/reader/DataReader.js": {
+   "sha512": "88c4f83e5847d0082c5e80ba45b6d9ebbe64d9d9280584d6e609a35f93cd1a99",
+   "size": 3693
+  },
+  "assets/lib/games/jszip/lib/reader/NodeBufferReader.js": {
+   "sha512": "8dba3a391cebbbcec01cadff54b2e2b9f8a549e02320e7fdfca9d5b090f1d850",
+   "size": 519
+  },
+  "assets/lib/games/jszip/lib/reader/StringReader.js": {
+   "sha512": "b3fd9dec3020209422dee26562b37c644a9d06d879db5632936ca63310cb88b9",
+   "size": 1020
+  },
+  "assets/lib/games/jszip/lib/reader/Uint8ArrayReader.js": {
+   "sha512": "2b28ae9f859f811d84fb63adb0382596397761bc6031de8a7392641910cd21ff",
+   "size": 652
+  },
+  "assets/lib/games/jszip/lib/reader/readerFor.js": {
+   "sha512": "6dbd897fcde9f4d4566d3ce704742100baa8c9f399af3abac8c7a627e69affc8",
+   "size": 945
+  },
+  "assets/lib/games/jszip/lib/signature.js": {
+   "sha512": "6c68ac0c0f0e4d87cbcd2f96646695bef21d95a097525e25866c65c3853955a9",
+   "size": 294
+  },
+  "assets/lib/games/jszip/lib/stream/ConvertWorker.js": {
+   "sha512": "ef3b9545e3d8a57b335065f02cb3c25d85185562b9b54cd1734aef74d79d332e",
+   "size": 648
+  },
+  "assets/lib/games/jszip/lib/stream/Crc32Probe.js": {
+   "sha512": "9036edc04ab4df8aebba519459c6b69ce06d0685a96c5be8b1fe9d5c966ac6bb",
+   "size": 562
+  },
+  "assets/lib/games/jszip/lib/stream/DataLengthProbe.js": {
+   "sha512": "d4ee8782e95d487be80c3fe7d9ee3c340b10990cb2b57d20e853268cdc09973c",
+   "size": 829
+  },
+  "assets/lib/games/jszip/lib/stream/DataWorker.js": {
+   "sha512": "6a2f943569c2bac86b65d4bb698b053aeea2d1f03e3405a0be5bad65fa971eea",
+   "size": 2776
+  },
+  "assets/lib/games/jszip/lib/stream/GenericWorker.js": {
+   "sha512": "83345b164709df2a00bc9362f5da286694825fd4ee80949c6b171f981023f6a9",
+   "size": 8183
+  },
+  "assets/lib/games/jszip/lib/stream/StreamHelper.js": {
+   "sha512": "e9f59d6783ec2514e26fcb673d05d562f2653a82f593cd3410119c89f2194b62",
+   "size": 6880
+  },
+  "assets/lib/games/jszip/lib/support.js": {
+   "sha512": "99e386628b31d581310480f6aa119aa0bc0bf5ec59bd1c623368d54bfae0e9f2",
+   "size": 1097
+  },
+  "assets/lib/games/jszip/lib/utf8.js": {
+   "sha512": "a916368c04a1902d5b6103fa8bf7a7d5f9318327eb5b0930c7f7a21c2dd5cf7a",
+   "size": 8101
+  },
+  "assets/lib/games/jszip/lib/utils.js": {
+   "sha512": "ef4cab6b087b4f3fbaadb47203ce69967dbf324f26f03c26cc319d6bb233933f",
+   "size": 15355
+  },
+  "assets/lib/games/jszip/lib/zipEntries.js": {
+   "sha512": "a01477019169b50039075525d40228dd260e70abdb00fdf59e2c1041452d13c1",
+   "size": 11900
+  },
+  "assets/lib/games/jszip/lib/zipEntry.js": {
+   "sha512": "e1d81421d21e7e4dac6723930b9b943ee8fbbc5b48eaa90164e2d1ed1d3d9f52",
+   "size": 11264
+  },
+  "assets/lib/games/jszip/lib/zipObject.js": {
+   "sha512": "99296b6829f57d3902e39d646508834d0d1bb3c96a4c2db82a4b517541ef2756",
+   "size": 4209
+  },
+  "assets/lib/games/jszip/package.json": {
+   "sha512": "ac759ed2bc2a21caabd1511f8ece7a1c8764705e44b7d72fd894a879ce8d5e6a",
+   "size": 1585
+  },
+  "assets/lib/games/jszip/test/asserts/constructor.js": {
+   "sha512": "a3219d537bef5321b9e5bfe771e9a362a2c3d5457aeec0ea37a63e226b5e67be",
+   "size": 491
+  },
+  "assets/lib/games/jszip/test/asserts/delete.js": {
+   "sha512": "b44f870ed5b9b56055c48624ffff8766aff8dcc39fadd8c8adb314edcd406e40",
+   "size": 4712
+  },
+  "assets/lib/games/jszip/test/asserts/deprecated.js": {
+   "sha512": "56e6cfa270bc6ef0d6c547ced0ab2a55136cbacd254d2364da68fe6f2b7b81b4",
+   "size": 1308
+  },
+  "assets/lib/games/jszip/test/asserts/external.js": {
+   "sha512": "ef7ffc18cef5ff7960992be162154723ab5122305b168314e890f659ef0eaea8",
+   "size": 4108
+  },
+  "assets/lib/games/jszip/test/asserts/file.js": {
+   "sha512": "cf2c251cf539354f1b836cf05c147c916e82f045fc26082d7e3c69f6ce04ed6e",
+   "size": 35924
+  },
+  "assets/lib/games/jszip/test/asserts/filter.js": {
+   "sha512": "fea0b0687b099b4700edb8785d55cac04ac0d8bdf41e2803b216c9ce2835b861",
+   "size": 1869
+  },
+  "assets/lib/games/jszip/test/asserts/foreach.js": {
+   "sha512": "5ff5785addd52e3b062903212a038f1264234f778b5c293cca539827ef7c69bb",
+   "size": 1446
+  },
+  "assets/lib/games/jszip/test/asserts/generate.js": {
+   "sha512": "4d084507b730ef49b71cfa513343739fdca60069a289ebcb05ca1ab7f136e684",
+   "size": 14660
+  },
+  "assets/lib/games/jszip/test/asserts/load.js": {
+   "sha512": "41c919c188d25783db662fcc218ef85dd77af33443020836cee4b0c3791bef40",
+   "size": 31535
+  },
+  "assets/lib/games/jszip/test/asserts/permissions.js": {
+   "sha512": "5623bf1222211fd7d8d964f844c1a61a39e589627240850c6226e96b04c0e2ee",
+   "size": 6347
+  },
+  "assets/lib/games/jszip/test/asserts/stream.js": {
+   "sha512": "21739804944fdcedb74d44b6f18e0dd4f9f1709716118be5451491b00e5d3938",
+   "size": 11684
+  },
+  "assets/lib/games/jszip/test/asserts/unicode.js": {
+   "sha512": "edeeb644eef739e84b635919de6833bbbce06eb84fd03a3595a86343994a4b29",
+   "size": 7643
+  },
+  "assets/lib/games/jszip/test/asserts/version.js": {
+   "sha512": "37914dc608849c900d51b8fccbe75cb5abee8936647fb55f086a98f8b9711aa7",
+   "size": 309
+  },
+  "assets/lib/games/jszip/test/helpers/browser-test-utils.js": {
+   "sha512": "803ee5805221e7456c469958fbd07a05fedadf491e82f9aec4da90cc81334039",
+   "size": 203
+  },
+  "assets/lib/games/jszip/test/helpers/node-test-utils.js": {
+   "sha512": "75b941f1506d91b37b465c2b1f3b11c4f91de8c3e88905e2942e2a2a401dc383",
+   "size": 1081
+  },
+  "assets/lib/games/jszip/test/helpers/test-utils.js": {
+   "sha512": "846d71733495cf7736a767d9effb391064c0881845aedbd39e8247f6583cef2e",
+   "size": 7835
+  },
+  "assets/lib/games/jszip/test/index.html": {
+   "sha512": "9dbd0b3968cd718494b1482a5f67528ea6537b2ca428c840364611fe6b726a4b",
+   "size": 3483
+  },
+  "assets/lib/games/jszip/test/jquery-1.8.3.min.js": {
+   "sha512": "bf28a9a446e50639a9592d7651f89511fc4e583e213f20a0dff3a44e1a7d73ce",
+   "size": 93637
+  },
+  "assets/lib/games/jszip/test/ref/all-stream.zip": {
+   "sha512": "51268abfc3775f17f0536f572c5806f06b214df1d1199d01b51e1c9ef5416d3d",
+   "size": 399
+  },
+  "assets/lib/games/jszip/test/ref/all.7zip.zip": {
+   "sha512": "6d2dfd0716d1a6a0b50400db06b0e418c21f61d56d900242079b2e58895ddbb3",
+   "size": 367
+  },
+  "assets/lib/games/jszip/test/ref/all.windows.zip": {
+   "sha512": "de6991ddf4021234df03a0d271d9243cec07632556a049b3c304664b7f38fd1c",
+   "size": 273
+  },
+  "assets/lib/games/jszip/test/ref/all.zip": {
+   "sha512": "80932ec8436324819e5dac04053b200fddcb8324e30ffb06ff3e40007409a79a",
+   "size": 367
+  },
+  "assets/lib/games/jszip/test/ref/all_appended_bytes.zip": {
+   "sha512": "a3a649df1c0be01ed6f3499fdabee01be695c33a620d5884ad929b3f4d3ff903",
+   "size": 379
+  },
+  "assets/lib/games/jszip/test/ref/all_missing_bytes.zip": {
+   "sha512": "fa2cb4446f297d954239c74dc54906d46eace5eefab43e85843739585be7123e",
+   "size": 335
+  },
+  "assets/lib/games/jszip/test/ref/all_prepended_bytes.zip": {
+   "sha512": "3fc03c122999126f2092051138112a8ed21e18c20cf1a9f98a8900dc2b6a68d3",
+   "size": 379
+  },
+  "assets/lib/games/jszip/test/ref/archive_comment.zip": {
+   "sha512": "3257302009804e5ad52ff2d488ac0ef8e94014cdc3fb0de68eafe973a9d420a8",
+   "size": 153
+  },
+  "assets/lib/games/jszip/test/ref/backslash.zip": {
+   "sha512": "12506271e8511106c3704c7e85ef589bb136543625ffc5f75ef94b91e2305176",
+   "size": 130
+  },
+  "assets/lib/games/jszip/test/ref/complex_files/AntarcticaTemps.ods": {
+   "sha512": "fe81f1c6755df281311d6f1cf5239c0d5138aa2065a509b1f71b36f4c1d25f57",
+   "size": 40538
+  },
+  "assets/lib/games/jszip/test/ref/complex_files/AntarcticaTemps.xlsx": {
+   "sha512": "469ea1dcdaac07d32156016d01ec0846191130df8358612e3b41568979d77cee",
+   "size": 31683
+  },
+  "assets/lib/games/jszip/test/ref/complex_files/Outlook2007_Calendar.xps": {
+   "sha512": "568828ac982e2708b1fa36baa60b87517e5641a1607da0e2c808d65743e9e81a",
+   "size": 188822
+  },
+  "assets/lib/games/jszip/test/ref/data_descriptor.zip": {
+   "sha512": "79556d034d72ab32be3311ef2d07c06b031a388a18b67a47d958009064ca54e6",
+   "size": 196
+  },
+  "assets/lib/games/jszip/test/ref/deflate-stream.zip": {
+   "sha512": "e08ba8270a0ec9d27ba1f9489cd31e8161719d1cc4fd2f974d99a4e92b979d94",
+   "size": 205
+  },
+  "assets/lib/games/jszip/test/ref/deflate.zip": {
+   "sha512": "085e1ae92f99673d9dcdd4d52ad1e1e39219b7b9249258544cbd1a854e40bfb3",
+   "size": 189
+  },
+  "assets/lib/games/jszip/test/ref/empty.zip": {
+   "sha512": "5e2f959f36b66df0580a94f384c5fc1ceeec4b2a3925f062d7b68f21758b8658",
+   "size": 22
+  },
+  "assets/lib/games/jszip/test/ref/encrypted.zip": {
+   "sha512": "841091980214809fccc8ddc34042c62df3f9055c014fdc0345f4760158bbc1a3",
+   "size": 156
+  },
+  "assets/lib/games/jszip/test/ref/extra_attributes.zip": {
+   "sha512": "a772f3163c12bfe85597abfcfd00175c7e9e8f271712546a012fa11661687a6d",
+   "size": 180
+  },
+  "assets/lib/games/jszip/test/ref/folder.zip": {
+   "sha512": "e8f3ddf68a6cee5f566aa4387210dd2374726c373a41be63626c0426ae7383a6",
+   "size": 112
+  },
+  "assets/lib/games/jszip/test/ref/image.zip": {
+   "sha512": "516445f73292ad67237e723b164f875e16deff43b7fcd116ebc7f7dbba25c1cb",
+   "size": 157
+  },
+  "assets/lib/games/jszip/test/ref/invalid/bad_decompressed_size.zip": {
+   "sha512": "813a38fb975e92270a0272a8d32aa96e08f63f25ae3b62821fb1e8f67798f964",
+   "size": 128
+  },
+  "assets/lib/games/jszip/test/ref/invalid/bad_offset.zip": {
+   "sha512": "22fc5b3abc60533e6439724b1b69475d125da6497e99b5afd6134fdae759fc6b",
+   "size": 128
+  },
+  "assets/lib/games/jszip/test/ref/invalid/compression.zip": {
+   "sha512": "b39caa06cfb71ac02ef6d8f0100d27fabfcdc01f578441777f4d3e727377b439",
+   "size": 189
+  },
+  "assets/lib/games/jszip/test/ref/invalid/crc32.zip": {
+   "sha512": "a00165a210f6a8502a16a6bcfa6f1c9108de5cc5280b3e70102e40c77a67d576",
+   "size": 128
+  },
+  "assets/lib/games/jszip/test/ref/local_encoding_in_name.zip": {
+   "sha512": "5b81ff0a0898f64967e7d5fbbd810604daf479f86121f9b2b4426d30c04c76ac",
+   "size": 350
+  },
+  "assets/lib/games/jszip/test/ref/nested.zip": {
+   "sha512": "680778cedee789901fa99cbae5bb9598aaebb12fb8d14917f6205b095eab0d30",
+   "size": 368
+  },
+  "assets/lib/games/jszip/test/ref/nested_data_descriptor.zip": {
+   "sha512": "98b20a1a7fc8d762b07cb69f958fc8ff56f5f9b32034f69cc5b18a2d6067f86f",
+   "size": 400
+  },
+  "assets/lib/games/jszip/test/ref/nested_zip64.zip": {
+   "sha512": "ecf4ab9ca518f11493bce1c001babc418a9859a17fb742a78e4bbd21ba09d9fb",
+   "size": 564
+  },
+  "assets/lib/games/jszip/test/ref/permissions/linux_7z.zip": {
+   "sha512": "abd3891f41274d9eab87537d06692be41b760b3e4fb22a352203eb99ff399d84",
+   "size": 666
+  },
+  "assets/lib/games/jszip/test/ref/permissions/linux_ark.zip": {
+   "sha512": "701519008ad5164e9127b3ff0252b99b2e67bdd8aebc5822c9aba04d875ed52a",
+   "size": 1030
+  },
+  "assets/lib/games/jszip/test/ref/permissions/linux_file_roller-ubuntu.zip": {
+   "sha512": "c0bb9faa2b97b9bfb4566a819779375d0c647592074c94df42e835bc05c892c5",
+   "size": 666
+  },
+  "assets/lib/games/jszip/test/ref/permissions/linux_file_roller-xubuntu.zip": {
+   "sha512": "02d6567aff8181b1068b0d2b336edc504f952b655e8b038ddd518aa6c3c6efeb",
+   "size": 1030
+  },
+  "assets/lib/games/jszip/test/ref/permissions/linux_zip.zip": {
+   "sha512": "05b89040a2c054cb13b93ad6e2c5c39a22fb7b9a54e677ef289d160ca99ff0a2",
+   "size": 1030
+  },
+  "assets/lib/games/jszip/test/ref/permissions/mac_finder.zip": {
+   "sha512": "3ed676a7deb920743867538bf91a7674b0dd25daf9ec202fe006ee04cbeaaa52",
+   "size": 862
+  },
+  "assets/lib/games/jszip/test/ref/permissions/windows_7z.zip": {
+   "sha512": "db34d56fae8745dca80766c638c53540e43951d07d7c5bc59fdfb25f2e158e5e",
+   "size": 1082
+  },
+  "assets/lib/games/jszip/test/ref/permissions/windows_compressed_folders.zip": {
+   "sha512": "05a06a3314a5fc3b535f80a4455bf02a43e806f619fe17b8d97140fe3ffc072e",
+   "size": 612
+  },
+  "assets/lib/games/jszip/test/ref/permissions/windows_izarc.zip": {
+   "sha512": "695f49278ad823fa85869ba17f918661c363e374f7e87311cd9a039c044dd0d5",
+   "size": 612
+  },
+  "assets/lib/games/jszip/test/ref/permissions/windows_winrar.zip": {
+   "sha512": "df3d0026d0ca95ebaa85f1489597085388ba23a7b1af52d1dbc51095d877c77c",
+   "size": 1082
+  },
+  "assets/lib/games/jszip/test/ref/pile_of_poo.zip": {
+   "sha512": "2367f9d87dc93c18bccd713163031851fd1ae70077193802a8f6c4fd44e4c54f",
+   "size": 276
+  },
+  "assets/lib/games/jszip/test/ref/slashes_and_izarc.zip": {
+   "sha512": "2f328f683ebbdc909472a0779c76ea40a56708c79803c0458fb78b6e62d790a9",
+   "size": 139
+  },
+  "assets/lib/games/jszip/test/ref/store-stream.zip": {
+   "sha512": "899ff84cd23ce4234d0c77565f390c5e1df47b3f2473924be2a457261711676d",
+   "size": 226
+  },
+  "assets/lib/games/jszip/test/ref/store.zip": {
+   "sha512": "ca600592aa78795859231fb2186848a57d1b05b4016920d79151619c7d192aad",
+   "size": 210
+  },
+  "assets/lib/games/jszip/test/ref/subfolder.zip": {
+   "sha512": "9791a873e888940dbbb42a60ca7aa202952139ec75f8cabc8770e6110f825e72",
+   "size": 222
+  },
+  "assets/lib/games/jszip/test/ref/text.zip": {
+   "sha512": "24a5162dbada9ce98506fa3c678e933bb2f635d0a76594d6edb403aab10135cc",
+   "size": 128
+  },
+  "assets/lib/games/jszip/test/ref/utf8.zip": {
+   "sha512": "f19235cddbab7dae2ab1a98d0eca1fdd477377bf8d8ae07a152b81bca4f1b153",
+   "size": 124
+  },
+  "assets/lib/games/jszip/test/ref/utf8_in_name.zip": {
+   "sha512": "c29a045a3e3682a668cca91793e1d29e7dde911243e196bc1a0f3d166c919cb4",
+   "size": 122
+  },
+  "assets/lib/games/jszip/test/ref/winrar_utf8_in_name.zip": {
+   "sha512": "2e7911a97df909a3a2db540f1cbc8fdd5dc539fe8583f83195dd4aa6b2eb72d5",
+   "size": 154
+  },
+  "assets/lib/games/jszip/test/ref/zip64.zip": {
+   "sha512": "64be5ac910fbbfc19ac5d38fd757533c58d16f850daedee9f1883026a9ad109d",
+   "size": 288
+  },
+  "assets/lib/games/jszip/test/ref/zip64_appended_bytes.zip": {
+   "sha512": "ca322dbba226063d21a0262f7ef0d6e79df929c014d322dbe81da7ce4a8facbb",
+   "size": 300
+  },
+  "assets/lib/games/jszip/test/ref/zip64_missing_bytes.zip": {
+   "sha512": "6778d1609b3bf8b633277c85486ab0a764a64f76094e6a828247ce30ec5f210b",
+   "size": 256
+  },
+  "assets/lib/games/jszip/test/ref/zip64_prepended_bytes.zip": {
+   "sha512": "9d4dc3c9446934779572a5b4648806be7ad4f2149401953a240f8f111e772caf",
+   "size": 300
+  },
+  "assets/lib/games/jszip/test/smile.gif": {
+   "sha512": "a88d615984cbe910eb231d9550d40b505c9fd22d658aa0da76c3be8d2bf97b70",
+   "size": 41
+  },
+  "assets/lib/games/jszip/vendor/FileSaver.js": {
+   "sha512": "c94e27341839171186f39378ab8c67c94ec3324eec66e329c10c9bbb3fc2536b",
+   "size": 7747
+  },
+  "assets/lib/videos/videogular-angulartics/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-angulartics/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-angulartics/README.md": {
+   "sha512": "5f2098206da960d81d6e6052085fbbeaf1f806cfd3f268b44ed50b965243d8c3",
+   "size": 1903
+  },
+  "assets/lib/videos/videogular-angulartics/bower.json": {
+   "sha512": "a056beefbc80d8e0468c33248821718c83cdc6618e401c4a8f12042363a5ad98",
+   "size": 174
+  },
+  "assets/lib/videos/videogular-angulartics/index.js": {
+   "sha512": "63a16d54227d014ae4c854054bad350634a8fe16df3172c8a69d25bc3024370a",
+   "size": 135
+  },
+  "assets/lib/videos/videogular-angulartics/package.json": {
+   "sha512": "7c1cc8d20e47ba610c3f4d6e1c53b951ee18b73d8476de70e6de9866fca36519",
+   "size": 282
+  },
+  "assets/lib/videos/videogular-angulartics/vg-analytics.js": {
+   "sha512": "af50581baa2273f689242eb01ca4ecb3cbd66d8fbf11647f0a8bb0446ac40e9b",
+   "size": 10306
+  },
+  "assets/lib/videos/videogular-angulartics/vg-analytics.min.js": {
+   "sha512": "b10f8773b79e82bb5fa024261a092ab7dc03a3e8f74706a5e196566019b8dcea",
+   "size": 2268
+  },
+  "assets/lib/videos/videogular-buffering/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-buffering/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-buffering/README.md": {
+   "sha512": "678739d9d3ae7b144f1cfb29fd1d00c993d1c032fdfd09ea2e614f75a24d68b9",
+   "size": 1901
+  },
+  "assets/lib/videos/videogular-buffering/bower.json": {
+   "sha512": "7d2546ae0ab228afb9ed046e576b2bf3d3a5b19facb2009233c420e8ebc4acf2",
+   "size": 142
+  },
+  "assets/lib/videos/videogular-buffering/index.js": {
+   "sha512": "8e717234d6f9076e5f225f8b8a1393167b00028c209b40cc2638506d8777b50c",
+   "size": 111
+  },
+  "assets/lib/videos/videogular-buffering/package.json": {
+   "sha512": "c4899b4a39773133b3de0453914260fe651f28bc45d3618d8061171622002920",
+   "size": 239
+  },
+  "assets/lib/videos/videogular-buffering/vg-buffering.js": {
+   "sha512": "d887384ddd9225b3a19896751e487d8f5b1e4fd1e1718cbe47b06080ed434b25",
+   "size": 3800
+  },
+  "assets/lib/videos/videogular-buffering/vg-buffering.min.js": {
+   "sha512": "5b2b6cba164ec58df42dbdc59167699efe859ef23b4e24776b2a72747f145152",
+   "size": 1122
+  },
+  "assets/lib/videos/videogular-controls/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-controls/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-controls/README.md": {
+   "sha512": "2c020e197b867bde1446d170b8843e05340e259b45e8d6eff6b4137a6a3025b1",
+   "size": 1897
+  },
+  "assets/lib/videos/videogular-controls/bower.json": {
+   "sha512": "c25390dd917eb1aa18cfc99b1abe93de483cfee42308b6dd614a9fa61903083c",
+   "size": 140
+  },
+  "assets/lib/videos/videogular-controls/index.js": {
+   "sha512": "3a622f82c57c374a402d8bdd2d5c498dd9c67be64ef330fa5d1cc699aeca1f54",
+   "size": 109
+  },
+  "assets/lib/videos/videogular-controls/package.json": {
+   "sha512": "75efb697976e488cf8ed04ea9ee71d97a6389f0381314e83f430b73f650d142c",
+   "size": 238
+  },
+  "assets/lib/videos/videogular-controls/vg-controls.js": {
+   "sha512": "9ecbca93a0ceab8130fa79878d4e6e1d90bc9167fa46cb97e0f9cc83021ae835",
+   "size": 53147
+  },
+  "assets/lib/videos/videogular-controls/vg-controls.min.js": {
+   "sha512": "b894b8d8cf8a0741ede20319ef30d964bad362377dae8371d3ca1de399dcc988",
+   "size": 16496
+  },
+  "assets/lib/videos/videogular-ima-ads/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-ima-ads/LICENSE": {
+   "sha512": "f05cbcc531d57a5aab5553a3960edeb27b6eed10ded42bb0c544525615b3461e",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-ima-ads/README.md": {
+   "sha512": "3a876a98d5244d000295e486f69e2827b4f9e6abeabfccedbf94a804f7b29f54",
+   "size": 2482
+  },
+  "assets/lib/videos/videogular-ima-ads/bower.json": {
+   "sha512": "9d92d226b287e972b04ce5bc24ab1ede21966909def86d1db74f423aee200090",
+   "size": 138
+  },
+  "assets/lib/videos/videogular-ima-ads/index.js": {
+   "sha512": "b5d76b3449acd8980c431701ea08ca00d9563ad34911e2275db5ae35bbb1baa9",
+   "size": 106
+  },
+  "assets/lib/videos/videogular-ima-ads/package.json": {
+   "sha512": "87bbafb6d001022e9eb66a28bdd9c143cb293f6f2fb92587211561e67993c7f8",
+   "size": 237
+  },
+  "assets/lib/videos/videogular-ima-ads/vg-ima-ads.js": {
+   "sha512": "ee4c68978233fc9db94129160644a0ceae7b8e57cf6d0f2056cdda719bf73022",
+   "size": 10948
+  },
+  "assets/lib/videos/videogular-ima-ads/vg-ima-ads.min.js": {
+   "sha512": "17c64df3c4d9f858b46d12dc3dabe85538cad216e00b1e81b48d2dc8724d29b9",
+   "size": 4002
+  },
+  "assets/lib/videos/videogular-overlay-play/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-overlay-play/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-overlay-play/README.md": {
+   "sha512": "855b75571eba286166de018714a22a18843f6c9100e15aeb00c9c48eb7a73036",
+   "size": 1913
+  },
+  "assets/lib/videos/videogular-overlay-play/bower.json": {
+   "sha512": "ddd5da22fc579f637094b315c790f4c0de63a1544875219a6006f6f77a40463d",
+   "size": 148
+  },
+  "assets/lib/videos/videogular-overlay-play/index.js": {
+   "sha512": "4874f94d80dde215c1ea27cdb1eace5d6084a25cc0f75be5e6bd2d3cfbb85211",
+   "size": 116
+  },
+  "assets/lib/videos/videogular-overlay-play/package.json": {
+   "sha512": "1b2f2105984ffa894e67fe7a4d541686c04322e90bc07abe399a7b5b4944c8fe",
+   "size": 242
+  },
+  "assets/lib/videos/videogular-overlay-play/vg-overlay-play.js": {
+   "sha512": "9367947d62a853dac2e88a328a6f7e48764913194147520eb38bf9c1176d7675",
+   "size": 2568
+  },
+  "assets/lib/videos/videogular-overlay-play/vg-overlay-play.min.js": {
+   "sha512": "9a1c98346395e7d0611f8cfe721ad83d00741b2585d02e9c3cb2bb287c8802b8",
+   "size": 846
+  },
+  "assets/lib/videos/videogular-poster/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-poster/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-poster/README.md": {
+   "sha512": "ea16ea4791176699db1f0ee8e8d6733c780cbe42d04bde14e3e6e705ef58a887",
+   "size": 1889
+  },
+  "assets/lib/videos/videogular-poster/bower.json": {
+   "sha512": "ecdcc18fde77d0345e9fac992c0a4a94bb6495170d7d37acbc9fe7ec0a346909",
+   "size": 136
+  },
+  "assets/lib/videos/videogular-poster/index.js": {
+   "sha512": "7bff4fbf11dfb1b2a4e1617dc5563ab81123a8bafda78a5b82c81d8e3524dd26",
+   "size": 105
+  },
+  "assets/lib/videos/videogular-poster/package.json": {
+   "sha512": "02440018c0ab7cae9c0553259782f1558861325f0b88e942b61eacfbe387e0b1",
+   "size": 236
+  },
+  "assets/lib/videos/videogular-poster/vg-poster.js": {
+   "sha512": "cba2a9155bfae750bfbf4887fb1e2827c573c708be5b35e6ab16b29add145495",
+   "size": 1798
+  },
+  "assets/lib/videos/videogular-poster/vg-poster.min.js": {
+   "sha512": "a2875381aa96d16c66332fce7c501dffdd80cf4e5571fd40166a5fe3914f7c21",
+   "size": 528
+  },
+  "assets/lib/videos/videogular-themes-default/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-themes-default/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-themes-default/README.md": {
+   "sha512": "97b398dea1bde39c80c4c9f12630c072ab19fb613672e0623ddf2c41d025acd5",
+   "size": 1801
+  },
+  "assets/lib/videos/videogular-themes-default/bower.json": {
+   "sha512": "d54c0f170974843e8985a54c5e711b3a51a9e4313be1f763315203f76ba8aed5",
+   "size": 311
+  },
+  "assets/lib/videos/videogular-themes-default/fonts/videogular.dev.svg": {
+   "sha512": "fdd6592253a996beee0cde7ec796ffbd21740448fc08d16b11426ab9f1498ec6",
+   "size": 5639
+  },
+  "assets/lib/videos/videogular-themes-default/fonts/videogular.eot": {
+   "sha512": "c75112b0d88a2b14c6e30cc99865d1394d4e4f608513e474329c39f5c2df97cd",
+   "size": 2544
+  },
+  "assets/lib/videos/videogular-themes-default/fonts/videogular.svg": {
+   "sha512": "7e98167c67730bde8f041e9e4ffea3797732fec50bc46561806838952ef6044d",
+   "size": 5127
+  },
+  "assets/lib/videos/videogular-themes-default/fonts/videogular.ttf": {
+   "sha512": "f7b136395bae1cd8069dc65cda033e756a7fc30158d41a30e859167edc835893",
+   "size": 2380
+  },
+  "assets/lib/videos/videogular-themes-default/fonts/videogular.woff": {
+   "sha512": "73ef31a2844e8df48ef52416073f60c295f3d0698f121ce10fdc30ba03f73849",
+   "size": 1948
+  },
+  "assets/lib/videos/videogular-themes-default/package.json": {
+   "sha512": "624b062d6a62b16962e2e84a33601abe422ff5154f2f4910f3f034ae04cc6dab",
+   "size": 250
+  },
+  "assets/lib/videos/videogular-themes-default/videogular.css": {
+   "sha512": "92b4542588932616cf19ad59da2c58122bd0b0ec13d9d8a15793f9dca1548e75",
+   "size": 14913
+  },
+  "assets/lib/videos/videogular-themes-default/videogular.css.map": {
+   "sha512": "92815a730865699a4556a2be12c52c2844781259d548d81b2bcad6424a34b7f2",
+   "size": 8021
+  },
+  "assets/lib/videos/videogular-themes-default/videogular.min.css": {
+   "sha512": "57afacf328adbb85743073e86dae0ae0db895d471fe5d42fe5e1680db92cf1e1",
+   "size": 11264
+  },
+  "assets/lib/videos/videogular-themes/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular-themes/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular-themes/README.md": {
+   "sha512": "97b398dea1bde39c80c4c9f12630c072ab19fb613672e0623ddf2c41d025acd5",
+   "size": 1801
+  },
+  "assets/lib/videos/videogular-themes/bower.json": {
+   "sha512": "d54c0f170974843e8985a54c5e711b3a51a9e4313be1f763315203f76ba8aed5",
+   "size": 311
+  },
+  "assets/lib/videos/videogular-themes/fonts/videogular.dev.svg": {
+   "sha512": "fdd6592253a996beee0cde7ec796ffbd21740448fc08d16b11426ab9f1498ec6",
+   "size": 5639
+  },
+  "assets/lib/videos/videogular-themes/fonts/videogular.eot": {
+   "sha512": "c75112b0d88a2b14c6e30cc99865d1394d4e4f608513e474329c39f5c2df97cd",
+   "size": 2544
+  },
+  "assets/lib/videos/videogular-themes/fonts/videogular.svg": {
+   "sha512": "7e98167c67730bde8f041e9e4ffea3797732fec50bc46561806838952ef6044d",
+   "size": 5127
+  },
+  "assets/lib/videos/videogular-themes/fonts/videogular.ttf": {
+   "sha512": "f7b136395bae1cd8069dc65cda033e756a7fc30158d41a30e859167edc835893",
+   "size": 2380
+  },
+  "assets/lib/videos/videogular-themes/fonts/videogular.woff": {
+   "sha512": "73ef31a2844e8df48ef52416073f60c295f3d0698f121ce10fdc30ba03f73849",
+   "size": 1948
+  },
+  "assets/lib/videos/videogular-themes/package.json": {
+   "sha512": "624b062d6a62b16962e2e84a33601abe422ff5154f2f4910f3f034ae04cc6dab",
+   "size": 250
+  },
+  "assets/lib/videos/videogular-themes/videogular.css": {
+   "sha512": "92b4542588932616cf19ad59da2c58122bd0b0ec13d9d8a15793f9dca1548e75",
+   "size": 14913
+  },
+  "assets/lib/videos/videogular-themes/videogular.css.map": {
+   "sha512": "92815a730865699a4556a2be12c52c2844781259d548d81b2bcad6424a34b7f2",
+   "size": 8021
+  },
+  "assets/lib/videos/videogular-themes/videogular.min.css": {
+   "sha512": "57afacf328adbb85743073e86dae0ae0db895d471fe5d42fe5e1680db92cf1e1",
+   "size": 11264
+  },
+  "assets/lib/videos/videogular/Gruntfile.js": {
+   "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
+   "size": 1177
+  },
+  "assets/lib/videos/videogular/LICENSE": {
+   "sha512": "00e4073e83c7c629146f9a446e0f3e40128f1ce0975d8b4e2a90e82a5c9c23c6",
+   "size": 1073
+  },
+  "assets/lib/videos/videogular/README.md": {
+   "sha512": "84631604ebf76bfed1929cee8fdb599682bce999e1badd2f9ab715858ac10550",
+   "size": 1757
+  },
+  "assets/lib/videos/videogular/bower.json": {
+   "sha512": "bb6ed7ce0422eb2292f96b4ebcd0ea0e461e70f7dcd928545af102650061ce5e",
+   "size": 161
+  },
+  "assets/lib/videos/videogular/index.js": {
+   "sha512": "4cedcb5f5f2beebe22fdea6abbe935151617770c558640c700ebe268b2eeb77c",
+   "size": 119
+  },
+  "assets/lib/videos/videogular/package.json": {
+   "sha512": "997cef1e558447fc40dcf35959ea02462752242df0b30a806c48b300418f02cb",
+   "size": 258
+  },
+  "assets/lib/videos/videogular/videogular.js": {
+   "sha512": "bd26f26a02dddec74e9c4ef77add6b0a20aa471fcf100df182cba70213136ee0",
+   "size": 63473
+  },
+  "assets/lib/videos/videogular/videogular.min.js": {
+   "sha512": "aa498c5e99a5da70528db42f037391a831904230fef39dc547ba756f9a27eb9b",
+   "size": 20513
   },
   "data-default/channel.json": {
    "sha512": "1920bcb11755dd8c3108026d87810a689d72a9bb97f6acc349c9bfbaa746f00d",
    "size": 51
   },
   "data/channel.json": {
-   "sha512": "ca59252b8257008540f1e1454b04aff72be4ed5f4a3e6501854dd69a65713a6c",
-   "size": 459
+   "sha512": "a72042782b2779cecfdfc1f67825776802272bfc5c22a5f09174c531adca913e",
+   "size": 1416
   },
   "edit.html": {
-   "sha512": "998a939a5ccad841272491985fb654ab1d074ff530239fa91b35d61b8813e836",
-   "size": 7194
+   "sha512": "5f11de8d9d99f5b90b1c4f1c58877b98ccb2e0e79af56895bbde6cbbd2c80a60",
+   "size": 7288
   },
   "index.html": {
-   "sha512": "263d1ce2035a0fd0c10c4a5e684e387388aaf0071aeaae781ffc4e3e6bf6067c",
-   "size": 6002
+   "sha512": "a22c84435e212e74e98d5b4e1cef7ad2b5be399b4a535324d0792a089dcfe909",
+   "size": 6230
   },
   "upload.html": {
-   "sha512": "80dc97df3e5a7de66886b859c96a5952b4aa866abafe38603a89327737681b66",
-   "size": 7262
+   "sha512": "e244dfba768c4171cca0a0411a4e0acd4b5be1730af542be0d84e8af8c4ba38f",
+   "size": 7737
   }
  },
  "files_optional": {
+  "uploads/games/amberstar.zip": {
+   "sha512": "764a5aba72b3250b531a22d7916b060de6db2df77db7bb6154f70c4dd9169108",
+   "size": 1210170
+  },
+  "uploads/games/dangerous-dave.zip": {
+   "sha512": "f0bd20339935f0022729cef321e655e4d0cf93048d6ba37618f57d46841587f3",
+   "size": 74289
+  },
   "uploads/items/dangerous-dave.zip": {
    "sha512": "f0bd20339935f0022729cef321e655e4d0cf93048d6ba37618f57d46841587f3",
    "size": 74289
@@ -1014,20 +1374,32 @@
   "uploads/items/muds-mean-ugly-dirty-sport.zip": {
    "sha512": "63c21eef01ed8994721e7665951ed589740fcdeecbaa103f1edc2d513af78447",
    "size": 1280089
+  },
+  "uploads/posters/amberstar.png": {
+   "sha512": "09265eca42bb2914a9f86b0ac58eb7615a6ae4ed106f38888e808ec9f1d36bb0",
+   "size": 358732
+  },
+  "uploads/videos/Cat_Saloon.mp4": {
+   "sha512": "8e823c4380a76001b3b719ee08fe1a5ef7d0e0a9512d3c3b78a4506c7ff7e0a1",
+   "size": 4573210
+  },
+  "uploads/videos/Super_Mario_Bros._Original_Theme_by_Nintendo.mp4": {
+   "sha512": "fda17d8b4312d68d2a6ddf266880db4663ee0f13a90cea8adc8d4051d735629c",
+   "size": 8488405
   }
  },
  "ignore": "(.git)",
  "inner_path": "content.json",
- "merged_type": "PPLOAD",
- "modified": 1478108365.948469,
+ "merged_type": "Zer0DOS",
+ "modified": 1479090235.068946,
  "optional": "(uploads/.*)",
  "sign": [
-  39634351666069659617501017865500312397809786002888715559696985234635116906689,
-  32337685291058541767550424385217104728289473472526208096737723870306435579112
+  84345437937478678096172901053267218885733259962655426184946939883839928679779,
+  55660914251119128538946399004230336813326067217582493053073360498464360689838
  ],
  "signers_sign": "G0Ag8qmseCoFyi1In81o7VgikOzhcQby5LHw9r5eGGTpP6zq9drqexKzLNCTX82kGFsd4ToPHwJH5qIkSucGR68=",
  "signs": {
-  "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1": "HNcWQ4XrlAqWEbQWCq1dFtD/1mV1rBuWqYFlhMWj9FtRe5yFPFaChqKnrKyJAGyY4wh2hqX4Mdvoa2c8Ia5Wl3U="
+  "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1": "GwLTdc1v+Hir4YCv5AnYM8a7CiRBb2vXIslTIVJZKbOF3AEXxAHkYmtRK1lZT9kd/FcyHGqv+6dfPkDIHkvOumg="
  },
  "signs_required": 1,
  "title": "PPLOAD Channel",

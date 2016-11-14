@@ -421,3 +421,9 @@ section.container {
 #dosbox-section.full .dosbox-exit-fullscreen:hover {
   opacity: 1;
 }
+/* VIDEO VIEW */
+.video-interface video {
+  width: 100%;
+  max-height: 400px;
+  background-color: black;
+}

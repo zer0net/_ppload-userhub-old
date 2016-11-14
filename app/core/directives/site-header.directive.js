@@ -152,7 +152,9 @@ app.directive('siteHeader', ['$rootScope','$location','$mdDialog','$mdMedia',
 					'</h3>' + 
 					'<div class="sub-title">' + 
 						'<small>{{chJson.channel.description}}</small>' + 
-						'<small>{{peers}} peers • {{chJson[media_type].length}} {{media_type}}</small>' + 
+						'<small>{{peers}} peers' +
+						'<span ng-repeat="type in media_types"> • {{chJson[type].length}} {{type}}</span>' +
+						'</small>' + 
 					'</div>' + 
 				'</div>' + 
 			'</div>' + 

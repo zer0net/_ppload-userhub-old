@@ -19,7 +19,7 @@ app.directive('imageUpload', [
 			// read image file
 			$scope.readImageFile = function(file){
 				$scope.reader.onload = function(){
-					$scope.img = this.result;
+					$scope.item.img = this.result;
 					$scope.$apply();
 				};
 				$scope.reader.readAsDataURL(file);

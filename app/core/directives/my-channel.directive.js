@@ -51,6 +51,7 @@ app.directive('myChannel', ['$sce','$location',
 
 			// save channel details
 			$scope.saveChannelDetails = function() {
+				console.log('save details');
 				if ($scope.file){ $scope.uploadPreviewImage();}
 				else { $scope.updateChannelJson(); }
 			};

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html ng-app="ZDChannel" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html ng-app="Channel" lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 	<!-- CSS -->
 		<!-- lib -->
-		<link href="assets/lib/angular-material/angular-material.css" rel="stylesheet" type="text/css"/>
-		<link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-		<!-- app -->
+		<link href="assets/lib/core/angular-material/angular-material.css" rel="stylesheet" type="text/css"/>
+		<link href="assets/lib/core/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<!-- app -->		
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+
 	<!-- /CSS -->
 
 	<!-- HTML5 Shim -->
@@ -45,85 +46,69 @@
 			<!-- /upload dropzone -->
 
 		    <!-- upload section -->
-			<section class="upload-container" flex layout="column" ng-show="item.file">
-				
-				<div layout="row">
-				
+			<section class="upload-container" flex layout="row" ng-show="item.file">
+								
+					<!-- sidebar -->
 					<aside flex="30" layout="column" layout-padding>
 
+						<!-- item details -->
 						<ul class="item-details section md-whiteframe-1dp" flex="100">
 							<li class="item-property" ng-repeat="property in itemProperties">
 								<b class="key">{{property.key}}:</b> 
 								<span class="value" ng-if="property.type === 'normal'">{{property.value}}</span>
 								<span class="value" ng-if="property.type === 'size'">{{property.value|filesize}}</span>
+								<span class="value" ng-if="property.type === 'time'">{{property.value|date:"mm:ss"}}</span>
 								<span class="value" ng-if="property.type === 'date'"><span am-time-ago="property.value"></span></span>
 							</li>
 						</ul>
+						<!-- /item details -->
 
+						<!-- item image -->
 						<div class="thumb-image-section section md-whiteframe-1dp">
+							<!-- preview image -->
+							<canvas style="width:100%;" id="preview-img"></canvas>
 							<!-- image upload -->
 							<image-upload></image-upload>
 							<!-- /image upload -->
 						</div>
+						<!-- /item image -->
 
 					</aside>
+					<!-- /sidebar -->
 
+					<!-- content -->
 					<section flex="70" layout="column" class="item-main" style="position: relative;" id="item-upload-form" layout-padding>
 
-            			<!-- item form -->
-	            		<div class="md-whiteframe-1dp item-info">
-						    <md-tabs md-dynamic-height md-border-bottom>
-						      <md-tab label="Basic Info">
-						        <md-content class="md-padding" layout="column">
-							        <md-input-container>
-							          <label>Title</label>
-							          <input ng-model="item.title"/>
-							        </md-input-container>
-							        <md-input-container>
-							          <label>Executable File Name</label>
-							          <input executable-file-input ng-model="item.file_name"/>
-							        </md-input-container>
-						        </md-content>
-						      </md-tab>
-						      <md-tab label="{{item_Type}} Info">
-						        <md-content class="md-padding" layout="column">
-							        <div flex="100" layout="row">
-								        <md-input-container flex="70">
-								        	<label>Publisher</label>
-								        	<input ng-model="item.publisher"/>
-								        </md-input-container>
-								        <md-input-container flex="10">
-								        	<label>Year</label>
-								        	<input ng-model="item.year"/>
-								        </md-input-container>
-								        <md-input-container flex="20">
-								        	<label>Genre</label>
-								        	<md-select ng-model="item.genre">
-								        		<md-option ng-repeat="genre in genres" ng-bind="genre" ng-value="genre"></md-option>
-								            </md-select>
-								        </md-input-container>
-							        </div>
-							        <md-input-container flex="100">
-							          <label>Description</label>
-							          <textarea ng-model="item.description"></textarea>
-							        </md-input-container>
-						        </md-content>
-						      </md-tab>
-						    </md-tabs>
-		                </div>
-	            		<!-- item form -->
+	            		<!-- game interface -->
+	            		<div class="game-interface" style="padding: 0;" game-interface ng-if="item.media_type === 'game'" ng-init="init()">
+	            			<!-- form -->
+							<item-form ng-if="formTabs"></item-form>
+							<!-- /form -->
+							<!-- player -->
+			            	<div id="dosbox-container" ng-show="game_type === 'DOS'">
+								<dosbox ng-init="initDosBox(item)"></dosbox>
+							</div>
+							<!-- /player -->
+	            		</div>
+	            		<!-- /game interface -->
 
-		                <!-- item player -->
-						<dosbox></dosbox>
-						<!-- item player -->
+	            		<!-- video interface -->
+	            		<div class="video-interface" style="padding: 0;" video-interface ng-if="item.media_type === 'video'" ng-init="init()">
+	            			<!-- form -->
+							<item-form ng-if="formTabs"></item-form>
+							<!-- /form -->
+							<!-- player -->
+							<video-player></video-player>
+							<!-- /player -->
+	            		</div>
+	            		<!-- /video interface -->
 
 			            <md-button flex="100" style="margin: 16px 0;" class="md-primary md-raised edgePadding pull-right" ng-click="uploadItem()">
-			            	<label>Upload {{item_type}}</label>
+			            	<label>Upload {{item.media_type}}</label>
 			            </md-button>
 
 					</section>
-
-				</div>
+					<!-- /content -->
 
 			</section>
 			<!-- /upload section -->
@@ -136,30 +121,37 @@
 
 	<!-- JS -->
 
-		<!-- dosbox -->
-		<script type="text/javascript" src="assets/lib/js-dos/js-dos.js"></script>
-
-		<!-- jszip -->
-		<script type="text/javascript" src="assets/lib/jszip/dist/jszip.min.js"></script>
-		<script type="text/javascript" src="assets/lib/jszip/dist/jszip.utils.js"></script>
-
 		<!-- zeronet -->
-		<script type="text/javascript" src="assets/lib/zeronet/ZeroFrame.js"></script>
-		<script type="text/javascript" src="assets/lib/zeronet/ZeroChat.js"></script>
+		<script type="text/javascript" src="assets/lib/core/zeronet/ZeroFrame.js"></script>
+		<script type="text/javascript" src="assets/lib/core/zeronet/ZeroChat.js"></script>
 
 		<!-- jquery -->
-		<script type="text/javascript" src="assets/lib/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/lib/core/jquery/jquery.min.js"></script>
 
 		<!-- angular -->
-		<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
-	    <script type="text/javascript" src="assets/lib/angular/angular-route.min.js"></script>
-	    <script type="text/javascript" src="assets/lib/angular/angular-animate.min.js"></script>
-	    <script type="text/javascript" src="assets/lib/angular/angular-aria.min.js"></script>
-		<script type="text/javascript" src="assets/lib/angular-sanitize/angular-sanitize.min.js"></script>
-		<script type="text/javascript" src="assets/lib/angular-material/angular-material.min.js"></script>
-		<script type="text/javascript" src="assets/lib/dropzone/dropzone.js"></script>
-		<script type="text/javascript" src="assets/lib/moment/moment.js"></script>
-		<script type="text/javascript" src="assets/lib/angular-moment/angular-moment.min.js"></script>
+		<script type="text/javascript" src="assets/lib/core/angular/angular.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/core/angular/angular-route.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/core/angular/angular-animate.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/core/angular/angular-aria.min.js"></script>
+		<script type="text/javascript" src="assets/lib/core/angular-sanitize/angular-sanitize.min.js"></script>
+		<script type="text/javascript" src="assets/lib/core/angular-material/angular-material.min.js"></script>
+		<script type="text/javascript" src="assets/lib/core/dropzone/dropzone.js"></script>
+		<script type="text/javascript" src="assets/lib/core/moment/moment.js"></script>
+		<script type="text/javascript" src="assets/lib/core/angular-moment/angular-moment.min.js"></script>
+
+		<!-- dosbox - for dos games -->
+		<script type="text/javascript" src="assets/lib/games/js-dos/js-dos.js"></script>
+
+		<!-- jszip - reading zip files -->
+		<script type="text/javascript" src="assets/lib/games/jszip/dist/jszip.min.js"></script>
+		<script type="text/javascript" src="assets/lib/games/jszip/dist/jszip.utils.js"></script>
+
+		<!-- videogular -->
+		<script type="text/javascript" src="assets/lib/videos/videogular/videogular.js"></script>
+		<script type="text/javascript" src="assets/lib/videos/videogular-controls/vg-controls.js"></script>
+		<script type="text/javascript" src="assets/lib/videos/videogular-buffering/vg-buffering.js"></script>
+		<script type="text/javascript" src="assets/lib/videos/videogular-overlay-play/vg-overlay-play.js"></script>
+		<script type="text/javascript" src="assets/lib/videos/videogular-poster/vg-poster.js"></script>
 
 		<!-- app -->
 		<script type="text/javascript" src="app/application.js"></script>		
@@ -171,11 +163,17 @@
 		<script type="text/javascript" src="app/core/directives/file-upload.directive.js"></script>
 		<script type="text/javascript" src="app/core/directives/image-upload.directive.js"></script>
 		<script type="text/javascript" src="app/core/directives/dropzone.directive.js"></script>
+		<script type="text/javascript" src="app/core/directives/item-form.directive.js"></script>
 		<script type="text/javascript" src="app/core/filters/file-size.filter.js"></script>
 
-		<!-- app module -->
+		<!-- app module - games -->
+		<script type="text/javascript" src="app/games/directives/game-interface.directive.js"></script>
 		<script type="text/javascript" src="app/games/directives/dosbox.directive.js"></script>
-		<script type="text/javascript" src="app/game/directives/executable-file-input.directive.js"></script>
+		<script type="text/javascript" src="app/games/directives/executable-file-input.directive.js"></script>
+
+		<!-- app module - videos -->
+		<script type="text/javascript" src="app/videos/directives/video-interface.directive.js"></script>
+		<script type="text/javascript" src="app/videos/directives/video-player.directive.js"></script>
 
 	<!-- /JS -->  
 

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html ng-app="ZDChannel" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html ng-app="Channel" lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 	<!-- CSS -->
 		<!-- lib -->
-		<link href="assets/lib/angular-material/angular-material.css" rel="stylesheet" type="text/css"/>
-		<link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<link href="assets/lib/core/angular-material/angular-material.css" rel="stylesheet" type="text/css"/>
+		<link href="assets/lib/core/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 		<!-- app -->
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
 	<!-- /CSS -->
@@ -39,7 +39,7 @@
 		<!-- /loading -->
 
 	    <!-- MAIN -->
-	    <md-content ng-if="chJson" flex layout-padding class="main-content">
+	    <md-content ng-controller="ItemsCtrl" ng-if="chJson" flex layout-padding class="main-content">
 
 	    	<!-- files section -->
 	    	<section ng-controller="FilesCtrl">
@@ -56,7 +56,7 @@
 	    	<!-- /files section -->
 
 		    <!-- items section -->
-		    <section ng-controller="ItemsCtrl" ng-init="initList()">
+		    <section ng-init="initList()">
 
 		    	<!-- unpublished -->
 			    <md-content class="md-whiteframe-1dp section" ng-if="unpublished_items">
@@ -73,31 +73,12 @@
 			    <!-- /unpublished -->
 
 			    <!-- items -->
-			    <md-content id="items-section" class="md-whiteframe-1dp section" ng-hide="loading">
-			    	<h2>{{media_type}} online</h2>
+			    <md-content ng-repeat="type in media_types" id="items-section" class="md-whiteframe-1dp section" ng-hide="loading">
+			    	<h2>{{type}} online</h2>
 			    	<hr/>
-				    <ul class="item-list">
-				    	<li ng-if="item.published !== false"
-				    		ng-repeat="item in chJson[media_type] | orderBy:'-date_added' track by $index">
-				    		<!-- item info -->
-				    		<div class="item-info">
-						    	<span ng-click="openVideoPreviewDialog(item)" class="title">{{item.title}} • </span>
-								<span ng-if="item.genre">{{item.genre}} • </span>
-								<span ng-if="item.zip_size">{{item.zip_size|filesize}} • </span>
-								<span><i am-time-ago="item.date_added"></i></span>
-							</div>
-							<!-- /item info -->
-							<!-- item options menu -->
-							<div class="item-options" ng-if="owner">
-								<span ng-click="deleteItem(item)" class="glyphicon glyphicon-trash"></span>
-								<a href="/{{site_address}}/edit.html?item={{item[item_id_name]}}z={{item.zip_name}}f={{item.file_name}}">
-								<span class="glyphicon glyphicon-pencil"></span></a>
-								<span ng-click="openVideoPreviewDialog(item)" class="glyphicon glyphicon-eye-open"></span>
-							</div>
-							<!-- /item options menu -->
-				    	</li>
-				    </ul>
-				    <a ng-hide="chJson[media_type]" href="/{{site_address}}/upload.html">no {{media_type}} yet, upload now!</a>
+			    	<game-list ng-if="type === 'games'"></game-list>
+			    	<video-list ng-if="type === 'videos'"></video-list>
+				    <a ng-hide="chJson[type]" href="/{{site_address}}/upload.html">no {{type}} yet, upload now!</a>
 			    </md-content>
 			    <!-- /items -->
 
@@ -111,23 +92,37 @@
 
 	<!-- JS -->
 
+		<!-- zeronet -->
+		<script type="text/javascript" src="assets/lib/core/zeronet/ZeroFrame.js"></script>
+		<script type="text/javascript" src="assets/lib/core/zeronet/ZeroChat.js"></script>
+
 		<!-- jquery -->
-		<script type="text/javascript" src="assets/lib/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/lib/core/jquery/jquery.min.js"></script>
 
 		<!-- angular -->
-		<script type="text/javascript" src="assets/lib/angular/angular.min.js"></script>
-	    <script type="text/javascript" src="assets/lib/angular/angular-route.min.js"></script>
-	    <script type="text/javascript" src="assets/lib/angular/angular-animate.min.js"></script>
-	    <script type="text/javascript" src="assets/lib/angular/angular-aria.min.js"></script>
-		<script type="text/javascript" src="assets/lib/angular-sanitize/angular-sanitize.min.js"></script>
-		<script type="text/javascript" src="assets/lib/angular-material/angular-material.min.js"></script>
-		<script type="text/javascript" src="assets/lib/moment/moment.js"></script>
-		<script type="text/javascript" src="assets/lib/angular-moment/angular-moment.min.js"></script>
-    	<script type="text/javascript" src="assets/lib/dropzone/dropzone.js"></script>	
+		<script type="text/javascript" src="assets/lib/core/angular/angular.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/core/angular/angular-route.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/core/angular/angular-animate.min.js"></script>
+	    <script type="text/javascript" src="assets/lib/core/angular/angular-aria.min.js"></script>
+		<script type="text/javascript" src="assets/lib/core/angular-sanitize/angular-sanitize.min.js"></script>
+		<script type="text/javascript" src="assets/lib/core/angular-material/angular-material.min.js"></script>
+		<script type="text/javascript" src="assets/lib/core/dropzone/dropzone.js"></script>
+		<script type="text/javascript" src="assets/lib/core/moment/moment.js"></script>
+		<script type="text/javascript" src="assets/lib/core/angular-moment/angular-moment.min.js"></script>
 
-		<!-- zeronet -->
-		<script type="text/javascript" src="assets/lib/zeronet/ZeroFrame.js"></script>
-		<script type="text/javascript" src="assets/lib/zeronet/ZeroChat.js"></script>
+		<!-- dosbox - for dos games -->
+		<script type="text/javascript" src="assets/lib/games/js-dos/js-dos.js"></script>
+
+		<!-- jszip - reading zip files -->
+		<script type="text/javascript" src="assets/lib/games/jszip/dist/jszip.min.js"></script>
+		<script type="text/javascript" src="assets/lib/games/jszip/dist/jszip.utils.js"></script>
+
+		<!-- videogular -->
+		<script type="text/javascript" src="assets/lib/videos/videogular/videogular.js"></script>
+		<script type="text/javascript" src="assets/lib/videos/videogular-controls/vg-controls.js"></script>
+		<script type="text/javascript" src="assets/lib/videos/videogular-buffering/vg-buffering.js"></script>
+		<script type="text/javascript" src="assets/lib/videos/videogular-overlay-play/vg-overlay-play.js"></script>
+		<script type="text/javascript" src="assets/lib/videos/videogular-poster/vg-poster.js"></script>
 
 		<!-- app -->
 		<script type="text/javascript" src="app/application.js"></script>		
@@ -137,8 +132,15 @@
 		<script type="text/javascript" src="app/core/directives/site-header.directive.js"></script>
 		<script type="text/javascript" src="app/core/directives/my-channel.directive.js"></script>
 		<script type="text/javascript" src="app/core/directives/dropzone.directive.js"></script>
-		<script type="text/javascript" src="app/core/directives/edit-item.directive.js"></script>
 		<script type="text/javascript" src="app/core/filters/file-size.filter.js"></script>
+
+		<!-- app games -->
+		<script type="text/javascript" src="app/games/directives/game-list.directive.js"></script>
+		<script type="text/javascript" src="app/games/directives/dosbox.directive.js"></script>
+
+		<!-- app videos -->
+		<script type="text/javascript" src="app/videos/directives/video-list.directive.js"></script>
+		<script type="text/javascript" src="app/videos/directives/video-player.directive.js"></script>
 
 	<!-- /JS -->  
 

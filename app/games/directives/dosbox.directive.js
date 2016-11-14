@@ -4,9 +4,17 @@ app.directive('dosbox', ['$location','$rootScope',
 		var controller = function($scope,$element) {
 
 			// init dosbox
-			$scope.initDosBox = function(){
+			$scope.initDosBox = function(item){
+				console.log(item);
 				// dosbox size
 				$scope.dosboxSize = 'normal';
+				// dosbox file
+				var zipFile;
+				if ($scope.mode === 'create'){
+					zipFile = item.file;
+				} else if ($scope.mode === 'edit'){
+					zipFile = "/"+$scope.site_address+"/uploads/games/"+item.zip_name;
+				}
 				// dosbox config
 				var dosbox = new Dosbox({
 					id: "dosbox",
@@ -14,8 +22,8 @@ app.directive('dosbox', ['$location','$rootScope',
 						console.log("App '" + app + "' is runned");
 					},
 					onload: function (dosbox) {
-						console.log($scope.item.title + ' running...');
-						dosbox.run("/"+$scope.site_address+"/uploads/games/"+$scope.item.zip_name, "./"+$scope.item.file_name);
+						console.log(item.title + ' running...');
+						dosbox.run(zipFile, "./"+item.file_name);
 					}
 				});
 			};
@@ -29,16 +37,24 @@ app.directive('dosbox', ['$location','$rootScope',
 			// on executable file name change
 			$rootScope.$on('onChangeExecutableFile',function(event,mass){
                 $scope.item.file_name = mass;
+				// dosbox file
+				var zipFile;
+				if ($scope.mode === 'create'){
+					zipFile = $scope.item.file;
+				} else if ($scope.mode === 'edit'){
+					zipFile = "/"+$scope.site_address+"/uploads/games/"+$scope.item.zip_name;
+				}
+				// dosbox onload
                 dosbox.onload = function (dosbox) {
 					console.log($scope.item.title + ' running...');
-					dosbox.run("/"+$scope.site_address+"/uploads/games/"+$scope.item.zip_name, "./"+$scope.item.file_name);
+					dosbox.run(zipFile, "./"+$scope.item.file_name);
                 }
 			});
 
 		};
 
 		var template = 				
-		'<div id="dosbox-section" class="{{dosboxSize}} md-whiteframe-1dp" ng-init="initDosBox()">' +
+		'<div id="dosbox-section" class="{{dosboxSize}} md-whiteframe-1dp">' +
 			'<style type="text/css">' +
 				'.dosbox-overlay {background-image: url("{{item.img}}");}' +
 			'</style>' +

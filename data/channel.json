@@ -1,18 +1,55 @@
 {
-	"next_item_id": 2,
+	"next_item_id": 8,
 	"channel": {
 		"name": "PPLOAD Channel",
 		"description": "Clone this channel template to create your own ppload network channel type"
 	},
-	"items": [
+	"games": [
 		{
-			"title": "muds-mean-ugly-dirty-sport",
-			"zip_name": "muds-mean-ugly-dirty-sport.zip",
-			"zip_size": 1280089,
-			"file_name": "m-u-d-s/MUDS.EXE",
-			"item_id": 1,
+			"file_type": "zip",
+			"title": "dangerous-dave",
+			"zip_name": "dangerous-dave.zip",
+			"media_type": "game",
+			"zip_size": 74289,
+			"file_name": "DAVE.EXE",
+			"game_id": 2,
 			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
-			"date_added": 1478108364903,
+			"date_added": 1478453746657,
+			"published": true,
+			"genre": "Action",
+			"year": "1990",
+			"path": "uploads/games/dangerous-dave.zip",
+			"imgPath": "uploads/posters/dangerous-dave.png"
+		},
+		{
+			"file_type": "zip",
+			"title": "amberstar",
+			"media_type": "game",
+			"zip_name": "amberstar.zip",
+			"zip_size": 1210170,
+			"file_name": "Amberstar/AMBER.EXE",
+			"genre": "RPG",
+			"year": "1993",
+			"path": "uploads/games/amberstar.zip",
+			"imgPath": "uploads/posters/amberstar.png",
+			"game_id": 7,
+			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
+			"date_added": 1479090229852,
+			"published": true
+		}
+	],
+	"videos": [
+		{
+			"file_type": "mp4",
+			"title": "Cat Saloon",
+			"media_type": "video",
+			"file_name": "Cat_Saloon.mp4",
+			"total_time": 31346.939,
+			"path": "uploads/videos/Cat_Saloon.mp4",
+			"imgPath": "uploads/posters/Cat_Saloon.png",
+			"video_id": 6,
+			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
+			"date_added": 1478793329295,
 			"published": true
 		}
 	]

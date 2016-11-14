@@ -1,5 +1,5 @@
-app.directive('fileUpload', [
-	function() {
+app.directive('fileUpload', ['$sce',
+	function($sce) {
 
 		// image upload controller
 		var controller = function($scope,$element) {
@@ -15,6 +15,8 @@ app.directive('fileUpload', [
 			    },
 				'eventHandlers': {
 					'sending': function (file, xhr, formData) {
+						// loading
+						$scope.showLoadingMsg('preparing file');
 						// function to be triggerd upon file add
 						$scope.readFile(file);
 					}
@@ -23,58 +25,38 @@ app.directive('fileUpload', [
 
 			// read zip file
 			$scope.readFile = function(file){
-				// loading
-				$scope.showLoadingMsg('preparing file');
 				// reader instance
 				$scope.reader = new FileReader();
 				// reader onload
 				$scope.reader.onload = function(){
 					// apply reader info to scope
-					$scope.file = file;
+					$scope.file = file;				
 					// render file name
 					var file_name = $scope.file.name.split(' ').join('_').normalize('NFKD').replace(/[\u0300-\u036F]/g, '').replace(/ß/g,"ss");
 					// get file type
-					var file_type = this.result.split(';base64,')[0].split('/')[1];
+					$scope.item.file_type = this.result.split(';base64,')[0].split('/')[1];
 					// apply to scope item
-					$scope.item.title = file_name.split('.'+file_type)[0];
+					$scope.item.title = file_name.split('.'+$scope.item.file_type)[0].split('_').join(' ');
 					// item file
 					$scope.item.file = this.result;
-					// item zip file name
-					$scope.item[$scope.item_file_name] = file_name;
-					// if zip file
-					if (file_type === 'zip'){
-						$scope.readZipFile();
-					}
 
+					// determine media type according to file type
+					if ($scope.item.file_type === 'zip'){
+						// item media type
+						$scope.item.media_type = 'game';
+						// item zip file name
+						$scope.item.zip_name = file_name;
+					} else if ($scope.item.file_type === 'mp4'){
+						// item media type
+						$scope.item.media_type = 'video';
+						// item video file name
+						$scope.item.file_name = file_name;
+					}
+					// apply
+					$scope.$apply();
 				};
 				// reader read file
 				$scope.reader.readAsDataURL(file);
-			};
-
-			// read zip file
-			$scope.readZipFile = function(){
-				// loading
-				$scope.showLoadingMsg('reading zip file');
-				// js zip instance
-				var zip = new JSZip();
-				// item zip file size
-				$scope.item.zip_size = $scope.file.size;
-				// js zip - loop through files in zip in file
-				zip.loadAsync($scope.file).then(function(zip) { 
-					// for every file in zip
-					for (var i in zip.files){ var file = zip.files[i];
-						// if file is .com / .exe
-						if (file.name.indexOf(".COM") > -1 || 
-							file.name.indexOf(".EXE") > -1 || 
-							file.name.indexOf(".com") > -1 ||
-							file.name.indexOf(".exe") > -1){
-							// apply to item as file_name
-							$scope.item.file_name = file.name;
-						}
-					}
-					// render item (item-create.direcrtive.js)
-					$scope.renderItem();
-				});
 			};
 
 		};

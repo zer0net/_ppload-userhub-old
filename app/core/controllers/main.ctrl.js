@@ -7,9 +7,9 @@ app.controller('MainCtrl', ['$scope','$rootScope','$sce','$location','$window',
 			$scope.master_address = '18kT4gHVMcpibg7WcUZ4ixSezhULR5fvet';
 			$scope.master_name = 'PPLOAD MASTER';
 			$scope.inner_path =  "data/channel.json";
-			$scope.media_type = "items";
-			$scope.item_type = "item";
-			$scope.item_id_name = "item_id";
+			$scope.media_type = "games";
+			$scope.item_type = "game";
+			$scope.item_id_name = "game_id";
 			$scope.item_file_type = "zip";
 			$scope.item_file_name = "zip_name";
 
@@ -66,12 +66,25 @@ app.controller('MainCtrl', ['$scope','$rootScope','$sce','$location','$window',
 					Page.cmd("fileGet", { "inner_path": $scope.inner_path, "required": false },function(data) {
 						// store channel.json to scope
 						$scope.chJson = JSON.parse(data);
+						// render available item media types
+						$scope.renderMediaTypes();
 						// render channel
 						$scope.renderChannel(data);
 						// apply to scope
 						$scope.$apply();
 				    });
 		    	});
+			};
+
+			// render media types
+			$scope.renderMediaTypes = function(){
+				$scope.media_types = [];
+				for (var i in $scope.chJson){
+					if (Object.prototype.toString.call($scope.chJson[i]) === '[object Array]'){
+						$scope.media_types.push(i);
+						console.log($scope.media_types);
+					}
+				}
 			};
 
 			// render channel
