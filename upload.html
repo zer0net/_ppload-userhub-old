@@ -47,69 +47,22 @@
 
 		    <!-- upload section -->
 			<section class="upload-container" flex layout="row" ng-show="item.file">
-								
-					<!-- sidebar -->
-					<aside flex="30" layout="column" layout-padding>
-
-						<!-- item details -->
-						<ul class="item-details section md-whiteframe-1dp" flex="100">
-							<li class="item-property" ng-repeat="property in itemProperties">
-								<b class="key">{{property.key}}:</b> 
-								<span class="value" ng-if="property.type === 'normal'">{{property.value}}</span>
-								<span class="value" ng-if="property.type === 'size'">{{property.value|filesize}}</span>
-								<span class="value" ng-if="property.type === 'time'">{{property.value|date:"mm:ss"}}</span>
-								<span class="value" ng-if="property.type === 'date'"><span am-time-ago="property.value"></span></span>
-							</li>
-						</ul>
-						<!-- /item details -->
-
-						<!-- item image -->
-						<div class="thumb-image-section section md-whiteframe-1dp">
-							<!-- preview image -->
-							<canvas style="width:100%;" id="preview-img"></canvas>
-							<!-- image upload -->
-							<image-upload></image-upload>
-							<!-- /image upload -->
-						</div>
-						<!-- /item image -->
-
-					</aside>
-					<!-- /sidebar -->
-
-					<!-- content -->
-					<section flex="70" layout="column" class="item-main" style="position: relative;" id="item-upload-form" layout-padding>
-
-	            		<!-- game interface -->
-	            		<div class="game-interface" style="padding: 0;" game-interface ng-if="item.media_type === 'game'" ng-init="init()">
-	            			<!-- form -->
-							<item-form ng-if="formTabs"></item-form>
-							<!-- /form -->
-							<!-- player -->
-			            	<div id="dosbox-container" ng-show="game_type === 'DOS'">
-								<dosbox ng-init="initDosBox(item)"></dosbox>
-							</div>
-							<!-- /player -->
-	            		</div>
-	            		<!-- /game interface -->
-
-	            		<!-- video interface -->
-	            		<div class="video-interface" style="padding: 0;" video-interface ng-if="item.media_type === 'video'" ng-init="init()">
-	            			<!-- form -->
-							<item-form ng-if="formTabs"></item-form>
-							<!-- /form -->
-							<!-- player -->
-							<video-player></video-player>
-							<!-- /player -->
-	            		</div>
-	            		<!-- /video interface -->
-
-			            <md-button flex="100" style="margin: 16px 0;" class="md-primary md-raised edgePadding pull-right" ng-click="uploadItem()">
-			            	<label>Upload {{item.media_type}}</label>
-			            </md-button>
-
-					</section>
-					<!-- /content -->
-
+				<!-- item sidebar -->
+				<side-bar></side-bar>
+				<!-- /item sidebar -->
+				<!-- item main -->
+				<section flex="70" layout="column" class="item-main" style="position: relative;" id="item-upload-form" layout-padding>
+            		<!-- game interface -->
+            		<game-interface ng-if="item.media_type === 'game'"></game-interface>
+            		<!-- /game interface -->
+            		<!-- video interface -->
+            		<video-interface ng-if="item.media_type === 'video'"></video-interface>
+            		<!-- /video interface -->
+		            <md-button flex="100" style="margin: 16px 0;" class="md-primary md-raised edgePadding pull-right" ng-click="uploadItem()">
+		            	<label>Upload {{item.media_type}}</label>
+		            </md-button>
+				</section>
+				<!-- /item main -->
 			</section>
 			<!-- /upload section -->
 
@@ -159,6 +112,7 @@
 		<script type="text/javascript" src="app/core/controllers/items.ctrl.js"></script>
 		<script type="text/javascript" src="app/core/directives/site-header.directive.js"></script>
 		<script type="text/javascript" src="app/core/directives/my-channel.directive.js"></script>
+		<script type="text/javascript" src="app/core/directives/side-bar.directive.js"></script>		
 		<script type="text/javascript" src="app/core/directives/create-item.directive.js"></script>
 		<script type="text/javascript" src="app/core/directives/file-upload.directive.js"></script>
 		<script type="text/javascript" src="app/core/directives/image-upload.directive.js"></script>

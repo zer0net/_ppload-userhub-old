@@ -1,26 +1,10 @@
 {
-	"next_item_id": 8,
+	"next_item_id": 10,
 	"channel": {
-		"name": "PPLOAD Channel",
+		"name": "PPLOAD TEST Channel",
 		"description": "Clone this channel template to create your own ppload network channel type"
 	},
 	"games": [
-		{
-			"file_type": "zip",
-			"title": "dangerous-dave",
-			"zip_name": "dangerous-dave.zip",
-			"media_type": "game",
-			"zip_size": 74289,
-			"file_name": "DAVE.EXE",
-			"game_id": 2,
-			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
-			"date_added": 1478453746657,
-			"published": true,
-			"genre": "Action",
-			"year": "1990",
-			"path": "uploads/games/dangerous-dave.zip",
-			"imgPath": "uploads/posters/dangerous-dave.png"
-		},
 		{
 			"file_type": "zip",
 			"title": "amberstar",
@@ -36,6 +20,22 @@
 			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
 			"date_added": 1479090229852,
 			"published": true
+		},
+		{
+			"file_type": "zip",
+			"title": "acfreew",
+			"media_type": "game",
+			"zip_name": "acfreew.zip",
+			"zip_size": 5408832,
+			"file_name": "CARNAGE.EXE",
+			"genre": "Action",
+			"year": "1993",
+			"path": "uploads/games/acfreew.zip",
+			"imgPath": "uploads/posters/acfreew.png",
+			"game_id": 8,
+			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
+			"date_added": 1479160770338,
+			"published": true
 		}
 	],
 	"videos": [
@@ -50,6 +50,19 @@
 			"video_id": 6,
 			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
 			"date_added": 1478793329295,
+			"published": true
+		},
+		{
+			"file_type": "mp4",
+			"title": "Super Mario Bros. Original Theme by Nintendo",
+			"media_type": "video",
+			"file_name": "Super_Mario_Bros._Original_Theme_by_Nintendo.mp4",
+			"total_time": 218778.413,
+			"path": "uploads/videos/Super_Mario_Bros._Original_Theme_by_Nintendo.mp4",
+			"imgPath": "uploads/posters/Super_Mario_Bros._Original_Theme_by_Nintendo.png",
+			"video_id": 9,
+			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
+			"date_added": 1479225947267,
 			"published": true
 		}
 	]

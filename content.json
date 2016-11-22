@@ -6,8 +6,8 @@
  "description": "Clone this channel template to create your own ppload network channel type",
  "files": {
   "README.md": {
-   "sha512": "e6192596022f2737aecf0dd6d83db8726735f66f710ae01b80d9615bb001b388",
-   "size": 10
+   "sha512": "81908ec88ca1aea57070f77c047f590059d82f97a400d76dc5ac3de5a3075224",
+   "size": 395
   },
   "app/application.js": {
    "sha512": "ccbefb22a2ae13cf8a46e83bb17b0ad9247349b80a9aeb4be604ebf6db481f78",
@@ -18,12 +18,12 @@
    "size": 3203
   },
   "app/core/controllers/items.ctrl.js": {
-   "sha512": "c2cd72902d9fb3cea5587afca902cb83926a2f3fcd9693e5445f0b2422399b7f",
-   "size": 7049
+   "sha512": "8596b841f2482707165bc277de587d2ce8180d960ade0cc58ee2f2e1480d150c",
+   "size": 6707
   },
   "app/core/controllers/main.ctrl.js": {
-   "sha512": "05edfa590bd3b75a401e505ce91ee35a9ed6662249024804c624321cbf282031",
-   "size": 4642
+   "sha512": "564952f582f0415cfc64b7789152085e9ac892a1c53432a6a0867b3619ca0308",
+   "size": 4635
   },
   "app/core/directives/create-item.directive.js": {
    "sha512": "6e7b6449e45cfc8803be120c81a779261a0b75667224bd7457141b693ecae4b4",
@@ -34,16 +34,16 @@
    "size": 428
   },
   "app/core/directives/edit-item.directive.js": {
-   "sha512": "fa33d3a0175314dc6f54bd876ee571997e97567f92c29bc3f03975fc2b5e05eb",
-   "size": 552
+   "sha512": "d47a4243d5d765561acf43b4c0f71613ef1c07d4fdaf89f2872a9e3b9b2096c4",
+   "size": 557
   },
   "app/core/directives/file-upload.directive.js": {
    "sha512": "55d2d165f9089f44ff17383773afc52b85149d929762afcef1935aee6a1b8eba",
    "size": 2207
   },
   "app/core/directives/image-upload.directive.js": {
-   "sha512": "356ec57eada0b531e23672225710506c3e121885cff33c1b941cbe1533e5b2d1",
-   "size": 1009
+   "sha512": "d34f7577e23867636d64954b5aaa0416f449d98780ca2f99b0366b111d2dea6d",
+   "size": 956
   },
   "app/core/directives/item-form.directive.js": {
    "sha512": "783d635f60d005b0a92e6ddfeab9727139b39bb293b38ad9c2b5b2bf19834f88",
@@ -66,8 +66,8 @@
    "size": 435
   },
   "app/games/directives/dosbox.directive.js": {
-   "sha512": "dd19652410d164aadd88ccc6c83c9cb16019c5221a87235b16945ee42b7e138e",
-   "size": 2181
+   "sha512": "1224a0070378fb939991542e2b98d6922ee6d8b89a15d30735676f4848f24dd1",
+   "size": 2251
   },
   "app/games/directives/executable-file-input.directive.js": {
    "sha512": "d5f058fc6a86adb5f34fd0222e5676134efcb83f89826833d6621e05cec57b44",
@@ -78,20 +78,20 @@
    "size": 2490
   },
   "app/games/directives/game-list.directive.js": {
-   "sha512": "a89a96334a58234eeb579e55066ec9d147dd1bff70c4f46200f33ff7b4d4d04e",
-   "size": 2950
+   "sha512": "25e4ac37909a66ac75ceeab83979b28182bd6b205ae62070191279179249de73",
+   "size": 2957
   },
   "app/videos/directives/video-interface.directive.js": {
    "sha512": "c51def485b29395bf67076fb43c120f7186ba9bab5534fd3fcf9f9b5a0e4efa4",
    "size": 1747
   },
   "app/videos/directives/video-list.directive.js": {
-   "sha512": "ba7b8ecd8e5a28de90fe367a1ea81e26d6a644f295654622d12819fd107778a0",
-   "size": 1368
+   "sha512": "fd3fd41d14564b7d921dcb44703cad4e030779f05baaf5723d0862b08f9d1a7f",
+   "size": 3261
   },
   "app/videos/directives/video-player.directive.js": {
-   "sha512": "c68c631682e9b4391cf2a6a5004d76f9ec6b6ca46149c689f5ecd892a1a0725b",
-   "size": 1942
+   "sha512": "eea27b41d04956a14e5b60e337b1d3cbdec58004497261b1a0dd171b9226f61a",
+   "size": 2033
   },
   "assets/css/elements.css": {
    "sha512": "a4cdf78a6b7696149581e6d07d0164d81e919f4becab37e49980a7c22ed3b918",
@@ -1342,16 +1342,16 @@
    "size": 51
   },
   "data/channel.json": {
-   "sha512": "a72042782b2779cecfdfc1f67825776802272bfc5c22a5f09174c531adca913e",
-   "size": 1416
+   "sha512": "29733b739c7920dab2ec53b704c7927e68d793344c55bae189c95d96d035a511",
+   "size": 1897
   },
   "edit.html": {
-   "sha512": "5f11de8d9d99f5b90b1c4f1c58877b98ccb2e0e79af56895bbde6cbbd2c80a60",
-   "size": 7288
+   "sha512": "53295be4aabf7efc904b8b762ab0fd4d24e0723e9c02a5ca53568a03e29db598",
+   "size": 7391
   },
   "index.html": {
-   "sha512": "a22c84435e212e74e98d5b4e1cef7ad2b5be399b4a535324d0792a089dcfe909",
-   "size": 6230
+   "sha512": "d1feae830f15c5f1681f0a1fe35aee3611b0afb7e289f4d68a6cf632ea411de9",
+   "size": 6327
   },
   "upload.html": {
    "sha512": "e244dfba768c4171cca0a0411a4e0acd4b5be1730af542be0d84e8af8c4ba38f",
@@ -1359,13 +1359,13 @@
   }
  },
  "files_optional": {
+  "uploads/games/acfreew.zip": {
+   "sha512": "006eeb1b2468fc4815ab869332ad3a5cac5e415696df4aec7b5c8a6808da4d03",
+   "size": 5408832
+  },
   "uploads/games/amberstar.zip": {
    "sha512": "764a5aba72b3250b531a22d7916b060de6db2df77db7bb6154f70c4dd9169108",
    "size": 1210170
-  },
-  "uploads/games/dangerous-dave.zip": {
-   "sha512": "f0bd20339935f0022729cef321e655e4d0cf93048d6ba37618f57d46841587f3",
-   "size": 74289
   },
   "uploads/items/dangerous-dave.zip": {
    "sha512": "f0bd20339935f0022729cef321e655e4d0cf93048d6ba37618f57d46841587f3",
@@ -1375,9 +1375,17 @@
    "sha512": "63c21eef01ed8994721e7665951ed589740fcdeecbaa103f1edc2d513af78447",
    "size": 1280089
   },
+  "uploads/posters/acfreew.png": {
+   "sha512": "393fe7bdebeb8ca26aca53622c077d4e919d95d18f275b89c65c9c0c344102ed",
+   "size": 245757
+  },
   "uploads/posters/amberstar.png": {
    "sha512": "09265eca42bb2914a9f86b0ac58eb7615a6ae4ed106f38888e808ec9f1d36bb0",
    "size": 358732
+  },
+  "uploads/posters/dangerous-dave.png": {
+   "sha512": "98ac367bb70291be004ea83f1f3aaf34022e5428bf5c015a27a304c9d47d366f",
+   "size": 5604
   },
   "uploads/videos/Cat_Saloon.mp4": {
    "sha512": "8e823c4380a76001b3b719ee08fe1a5ef7d0e0a9512d3c3b78a4506c7ff7e0a1",
@@ -1390,18 +1398,18 @@
  },
  "ignore": "(.git)",
  "inner_path": "content.json",
- "merged_type": "Zer0DOS",
- "modified": 1479090235.068946,
+ "merged_type": "PPLOAD",
+ "modified": 1479225951.862565,
  "optional": "(uploads/.*)",
  "sign": [
-  84345437937478678096172901053267218885733259962655426184946939883839928679779,
-  55660914251119128538946399004230336813326067217582493053073360498464360689838
+  73882948869784204463369649104095354152453013429816938732282081744396236258204,
+  24070368995970991643271416113020693244368502352563594306468004032682975861821
  ],
  "signers_sign": "G0Ag8qmseCoFyi1In81o7VgikOzhcQby5LHw9r5eGGTpP6zq9drqexKzLNCTX82kGFsd4ToPHwJH5qIkSucGR68=",
  "signs": {
-  "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1": "GwLTdc1v+Hir4YCv5AnYM8a7CiRBb2vXIslTIVJZKbOF3AEXxAHkYmtRK1lZT9kd/FcyHGqv+6dfPkDIHkvOumg="
+  "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1": "HKOShlFp1bCvovfOQ0rZoABjwYMOfH2y2Asf0AxXakCC6Vz0UtHak9wIt8VXptdd1CDiFAaiTMC7OsImSjXN8Pc="
  },
  "signs_required": 1,
- "title": "PPLOAD Channel",
- "zeronet_version": "0.4.1"
+ "title": "PPLOAD TEST Channel",
+ "zeronet_version": "0.5.0"
 }

@@ -4,11 +4,6 @@ app.directive('gameList', ['$mdDialog','$mdMedia',
 		// game interface controller
 		var controller = function($scope,$element) {
 
-			// render list item 
-			$scope.renderListItem = function(item){
-				item.editUrl = '/'+$scope.site_address+'/edit.html?item='+item.game_id+'type='+item.media_type;
-			};
-
 		    // game preview dialog
 			$scope.gamePreviewDialog = function(ev,item) {
 
@@ -70,8 +65,7 @@ app.directive('gameList', ['$mdDialog','$mdMedia',
 
 		var template =  '<ul class="item-list">' +
 							'<li ng-if="item.published !== false"' +
-								'ng-init="renderListItem(item)"' +
-								'ng-repeat="item in chJson[type] | orderBy:\'-date_added\' track by $index">' +
+								'ng-repeat="item in chJson.games | orderBy:\'-date_added\' track by $index">' +
 								'<!-- item info -->' +
 								'<div class="item-info">' +
 							    	'<span ng-click="gamePreviewDialog($event,item)" class="title">{{item.title}} • </span>' +
@@ -84,7 +78,7 @@ app.directive('gameList', ['$mdDialog','$mdMedia',
 								'<!-- item options menu -->' +
 								'<div class="item-options" ng-if="owner">' +
 									'<span ng-click="deleteItem(item)" class="glyphicon glyphicon-trash"></span>' +
-									'<a href="{{item.editUrl}}">' +
+									'<a href="/{{site_address}}/edit.html?item={{item.game_id}}type=game">' +
 									'<span class="glyphicon glyphicon-pencil"></span></a>' +
 									'<span ng-click="gamePreviewDialog($event,item)" class="glyphicon glyphicon-eye-open"></span>' +
 								'</div>' +

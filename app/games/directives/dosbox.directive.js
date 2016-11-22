@@ -5,7 +5,8 @@ app.directive('dosbox', ['$location','$rootScope',
 
 			// init dosbox
 			$scope.initDosBox = function(item){
-				console.log(item);
+				// assign item to scope
+				$scope.item = item;
 				// dosbox size
 				$scope.dosboxSize = 'normal';
 				// dosbox file
@@ -13,7 +14,7 @@ app.directive('dosbox', ['$location','$rootScope',
 				if ($scope.mode === 'create'){
 					zipFile = item.file;
 				} else if ($scope.mode === 'edit'){
-					zipFile = "/"+$scope.site_address+"/uploads/games/"+item.zip_name;
+					zipFile = "/"+$scope.site_address+"/uploads/games/"+$scope.item.zip_name;
 				}
 				// dosbox config
 				var dosbox = new Dosbox({
@@ -23,7 +24,7 @@ app.directive('dosbox', ['$location','$rootScope',
 					},
 					onload: function (dosbox) {
 						console.log(item.title + ' running...');
-						dosbox.run(zipFile, "./"+item.file_name);
+						dosbox.run(zipFile, "./"+$scope.item.file_name);
 					}
 				});
 			};
@@ -56,7 +57,7 @@ app.directive('dosbox', ['$location','$rootScope',
 		var template = 				
 		'<div id="dosbox-section" class="{{dosboxSize}} md-whiteframe-1dp">' +
 			'<style type="text/css">' +
-				'.dosbox-overlay {background-image: url("{{item.img}}");}' +
+				'.dosbox-overlay {background-image: url("{{item.imgPath}}");}' +
 			'</style>' +
 			'<div id="dosbox"></div>' +
 			'<div ng-if="dosboxSize === \'full\'" class="dosbox-exit-fullscreen">' +

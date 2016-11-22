@@ -305,6 +305,11 @@ section.container {
   padding: 8px;
   box-sizing: content-box;
 }
+.edit-item-view aside .item-details li {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .edit-item-view aside .thumb-image-section {
   display: block;
   float: left;

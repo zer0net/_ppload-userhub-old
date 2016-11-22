@@ -10,7 +10,6 @@ app.directive('videoPlayer', ['$sce','$timeout',
 			$scope.onPlayerReady = function($API){
 				$timeout(function () {
 					$scope.item.total_time = $API.totalTime;
-					$scope.capturePreviewImage();
 					$scope.generateItemProperties();
 				}, 2000);
 			};

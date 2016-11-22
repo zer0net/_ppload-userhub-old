@@ -72,12 +72,12 @@
 					$scope.media_type = 'games';
 					$scope.item_id_name = 'game_id';
 					item.path = 'uploads/games/' + item.zip_name;
-					item.imgPath = 'uploads/posters/' + item.zip_name.split('.zip')[0] + '.png';
+					if (item.img) item.imgPath = 'uploads/posters/' + item.zip_name.split('.zip')[0] + '.png';
 				} else if (item.media_type === 'video'){
 					$scope.media_type = 'videos';
 					$scope.item_id_name = 'video_id';
 					item.path = 'uploads/videos/' + item.file_name;
-					item.imgPath = 'uploads/posters/' + item.file_name.split('.' + item.file_type)[0] + '.png';
+					if (item.img) item.imgPath = 'uploads/posters/' + item.file_name.split('.' + item.file_type)[0] + '.png';
 				}
 				return item;
 			};

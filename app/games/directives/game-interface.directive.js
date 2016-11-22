@@ -102,10 +102,22 @@ app.directive('gameInterface', [
 
 		};
 
+		var template = '<div class="game-interface" style="padding: 0;" ng-init="init()">' +
+							'<!-- form -->' +
+							'<item-form ng-if="formTabs"></item-form>' +
+							'<!-- /form -->' +
+							'<!-- player -->' +
+							'<div id="dosbox-container" ng-show="game_type === \'DOS\'">' +
+								'<dosbox ng-init="initDosBox(item)"></dosbox>' +
+							'</div>' +
+							'<!-- /player -->' +
+						'</div>';
+
 		return {
 			restrict: 'AE',
-			replace:false,
-			controller: controller
+			replace:true,
+			controller: controller,
+			template:template
 		}
 
 	}

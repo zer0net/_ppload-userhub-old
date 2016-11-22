@@ -26,9 +26,7 @@ app.directive('imageUpload', [
 			};
 		};
 
-		var template = '<button style="width:100%;height:100px;" dropzone="imageUploadConfig" ng-hide="img"> Drag and drop files here or click to upload </button>' +
-			'<img ng-src="{{img}}" ng-show="img"/>' +
-		'</div>';
+		var template = '<button style="width:100%;height:100px;" dropzone="imageUploadConfig" ng-hide="item.img"> Drag and drop files here or click to upload </button>';
 
 		return {
 			restrict: 'AE',

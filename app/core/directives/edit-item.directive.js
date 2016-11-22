@@ -14,7 +14,7 @@ app.directive('editItem', [
 
 			// on update item
 			$scope.onUpdateItem = function(){
-				if ($scope.img){
+				if ($scope.item.img){
 					$scope.uploadPosterImage();
 				} else {
 					$scope.updateItem();

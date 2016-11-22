@@ -25,7 +25,7 @@
 	<site-header></site-header>
 	<!-- /HEADER -->
 
-	<section layout="row" class="container">
+	<section ng-controller="ItemsCtrl" layout="row" class="container">
 
     	<!-- loading -->
 		<div layout="column" ng-show="loading" flex>
@@ -39,7 +39,7 @@
 		<!-- /loading -->
 
 	    <!-- MAIN -->
-	    <md-content ng-controller="ItemsCtrl" ng-if="chJson" flex layout-padding class="main-content">
+	    <md-content ng-if="chJson" flex layout-padding class="main-content">
 
 	    	<!-- files section -->
 	    	<section ng-controller="FilesCtrl">

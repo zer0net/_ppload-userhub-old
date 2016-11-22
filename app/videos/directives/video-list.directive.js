@@ -3,10 +3,6 @@ app.directive('videoList', ['$mdDialog','$mdMedia',
 
 		// game interface controller
 		var controller = function($scope,$element) {
-			// render list item 
-			$scope.renderListItem = function(item){
-				item.editUrl = '/'+$scope.site_address+'/edit.html?item='+item.video_id+'type='+item.media_type;
-			};
 
 		    // video preview dialog
 			$scope.videoPreviewDialog = function(ev,item) {
@@ -79,20 +75,19 @@ app.directive('videoList', ['$mdDialog','$mdMedia',
 
 		var template =  '<ul class="item-list">' +
 							'<li ng-if="item.published !== false"' +
-								'ng-init="renderListItem(item)"' +
-								'ng-repeat="item in chJson[type] | orderBy:\'-date_added\' track by $index">' +
+								'ng-repeat="item in chJson.videos | orderBy:\'-date_added\' track by $index">' +
 								'<!-- item info -->' +
 								'<div class="item-info">' +
 							    	'<span ng-click="videoPreviewDialog($event,item)" class="title">{{item.title}} • </span>' +
-									'<span ng-if="item.genre">{{item.genre}} • </span>' +
-									'<span ng-if="item.zip_size">{{item.zip_size|filesize}} • </span>' +
+									'<span ng-if="item.total_time">{{item.total_time|date:"mm:ss"}} • </span>' +
+									'<span ng-if="item.file_size">{{item.file_size|filesize}} • </span>' +
 									'<span><i am-time-ago="item.date_added"></i></span>' +
 								'</div>' +
 								'<!-- /item info -->' +
 								'<!-- item options menu -->' +
 								'<div class="item-options" ng-if="owner">' +
 									'<span ng-click="deleteItem(item)" class="glyphicon glyphicon-trash"></span>' +
-									'<a href="{{item.editUrl}}">' +
+									'<a href="/{{site_address}}/edit.html?item={{item.video_id}}type=video">' +
 									'<span class="glyphicon glyphicon-pencil"></span></a>' +
 									'<span ng-click="videoPreviewDialog($event,item)" class="glyphicon glyphicon-eye-open"></span>' +
 								'</div>' +

@@ -40,65 +40,22 @@
 
 		<!-- edit item section -->
 		<md-content class="edit-item-section" edit-item  ng-init="init()" ng-hide="loading" ng-if="item" layout="row" flex>
-
-			<!-- item details -->
-			<aside flex="30" layout="column" layout-padding>
-				<ul class="item-details md-whiteframe-1dp" flex="100">
-					<li class="item-property" ng-repeat="property in itemProperties">
-						<b class="key">{{property.key}}:</b> 
-						<span class="value" ng-if="property.type === 'normal'">{{property.value}}</span>
-						<span class="value" ng-if="property.type === 'size'">{{property.value|filesize}}</span>
-						<span class="value" ng-if="property.type === 'date'"><span am-time-ago="property.value"></span></span>
-					</li>
-				</ul>
-				<div class="thumb-image-section md-whiteframe-1dp" flex="100">
-					<!-- item image -->
-					<img ng-src="{{item.imgPath}}" ng-hide="img" ng-if="item.imgPath" style="margin-bottom:8px;"/>
-					<!-- /item image -->
-					<!-- image upload -->
-					<image-upload></image-upload>
-					<!-- /image upload -->
-				</div>
-			</aside>
-			<!-- /item details -->
-
+			<!-- item sidebar -->
+			<side-bar></side-bar>
+			<!-- /item sidebar -->
 			<!-- item main -->
-            <md-content class="item-main" layout="row" flex="70">
-            	<section flex="100" layout="column" layout-padding>
-
-            		<!-- game interface -->
-            		<div class="game-interface" style="padding: 0;" game-interface ng-if="item.media_type === 'game'" ng-init="init()">
-            			<!-- form -->
-						<item-form ng-if="formTabs"></item-form>
-						<!-- /form -->
-						<!-- player -->
-		            	<div id="dosbox-container" ng-show="game_type === 'DOS'">
-							<dosbox ng-init="initDosBox(item)"></dosbox>
-						</div>
-						<!-- /player -->
-            		</div>
-            		<!-- /game interface -->
-
-            		<!-- video interface -->
-            		<div class="video-interface" style="padding: 0;" video-interface ng-if="item.media_type === 'video'" ng-init="init()">
-            			<!-- form -->
-						<item-form ng-if="formTabs"></item-form>
-						<!-- /form -->
-						<!-- player -->
-						<video-player></video-player>
-						<!-- /player -->
-            		</div>
-            		<!-- /video interface -->
-
-					<!-- update item button -->
-		            <md-button flex="100" style="margin: 16px 0;" class="md-primary md-raised edgePadding pull-right" ng-click="onUpdateItem(item)">
-		            	<label>Update {{item_type}}</label>
-		            </md-button>
-		            <!-- /update item button -->
-
-				</section>
-            </md-content>
-            <!-- /item main -->
+			<section flex="70" layout="column" class="item-main" style="position: relative;" id="item-upload-form" layout-padding>
+        		<!-- game interface -->
+        		<game-interface ng-if="item.media_type === 'game'"></game-interface>
+        		<!-- /game interface -->
+        		<!-- video interface -->
+        		<video-interface ng-if="item.media_type === 'video'"></video-interface>
+        		<!-- /video interface -->
+	            <md-button flex="100" style="margin: 16px 0;" class="md-primary md-raised edgePadding pull-right" ng-click="uploadItem()">
+	            	<label>Update {{item.media_type}}</label>
+	            </md-button>
+			</section>
+			<!-- /item main -->
 		</md-content>
 		<!-- /edit item section -->
 
@@ -145,6 +102,7 @@
 		<script type="text/javascript" src="app/core/controllers/items.ctrl.js"></script>
 		<script type="text/javascript" src="app/core/directives/site-header.directive.js"></script>
 		<script type="text/javascript" src="app/core/directives/my-channel.directive.js"></script>
+		<script type="text/javascript" src="app/core/directives/side-bar.directive.js"></script>
 		<script type="text/javascript" src="app/core/directives/edit-item.directive.js"></script>
 		<script type="text/javascript" src="app/core/directives/image-upload.directive.js"></script>
 		<script type="text/javascript" src="app/core/directives/dropzone.directive.js"></script>

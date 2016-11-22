@@ -55,20 +55,22 @@ app.directive('videoInterface', ['$sce',
 				if ($scope.mode === 'create') $scope.renderItem();
 			};
 
-			// capture preview image
-			$scope.capturePreviewImage = function(){
-				var canvas = document.getElementById('preview-img');
-			    var video = document.getElementsByTagName('video')[0];
-			    canvas.getContext('2d').drawImage(video, 0, 0, 350, 200);
-				$scope.item.img = canvas.toDataURL("image/png").split(',')[1];
-			};
-
 		};
+
+		var template = '<div class="video-interface" style="padding: 0;" ng-init="init()">' +
+							'<!-- form -->' +
+							'<item-form ng-if="formTabs"></item-form>' +
+							'<!-- /form -->' +
+							'<!-- player -->' +
+							'<video-player></video-player>' +
+							'<!-- /player -->' +
+						'</div>';
 
 		return {
 			restrict: 'AE',
-			replace:false,
-			controller: controller
+			replace:true,
+			controller: controller,
+			template:template
 		}
 
 	}

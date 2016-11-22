@@ -4,8 +4,8 @@ app.controller('MainCtrl', ['$scope','$rootScope','$sce','$location','$window',
 		/** CONFIG **/
 
 			$scope.site_address = $location.$$absUrl.split('0/')[1].split('/')[0];
-			$scope.master_address = '18kT4gHVMcpibg7WcUZ4ixSezhULR5fvet';
-			$scope.master_name = 'PPLOAD MASTER';
+			$scope.master_address = '1HPbR1zp6hsvrqgTSVdsEC5VWw7MEMGPTR';
+			$scope.master_name = 'PPLOAD';
 			$scope.inner_path =  "data/channel.json";
 			$scope.media_type = "games";
 			$scope.item_type = "game";
