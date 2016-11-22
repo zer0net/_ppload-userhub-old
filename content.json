@@ -53,6 +53,10 @@
    "sha512": "0ab1be55aee2f2a9914c406dc5fa707c12fac2bd02195c23b7a898ee4f598017",
    "size": 1709
   },
+  "app/core/directives/side-bar.directive.js": {
+   "sha512": "73038682d84978157c4b28608db2cd014b51ab028d8e1dd23caacef7a0d2465f",
+   "size": 1378
+  },
   "app/core/directives/site-header.directive.js": {
    "sha512": "676bac6623860ac96e0013300cc3873460c8d82cb81a52487a672c68fc825ed3",
    "size": 6555
@@ -74,32 +78,32 @@
    "size": 471
   },
   "app/games/directives/game-interface.directive.js": {
-   "sha512": "d0678e39db5d964ed667f497205941a4c9cf52f8ebf0dbd71eaca0507beff9e5",
-   "size": 2490
+   "sha512": "b19daf559bd2dec7d8f55798641fd2bb0dcd48f584d2112a64f1f62f06aecd9c",
+   "size": 2919
   },
   "app/games/directives/game-list.directive.js": {
    "sha512": "25e4ac37909a66ac75ceeab83979b28182bd6b205ae62070191279179249de73",
    "size": 2957
   },
   "app/videos/directives/video-interface.directive.js": {
-   "sha512": "c51def485b29395bf67076fb43c120f7186ba9bab5534fd3fcf9f9b5a0e4efa4",
-   "size": 1747
+   "sha512": "69cb91c2e197671db5d6a1826cd4f8311ede9e89173cba7f29a4e4b6f4c686de",
+   "size": 1742
   },
   "app/videos/directives/video-list.directive.js": {
    "sha512": "fd3fd41d14564b7d921dcb44703cad4e030779f05baaf5723d0862b08f9d1a7f",
    "size": 3261
   },
   "app/videos/directives/video-player.directive.js": {
-   "sha512": "eea27b41d04956a14e5b60e337b1d3cbdec58004497261b1a0dd171b9226f61a",
-   "size": 2033
+   "sha512": "d02a7ba8cb3a64269c9a3e92c101c202999490f36561f5949d26f5f549de7f6b",
+   "size": 1998
   },
   "assets/css/elements.css": {
    "sha512": "a4cdf78a6b7696149581e6d07d0164d81e919f4becab37e49980a7c22ed3b918",
    "size": 314
   },
   "assets/css/style.css": {
-   "sha512": "5a07e76f2a58f10738c223c25fce933d1b5f2ece578c9af99dfc10eec18c783b",
-   "size": 8781
+   "sha512": "01d33e50363d2f0028aa94e73e9576f58224aa52d718c2cd5f8c1c09c0c91896",
+   "size": 8894
   },
   "assets/img/videorama-zero.png": {
    "sha512": "234b9804a449b25d1bade757b097f15ac087b40b4d64513b0f9e2fe98f4c9dfd",
@@ -110,8 +114,8 @@
    "size": 6313
   },
   "assets/less/style.less": {
-   "sha512": "81bdacb6d562540ba1d08a7f06e77410870709b365150e08ec0585586c3f4f11",
-   "size": 6795
+   "sha512": "b00c75255de70530046b72acf8ec15b43b45348f697e94b8707d44e93904e134",
+   "size": 6904
   },
   "assets/lib/core/angular-identicon/angular-identicon.min.js": {
    "sha512": "d53e365d7bc0d0665b9fd816f98e7edf53b3fc380ecd5c4155d4e3f63964292c",
@@ -1346,16 +1350,16 @@
    "size": 1897
   },
   "edit.html": {
-   "sha512": "53295be4aabf7efc904b8b762ab0fd4d24e0723e9c02a5ca53568a03e29db598",
-   "size": 7391
+   "sha512": "a6208f2d9f5068351896a21db33e26b66ab2f49da9beb0dc459b0db354e5fc40",
+   "size": 5788
   },
   "index.html": {
    "sha512": "d1feae830f15c5f1681f0a1fe35aee3611b0afb7e289f4d68a6cf632ea411de9",
    "size": 6327
   },
   "upload.html": {
-   "sha512": "e244dfba768c4171cca0a0411a4e0acd4b5be1730af542be0d84e8af8c4ba38f",
-   "size": 7737
+   "sha512": "d36cac38a8b8cabbf071a5aee0d5d723501020304aafd3add6283ace23ebcca8",
+   "size": 6173
   }
  },
  "files_optional": {
@@ -1374,6 +1378,10 @@
   "uploads/items/muds-mean-ugly-dirty-sport.zip": {
    "sha512": "63c21eef01ed8994721e7665951ed589740fcdeecbaa103f1edc2d513af78447",
    "size": 1280089
+  },
+  "uploads/posters/Super_Mario_Bros._Original_Theme_by_Nintendo.png": {
+   "sha512": "2d38e1c4a0e6858895a36b6918ef20b975237456b527df57419c50d2829c7592",
+   "size": 62795
   },
   "uploads/posters/acfreew.png": {
    "sha512": "393fe7bdebeb8ca26aca53622c077d4e919d95d18f275b89c65c9c0c344102ed",
@@ -1399,15 +1407,15 @@
  "ignore": "(.git)",
  "inner_path": "content.json",
  "merged_type": "PPLOAD",
- "modified": 1479225951.862565,
+ "modified": 1479825488.150536,
  "optional": "(uploads/.*)",
  "sign": [
-  73882948869784204463369649104095354152453013429816938732282081744396236258204,
-  24070368995970991643271416113020693244368502352563594306468004032682975861821
+  31717124847132774470580159116433855979143966905775671331567337904149767682138,
+  74088225617348899926098195030538894379076943239003362137510656894075809448014
  ],
  "signers_sign": "G0Ag8qmseCoFyi1In81o7VgikOzhcQby5LHw9r5eGGTpP6zq9drqexKzLNCTX82kGFsd4ToPHwJH5qIkSucGR68=",
  "signs": {
-  "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1": "HKOShlFp1bCvovfOQ0rZoABjwYMOfH2y2Asf0AxXakCC6Vz0UtHak9wIt8VXptdd1CDiFAaiTMC7OsImSjXN8Pc="
+  "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1": "Gy9f6XsQMX3UPC8RVWeIt/NQ1Xc7GVqsir8ymUVIn1OwamvnSBp+PLltf6FEahEOv/eFt4L5o68SA2ZLRYgT26I="
  },
  "signs_required": 1,
  "title": "PPLOAD TEST Channel",
