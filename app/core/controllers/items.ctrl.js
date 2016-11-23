@@ -46,6 +46,7 @@
 						$scope.itemProperties.push(property); 
 					}
 				}
+				console.log($scope.item);
 			};
 
 			// init list
@@ -72,6 +73,7 @@
 					$scope.media_type = 'games';
 					$scope.item_id_name = 'game_id';
 					item.path = 'uploads/games/' + item.zip_name;
+					if (item.file_type === 'nes') item.path = 'uploads/games/' + item.file_name;
 					if (item.img) item.imgPath = 'uploads/posters/' + item.zip_name.split('.zip')[0] + '.png';
 				} else if (item.media_type === 'video'){
 					$scope.media_type = 'videos';
@@ -181,7 +183,7 @@
 			};
 
 			// delete item
-			$scope.deleteItem = function(item) {
+			$scope.deleteItem = function(item,item_name_field) {
 				$scope.showLoadingMsg('deleting ' + item.media_type);
 				// prepare item				
 				item = $scope.prepareItem(item);
@@ -193,9 +195,9 @@
 				});
 
 				$scope.chJson[$scope.media_type].splice(itemIndex,1);
-				var itemPath = 'uploads/' + $scope.media_type + '/' + item[$scope.item_file_name];
+				var itemPath = 'uploads/' + $scope.media_type + '/' + item[item_name_field];
 				Page.cmd("fileDelete", [itemPath], function(res) {	
-					var posterPath = 'uploads/posters' + item.file_name.split('.')[0] + '.png';
+					var posterPath = 'uploads/posters' + item[item_name_field].split('.')[0] + '.png';
 					Page.cmd("fileDelete", [posterPath], function(res) {
 						$scope.updateChannelJson();
 					});

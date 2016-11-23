@@ -39,6 +39,17 @@
 		},
 		{
 			"file_type": "nes",
+			"title": "Super-Mario-Bros.-JU-",
+			"media_type": "game",
+			"file_name": "Super-Mario-Bros.-JU-.nes",
+			"path": "uploads/games/undefined",
+			"game_id": 14,
+			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
+			"date_added": 1479865299612,
+			"published": true
+		},
+		{
+			"file_type": "nes",
 			"title": "Super-Mario-Bros.-3-U-PRG1-",
 			"media_type": "game",
 			"file_name": "Super-Mario-Bros.-3-U-PRG1-.nes",

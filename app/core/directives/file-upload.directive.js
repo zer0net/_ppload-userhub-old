@@ -30,11 +30,15 @@ app.directive('fileUpload', ['$sce',
 				// reader onload
 				$scope.reader.onload = function(){
 					// apply reader info to scope
-					$scope.file = file;				
+					$scope.file = file;
 					// render file name
 					var file_name = $scope.file.name.split(' ').join('_').normalize('NFKD').replace(/[\u0300-\u036F]/g, '').replace(/ß/g,"ss");
 					// get file type
-					$scope.item.file_type = this.result.split(';base64,')[0].split('/')[1];
+					var splitByLastDot = function(text) {
+					    var index = text.lastIndexOf('.');
+					    return [text.slice(0, index), text.slice(index + 1)]
+					}
+					$scope.item.file_type = splitByLastDot(file.name)[1];
 					// apply to scope item
 					$scope.item.title = file_name.split('.'+$scope.item.file_type)[0].split('_').join(' ');
 					// item file
@@ -46,12 +50,18 @@ app.directive('fileUpload', ['$sce',
 						$scope.item.media_type = 'game';
 						// item zip file name
 						$scope.item.zip_name = file_name;
+					} else if ($scope.item.file_type === 'nes'){
+						// item media type
+						$scope.item.media_type = 'game';
+						// item file name						
+						$scope.item.file_name = file_name;
 					} else if ($scope.item.file_type === 'mp4'){
 						// item media type
 						$scope.item.media_type = 'video';
 						// item video file name
 						$scope.item.file_name = file_name;
 					}
+					console.log($scope.item.file_type);
 					// apply
 					$scope.$apply();
 				};

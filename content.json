@@ -18,16 +18,16 @@
    "size": 3203
   },
   "app/core/controllers/items.ctrl.js": {
-   "sha512": "8596b841f2482707165bc277de587d2ce8180d960ade0cc58ee2f2e1480d150c",
-   "size": 6707
+   "sha512": "24497a51fc205494f255dadd0ffbfc73e2462059ea3f1efc90ba63b099ef3c67",
+   "size": 6836
   },
   "app/core/controllers/main.ctrl.js": {
    "sha512": "564952f582f0415cfc64b7789152085e9ac892a1c53432a6a0867b3619ca0308",
    "size": 4635
   },
   "app/core/directives/create-item.directive.js": {
-   "sha512": "6e7b6449e45cfc8803be120c81a779261a0b75667224bd7457141b693ecae4b4",
-   "size": 657
+   "sha512": "44c5de3739a25dd2ef7b4613d6ceeac3c499d7c08ebc836161b474e347cb899a",
+   "size": 574
   },
   "app/core/directives/dropzone.directive.js": {
    "sha512": "626290079050c1f03761c43ad7255dfc62c528c719fbc606b327f606bb1d78e9",
@@ -38,8 +38,8 @@
    "size": 557
   },
   "app/core/directives/file-upload.directive.js": {
-   "sha512": "55d2d165f9089f44ff17383773afc52b85149d929762afcef1935aee6a1b8eba",
-   "size": 2207
+   "sha512": "6c104006cfb1aa461dea719768cd8468a3a792b0933c5fbf92908101ec8acd55",
+   "size": 2567
   },
   "app/core/directives/image-upload.directive.js": {
    "sha512": "d34f7577e23867636d64954b5aaa0416f449d98780ca2f99b0366b111d2dea6d",
@@ -78,12 +78,16 @@
    "size": 471
   },
   "app/games/directives/game-interface.directive.js": {
-   "sha512": "b19daf559bd2dec7d8f55798641fd2bb0dcd48f584d2112a64f1f62f06aecd9c",
-   "size": 2919
+   "sha512": "26ce9c82b0aa9993c343a648056bb632b81f38b4994fc1384ddbb11a6853998c",
+   "size": 3218
   },
   "app/games/directives/game-list.directive.js": {
-   "sha512": "25e4ac37909a66ac75ceeab83979b28182bd6b205ae62070191279179249de73",
-   "size": 2957
+   "sha512": "9394e63dda6a05ac3fbc9f4ca1bd9a5ee2ab8320e5da48775f5151bb4b4ff829",
+   "size": 4575
+  },
+  "app/games/directives/nes-emulator.directive.js": {
+   "sha512": "e26ad19526c6cfb8816342bc110449e5b1a73c0f4d87fa11fca02bdace92c1a1",
+   "size": 2707
   },
   "app/videos/directives/video-interface.directive.js": {
    "sha512": "69cb91c2e197671db5d6a1826cd4f8311ede9e89173cba7f29a4e4b6f4c686de",
@@ -1013,6 +1017,78 @@
    "sha512": "c94e27341839171186f39378ab8c67c94ec3324eec66e329c10c9bbb3fc2536b",
    "size": 7747
   },
+  "assets/lib/games/nes/cpu.js": {
+   "sha512": "73660ff32f22270c94e91d5b5f1388478b29a60793b77dee008e0f13699f678b",
+   "size": 48978
+  },
+  "assets/lib/games/nes/dynamicaudio.swf": {
+   "sha512": "7c66ba7fd5e72d0c99fd75cc546a9aa2f8d510a507343964b838cd7b708b9c79",
+   "size": 1053
+  },
+  "assets/lib/games/nes/header.js": {
+   "sha512": "1b926b39890422ce35145fb1310885c0b61096d18fecd1ed0434a09a62125204",
+   "size": 687
+  },
+  "assets/lib/games/nes/jsnes-ie-hacks.vbscript": {
+   "sha512": "5aa48a2d61dd0e77873d655642fe2d4347b7a4ad1f748e4f779d5bd3ba5c4e79",
+   "size": 297
+  },
+  "assets/lib/games/nes/keyboard.js": {
+   "sha512": "1d3c21196deb7662e4d5fd72177607b77f13f373cd401e3d949e6554c9033285",
+   "size": 3145
+  },
+  "assets/lib/games/nes/lib/dynamicaudio-min.js": {
+   "sha512": "e60b1e502c0b7787cd02de2f33ee68986db5a87edd2585b0d5eab02c981eb04f",
+   "size": 13578
+  },
+  "assets/lib/games/nes/lib/dynamicaudio.swf": {
+   "sha512": "7c66ba7fd5e72d0c99fd75cc546a9aa2f8d510a507343964b838cd7b708b9c79",
+   "size": 1053
+  },
+  "assets/lib/games/nes/lib/jquery-1.4.2.min.js": {
+   "sha512": "cc92cf5a9b3a62a18af432fdffb81b76da84e2f43ce3c7800a919c10809118d0",
+   "size": 72174
+  },
+  "assets/lib/games/nes/lib/jquery.dimensions.min.js": {
+   "sha512": "70fdaba665ecfd7cfc6fe8028dd68c6848e1da319fe9bc09fce2a374b0942037",
+   "size": 2514
+  },
+  "assets/lib/games/nes/mappers.js": {
+   "sha512": "ac2008de73b9fbcb2121802f84d3f0f0aa3209048647088f64974050380d2328",
+   "size": 34728
+  },
+  "assets/lib/games/nes/nes.js": {
+   "sha512": "306f6357b4e97450d4fdc8d89512506d3c621c8ea259a12642aedd8fc03d11d6",
+   "size": 6853
+  },
+  "assets/lib/games/nes/nes_new.js": {
+   "sha512": "433542a58755c6240441dc4f07766933ce5688cb3a44b4d268657f2d02dfb7f9",
+   "size": 232973
+  },
+  "assets/lib/games/nes/nes_old.js": {
+   "sha512": "306f6357b4e97450d4fdc8d89512506d3c621c8ea259a12642aedd8fc03d11d6",
+   "size": 6853
+  },
+  "assets/lib/games/nes/papu.js": {
+   "sha512": "01a1e1fffd508820240b7db0f848a7803187cb18509ee12b17e5babde490e77d",
+   "size": 44271
+  },
+  "assets/lib/games/nes/ppu.js": {
+   "sha512": "41cc67cd8100c290359bb0b75d0abaa774df6cd67f936e69e5eddd56c8d69c00",
+   "size": 65929
+  },
+  "assets/lib/games/nes/rom.js": {
+   "sha512": "9488bf2872c0501b3ed2c887136e278333090044714cc7be032d6e6f5f277d09",
+   "size": 7066
+  },
+  "assets/lib/games/nes/ui.js": {
+   "sha512": "ebf236102f9c0e289818a2954079ea459ed3e10b15cd85e84c2c56cbf2d561de",
+   "size": 12870
+  },
+  "assets/lib/games/nes/utils.js": {
+   "sha512": "e2beaccbae0440057f7d77ca15334509766f1850ae242c50b8c626136d7b1d84",
+   "size": 1632
+  },
   "assets/lib/videos/videogular-angulartics/Gruntfile.js": {
    "sha512": "b66bf941a8b0feccf252797e2ad4cf452191e45d340c400326e8011f5089650a",
    "size": 1177
@@ -1346,23 +1422,31 @@
    "size": 51
   },
   "data/channel.json": {
-   "sha512": "29733b739c7920dab2ec53b704c7927e68d793344c55bae189c95d96d035a511",
-   "size": 1897
+   "sha512": "2aa5a04d9af3a363e1de8c0c56d0e88e0cf68ce25e9e7a7220dba13b8b3b36ec",
+   "size": 2531
   },
   "edit.html": {
-   "sha512": "a6208f2d9f5068351896a21db33e26b66ab2f49da9beb0dc459b0db354e5fc40",
-   "size": 5788
+   "sha512": "23f49073e18cf5ef783a58a3d7f931c5d9589b4db9123a235fe5fb54fbb544ff",
+   "size": 6888
   },
   "index.html": {
-   "sha512": "d1feae830f15c5f1681f0a1fe35aee3611b0afb7e289f4d68a6cf632ea411de9",
-   "size": 6327
+   "sha512": "8a0bcdcc82497c0ae1095cffc7164ca033f8b4fa1b2c2a2035ae0f9cd8e9fe6f",
+   "size": 7427
   },
   "upload.html": {
-   "sha512": "d36cac38a8b8cabbf071a5aee0d5d723501020304aafd3add6283ace23ebcca8",
-   "size": 6173
+   "sha512": "75a2a61236bec6b3a3b915c1eecf65fe4aee1487acd10a4c167731b549fd6c7f",
+   "size": 7276
   }
  },
  "files_optional": {
+  "uploads/games/Super-Mario-Bros.-3-U-PRG1-.nes": {
+   "sha512": "14ab6761ed0a0c71da8e8ea78f15f53896841a8c83d64ab7dec86a2ed0304d9d",
+   "size": 393232
+  },
+  "uploads/games/Super-Mario-Bros.-JU-.nes": {
+   "sha512": "c2eb66533f2bfec61f15793884777b1c711aebd74533cd33bd5774112a038123",
+   "size": 40976
+  },
   "uploads/games/acfreew.zip": {
    "sha512": "006eeb1b2468fc4815ab869332ad3a5cac5e415696df4aec7b5c8a6808da4d03",
    "size": 5408832
@@ -1370,6 +1454,10 @@
   "uploads/games/amberstar.zip": {
    "sha512": "764a5aba72b3250b531a22d7916b060de6db2df77db7bb6154f70c4dd9169108",
    "size": 1210170
+  },
+  "uploads/games/undefined": {
+   "sha512": "c2eb66533f2bfec61f15793884777b1c711aebd74533cd33bd5774112a038123",
+   "size": 40976
   },
   "uploads/items/dangerous-dave.zip": {
    "sha512": "f0bd20339935f0022729cef321e655e4d0cf93048d6ba37618f57d46841587f3",
@@ -1407,15 +1495,15 @@
  "ignore": "(.git)",
  "inner_path": "content.json",
  "merged_type": "PPLOAD",
- "modified": 1479825488.150536,
+ "modified": 1479865429.766563,
  "optional": "(uploads/.*)",
  "sign": [
-  31717124847132774470580159116433855979143966905775671331567337904149767682138,
-  74088225617348899926098195030538894379076943239003362137510656894075809448014
+  29710324347495437652871108984956719822419689878086329102825079931948843589005,
+  69009432418468002578678015821731418800459480733825250520382254401976960619811
  ],
  "signers_sign": "G0Ag8qmseCoFyi1In81o7VgikOzhcQby5LHw9r5eGGTpP6zq9drqexKzLNCTX82kGFsd4ToPHwJH5qIkSucGR68=",
  "signs": {
-  "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1": "Gy9f6XsQMX3UPC8RVWeIt/NQ1Xc7GVqsir8ymUVIn1OwamvnSBp+PLltf6FEahEOv/eFt4L5o68SA2ZLRYgT26I="
+  "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1": "G1QpRw6fSP9X4Zi8ZrhvyWv8hZj0+0uKee7XwbaR6FwV+xrsGDzfDqdwgHtyjfuIE+e659wdkUJFqOHthIyUGwU="
  },
  "signs_required": 1,
  "title": "PPLOAD TEST Channel",

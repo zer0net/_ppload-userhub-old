@@ -18,8 +18,6 @@ app.directive('createItem', [
 				$scope.generateItemProperties();
 				// finish loading
 				$scope.finishLoading();
-				// apply to scope
-				if ($scope.item.media_type !== 'video') $scope.$apply();
 			};
 
 		};

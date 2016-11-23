@@ -68,8 +68,11 @@ app.directive('gameInterface', [
 					$scope.game_type = 'DOS';
 					// if mode is create
 					if ($scope.mode === 'create'){
-							$scope.readZipFile();
+						$scope.readZipFile();
 					}
+				} else if ($scope.item.file_type === 'nes'){
+					$scope.game_type = 'NES';
+					$scope.renderItem();
 				}
 			};
 
@@ -96,6 +99,7 @@ app.directive('gameInterface', [
 						}
 					}
 					// render item (item-create.direcrtive.js)
+					$scope.$apply();					
 					$scope.renderItem();
 				});
 			};
@@ -110,6 +114,9 @@ app.directive('gameInterface', [
 							'<div id="dosbox-container" ng-show="game_type === \'DOS\'">' +
 								'<dosbox ng-init="initDosBox(item)"></dosbox>' +
 							'</div>' +
+							'<div id="nes-container" ng-show="game_type === \'NES\'">' +
+								'<nes-emulator ng-init="initNesEmulator(item)"></nes-emulator>' +
+							'</div>' +							
 							'<!-- /player -->' +
 						'</div>';
 
