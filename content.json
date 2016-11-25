@@ -86,8 +86,8 @@
    "size": 4575
   },
   "app/games/directives/nes-emulator.directive.js": {
-   "sha512": "e26ad19526c6cfb8816342bc110449e5b1a73c0f4d87fa11fca02bdace92c1a1",
-   "size": 2707
+   "sha512": "03722fe96c6ea56e0c7038493f1151db80111f65fc96511290c35a5705e3c4f9",
+   "size": 2633
   },
   "app/videos/directives/video-interface.directive.js": {
    "sha512": "69cb91c2e197671db5d6a1826cd4f8311ede9e89173cba7f29a4e4b6f4c686de",
@@ -1422,6 +1422,10 @@
    "size": 51
   },
   "data/channel.json": {
+   "sha512": "7cefdb491b6219b081c90f7bc2ebb78f76bb8c8abab77dbf9ce78e6083f7613e",
+   "size": 2231
+  },
+  "data/channel.json-old": {
    "sha512": "2aa5a04d9af3a363e1de8c0c56d0e88e0cf68ce25e9e7a7220dba13b8b3b36ec",
    "size": 2531
   },
@@ -1430,8 +1434,8 @@
    "size": 6888
   },
   "index.html": {
-   "sha512": "8a0bcdcc82497c0ae1095cffc7164ca033f8b4fa1b2c2a2035ae0f9cd8e9fe6f",
-   "size": 7427
+   "sha512": "d50c49d366509e862b72761974cc07704239ce8eb084032bee4c555fa2ac7523",
+   "size": 7433
   },
   "upload.html": {
    "sha512": "75a2a61236bec6b3a3b915c1eecf65fe4aee1487acd10a4c167731b549fd6c7f",
@@ -1442,10 +1446,6 @@
   "uploads/games/Super-Mario-Bros.-3-U-PRG1-.nes": {
    "sha512": "14ab6761ed0a0c71da8e8ea78f15f53896841a8c83d64ab7dec86a2ed0304d9d",
    "size": 393232
-  },
-  "uploads/games/Super-Mario-Bros.-JU-.nes": {
-   "sha512": "c2eb66533f2bfec61f15793884777b1c711aebd74533cd33bd5774112a038123",
-   "size": 40976
   },
   "uploads/games/acfreew.zip": {
    "sha512": "006eeb1b2468fc4815ab869332ad3a5cac5e415696df4aec7b5c8a6808da4d03",
@@ -1495,17 +1495,17 @@
  "ignore": "(.git)",
  "inner_path": "content.json",
  "merged_type": "PPLOAD",
- "modified": 1479865429.766563,
+ "modified": 1480016798.332731,
  "optional": "(uploads/.*)",
  "sign": [
-  29710324347495437652871108984956719822419689878086329102825079931948843589005,
-  69009432418468002578678015821731418800459480733825250520382254401976960619811
+  94819518547754389963663696651350273631738938614860653967874087214447101774489,
+  56762054072113676744817994429589807254837885900322811984546764623833493068610
  ],
  "signers_sign": "G0Ag8qmseCoFyi1In81o7VgikOzhcQby5LHw9r5eGGTpP6zq9drqexKzLNCTX82kGFsd4ToPHwJH5qIkSucGR68=",
  "signs": {
-  "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1": "G1QpRw6fSP9X4Zi8ZrhvyWv8hZj0+0uKee7XwbaR6FwV+xrsGDzfDqdwgHtyjfuIE+e659wdkUJFqOHthIyUGwU="
+  "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1": "HPFnSd1NjVtD2Z263L84/kRyYlt2JDrNliiUW5GoT5idkjxF8WaQRH4VQcr2saLJGADJChtTyoiwPe5XLsxtFwg="
  },
  "signs_required": 1,
  "title": "PPLOAD TEST Channel",
- "zeronet_version": "0.5.0"
+ "zeronet_version": "0.3.6"
 }
