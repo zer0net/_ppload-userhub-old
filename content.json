@@ -1425,10 +1425,6 @@
    "sha512": "7cefdb491b6219b081c90f7bc2ebb78f76bb8c8abab77dbf9ce78e6083f7613e",
    "size": 2231
   },
-  "data/channel.json-old": {
-   "sha512": "2aa5a04d9af3a363e1de8c0c56d0e88e0cf68ce25e9e7a7220dba13b8b3b36ec",
-   "size": 2531
-  },
   "edit.html": {
    "sha512": "23f49073e18cf5ef783a58a3d7f931c5d9589b4db9123a235fe5fb54fbb544ff",
    "size": 6888
@@ -1495,17 +1491,17 @@
  "ignore": "(.git)",
  "inner_path": "content.json",
  "merged_type": "PPLOAD",
- "modified": 1480016798.332731,
+ "modified": 1480048195.883038,
  "optional": "(uploads/.*)",
  "sign": [
-  94819518547754389963663696651350273631738938614860653967874087214447101774489,
-  56762054072113676744817994429589807254837885900322811984546764623833493068610
+  43199326059943750885395675676239845566115751453750346057633016598783605291077,
+  57795423160731446042012275252640178900278785320457410699345266650664123979235
  ],
  "signers_sign": "G0Ag8qmseCoFyi1In81o7VgikOzhcQby5LHw9r5eGGTpP6zq9drqexKzLNCTX82kGFsd4ToPHwJH5qIkSucGR68=",
  "signs": {
-  "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1": "HPFnSd1NjVtD2Z263L84/kRyYlt2JDrNliiUW5GoT5idkjxF8WaQRH4VQcr2saLJGADJChtTyoiwPe5XLsxtFwg="
+  "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1": "HCs7Qb1/uHqGDiFe3FEdFmoPOp0x+Edls5Dx5JNEdzwA6o7iEpM3p8GzvDbpLszLbLr2wf8TBkVqZJoHV0uMZ+U="
  },
  "signs_required": 1,
  "title": "PPLOAD TEST Channel",
- "zeronet_version": "0.3.6"
+ "zeronet_version": "0.5.1"
 }
