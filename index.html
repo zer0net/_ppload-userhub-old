@@ -59,14 +59,14 @@
 		    <section ng-init="initList()">
 
 		    	<!-- unpublished -->
-			    <md-content class="md-whiteframe-1dp section" ng-if="unpublished_items">
+			    <md-content class="md-whiteframe-1dp section" ng-if="owner" ng-show="unpublished_items">
 			    	<h2>Unpublished {{media_type}}</h2>
 			    	<hr/>
 			    	<p>these {{media_type}} are not yet published, please click on them to confirm & publish</p>
 			    	<ul>
 			    		<li ng-if="item.published === false"
 			    			ng-repeat="item in chJson[media_type] | orderBy:'-date_added' track by $index">
-			    			<a href="/{{site_address}}/edit.html?item={{item[item_id_name]}}z={{item[item_file_name]}}f={{item.file_name}}">{{item.zip_name}}</a>
+			    			<a href="{{item.edit_url}}">{{item.title}}</a>
 			    		</li>
 			    	</ul>
 			    </md-content>
@@ -93,8 +93,9 @@
 	<!-- JS -->
 
 		<!-- zeronet -->
-		<script type="text/javascript" src="assets/lib/core/zeronet/ZeroFrame.js"></script>
-		<script type="text/javascript" src="assets/lib/core/zeronet/ZeroChat.js"></script>
+		<script type="text/javascript" src="assets/lib/core/zeronet/class.js"></script>
+		<script type="text/javascript" src="assets/lib/core/zeronet/zeroframe.js"></script>
+		<script type="text/javascript" src="assets/lib/core/zeronet/zerochat.js"></script>
 
 		<!-- jquery -->
 		<script type="text/javascript" src="assets/lib/core/jquery/jquery.min.js"></script>

@@ -57,6 +57,17 @@
 					$scope.chJson[$scope.media_type].forEach(function(item,index){
 						// if at least one item is unpublished, show unpublished items section
 						if (item.published === false){
+							var item_id_name;
+							var item_type;
+							if (item.file_type === 'zip' || item.file_type === 'nes'){
+								item_id_name = 'game_id';
+								item.item_type = 'game';
+							} else {
+								item_id_name = 'video_id';
+								item.item_type = 'video';
+							}
+							item.edit_url = 'edit.html?item='+item[item_id_name]+'type='+item.item_type;
+							console.log(item);
 							$scope.unpublished_items = true;
 						}
 					});
@@ -92,6 +103,7 @@
 				$scope.item = $scope.prepareItem($scope.item);
 				// file path
 				Page.cmd("fileWrite",[$scope.item.path, $scope.item.file.split('base64,')[1] ], function(res) {
+					console.log(res);
 					if ($scope.item.img){
 						$scope.uploadPosterImage();
 					} else {
@@ -139,7 +151,6 @@
 				$scope.chJson.next_item_id += 1;
 				// push item to channel json items
 				$scope.chJson[$scope.media_type].push($scope.item);
-				console.log($scope.item);				
 				// update channel json
 				$scope.updateChannelJson();
 			};
@@ -147,19 +158,45 @@
 			// create items - bulk
 			$rootScope.$on('onCreateItems',function(event,mass){
 				mass.forEach(function(itm,index){
+					console.log(itm);
 			    	// new item
+					var splitByLastDot = function(text) {
+					    var index = text.lastIndexOf('.');
+					    return [text.slice(0, index), text.slice(index + 1)]
+					}
+					var file_type = splitByLastDot(itm.file_name)[1];
 					item = {
+						"file_type":file_type,
 						"channel":$scope.site_address,
 						"title": itm.title,
 						"description":itm.description,
-						"zip_size": itm.file.size,
 						"date_added": +(new Date),
 						"published":false
 					};
+					var item_id_name;
+					if (file_type === 'zip') {
+						item.zip_size = itm.size;
+						item.media_type = 'game';
+						item_id_name = 'game_id';
+						item_file_name = 'zip_name';
+						item.path = 'uploads/games/'+itm.file_name;
+					} else if (file_type === 'nes') {
+						item.file_size = itm.size;
+						item.media_type = 'game';
+						item_id_name = 'game_id';
+						item_file_name = 'file_name';
+						item.path = 'uploads/games/'+itm.file_name;
+					} else {
+						item.media_type = 'video';
+						item.file_size = itm.size;
+						item_id_name = 'video_id';
+						item_file_name = 'file_name';
+						item.path = 'uploads/videos/'+itm.file_name;						
+					}
 					// item file name
-					item[$scope.item_file_name] = itm.file_name;					
+					item[item_file_name] = itm.file_name;					
 					// item id
-					item[$scope.item_id_name] = $scope.chJson.next_item_id;
+					item[item_id_name] = $scope.chJson.next_item_id;
 					// item id update
 					$scope.chJson.next_item_id += 1;
 					// push item to channel json items

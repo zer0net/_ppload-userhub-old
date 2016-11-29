@@ -72,7 +72,7 @@ app.directive('gameInterface', [
 					}
 				} else if ($scope.item.file_type === 'nes'){
 					$scope.game_type = 'NES';
-					$scope.renderItem();
+					if ($scope.mode === 'create') $scope.renderItem();
 				}
 			};
 
@@ -100,7 +100,7 @@ app.directive('gameInterface', [
 					}
 					// render item (item-create.direcrtive.js)
 					$scope.$apply();					
-					$scope.renderItem();
+					if ($scope.mode === 'create') $scope.renderItem();
 				});
 			};
 

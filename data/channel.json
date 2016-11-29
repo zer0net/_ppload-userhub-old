@@ -1,5 +1,5 @@
 {
-	"next_item_id": 16,
+	"next_item_id": 36,
 	"channel": {
 		"name": "PPLOAD TEST Channel",
 		"description": "Clone this channel template to create your own ppload network channel type"
@@ -39,14 +39,14 @@
 		},
 		{
 			"file_type": "nes",
-			"title": "Super-Mario-Bros.-3-U-PRG1-",
-			"media_type": "game",
-			"file_name": "Super-Mario-Bros.-3-U-PRG1-.nes",
-			"path": "uploads/games/Super-Mario-Bros.-3-U-PRG1-.nes",
-			"game_id": 15,
 			"channel": "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1",
-			"date_added": 1479865400560,
-			"published": true
+			"title": "Super-Mario-Bros.-3-U-PRG1-.nes",
+			"date_added": 1480410017711,
+			"published": false,
+			"media_type": "game",
+			"path": "uploads/games/Super-Mario-Bros.-3-U-PRG1-.nes",
+			"file_name": "Super-Mario-Bros.-3-U-PRG1-.nes",
+			"game_id": 35
 		}
 	],
 	"videos": [

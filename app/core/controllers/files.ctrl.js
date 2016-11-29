@@ -34,7 +34,7 @@ app.controller('FilesCtrl', ['$scope','$rootScope',
 			});
 
 			// sign content.json & generate new version
-			Page.cmd("siteSign",[$scope.privateKey], function(res){
+			Page.cmd("siteSign",["stored"], function(res){
 				// 2nd get content.json
 		    	$.getJSON('/'+$scope.site_address+'/content.json',function(data){
 		    		// assign latest content.json to scope
@@ -64,6 +64,8 @@ app.controller('FilesCtrl', ['$scope','$rootScope',
 
 	    // check for new files
 	    $scope.checkForNewFiles = function(fileList,newFilesList){
+	    	console.log(fileList);
+	    	console.log(newFilesList);
 	    	// pending items array
 	    	$scope.pendingItems = [];
 			// compare old file list with new file list

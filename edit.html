@@ -51,7 +51,7 @@
         		<!-- video interface -->
         		<video-interface ng-if="item.media_type === 'video'"></video-interface>
         		<!-- /video interface -->
-	            <md-button flex="100" style="margin: 16px 0;" class="md-primary md-raised edgePadding pull-right" ng-click="uploadItem()">
+	            <md-button flex="100" style="margin: 16px 0;" class="md-primary md-raised edgePadding pull-right" ng-click="onUpdateItem()">
 	            	<label>Update {{item.media_type}}</label>
 	            </md-button>
 			</section>
@@ -65,8 +65,10 @@
 	<!-- JS -->
 
 		<!-- zeronet -->
-		<script type="text/javascript" src="assets/lib/core/zeronet/ZeroFrame.js"></script>
-		<script type="text/javascript" src="assets/lib/core/zeronet/ZeroChat.js"></script>
+		<script type="text/javascript" src="assets/lib/core/zeronet/class.js"></script>
+		<script type="text/javascript" src="assets/lib/core/zeronet/zeroframe.js"></script>
+		<script type="text/javascript" src="assets/lib/core/zeronet/zerochat.js"></script>
+
 
 		<!-- jquery -->
 		<script type="text/javascript" src="assets/lib/core/jquery/jquery.min.js"></script>

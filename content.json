@@ -6,20 +6,20 @@
  "description": "Clone this channel template to create your own ppload network channel type",
  "files": {
   "README.md": {
-   "sha512": "81908ec88ca1aea57070f77c047f590059d82f97a400d76dc5ac3de5a3075224",
-   "size": 395
+   "sha512": "fcd4a6f1c80d85a50827386ccd5065de84db2adf7595904f9161ce710bb70243",
+   "size": 112
   },
   "app/application.js": {
    "sha512": "ccbefb22a2ae13cf8a46e83bb17b0ad9247349b80a9aeb4be604ebf6db481f78",
    "size": 302
   },
   "app/core/controllers/files.ctrl.js": {
-   "sha512": "c4b1a34349b755458f8a2caf44679df4edbb9003b7bf387ac1f20161f56ccb96",
-   "size": 3203
+   "sha512": "d457ea88a9db60003c2ff2cae8dc3d81c303399fc26b83f20403784454b0f1af",
+   "size": 3256
   },
   "app/core/controllers/items.ctrl.js": {
-   "sha512": "24497a51fc205494f255dadd0ffbfc73e2462059ea3f1efc90ba63b099ef3c67",
-   "size": 6836
+   "sha512": "5df7b18a221878be843287c94e328d1dc15d8be975653550920dc4539d102bfa",
+   "size": 8096
   },
   "app/core/controllers/main.ctrl.js": {
    "sha512": "564952f582f0415cfc64b7789152085e9ac892a1c53432a6a0867b3619ca0308",
@@ -42,8 +42,8 @@
    "size": 2567
   },
   "app/core/directives/image-upload.directive.js": {
-   "sha512": "d34f7577e23867636d64954b5aaa0416f449d98780ca2f99b0366b111d2dea6d",
-   "size": 956
+   "sha512": "12a3f104a1276e69779fe1bdb1aa5634345a394f5c3858a903fdf853289680f8",
+   "size": 930
   },
   "app/core/directives/item-form.directive.js": {
    "sha512": "783d635f60d005b0a92e6ddfeab9727139b39bb293b38ad9c2b5b2bf19834f88",
@@ -54,8 +54,8 @@
    "size": 1709
   },
   "app/core/directives/side-bar.directive.js": {
-   "sha512": "73038682d84978157c4b28608db2cd014b51ab028d8e1dd23caacef7a0d2465f",
-   "size": 1378
+   "sha512": "60b552413aa89725225e3292225cfa94746ef6a189aed0527ef9fab5c9d555e3",
+   "size": 1421
   },
   "app/core/directives/site-header.directive.js": {
    "sha512": "676bac6623860ac96e0013300cc3873460c8d82cb81a52487a672c68fc825ed3",
@@ -78,8 +78,8 @@
    "size": 471
   },
   "app/games/directives/game-interface.directive.js": {
-   "sha512": "26ce9c82b0aa9993c343a648056bb632b81f38b4994fc1384ddbb11a6853998c",
-   "size": 3218
+   "sha512": "cdee490af6220161218ad2a9bec61ae9343327903f127505133b26b62cd27ccf",
+   "size": 3278
   },
   "app/games/directives/game-list.directive.js": {
    "sha512": "9394e63dda6a05ac3fbc9f4ca1bd9a5ee2ab8320e5da48775f5151bb4b4ff829",
@@ -345,21 +345,33 @@
    "sha512": "651e54d33e16ab0ca2fafcfb9c06ef8de815921286358f588e4652c92258e6a7",
    "size": 104409
   },
+  "assets/lib/core/zeronet/Class.coffee": {
+   "sha512": "ae32c72fe6615132791361a5e8cf412ddb2a2fa59d9d33db4bb8e29d50a8568d",
+   "size": 490
+  },
   "assets/lib/core/zeronet/ZeroChat.coffee": {
    "sha512": "b4d9538aa3f09a18cb7336d20366c7e885a705a9b08583edba30ef656113625d",
    "size": 104
   },
-  "assets/lib/core/zeronet/ZeroChat.js": {
+  "assets/lib/core/zeronet/ZeroFrame.coffee": {
+   "sha512": "342048e3d262bc140212e271f752bdb20fbd103bef6073f5107eb2fc031eda23",
+   "size": 2207
+  },
+  "assets/lib/core/zeronet/all.js": {
+   "sha512": "fae592d3a8f2f7b45c0472247125e7a9b1b894a28bbe1b34b742697801a20860",
+   "size": 255791
+  },
+  "assets/lib/core/zeronet/class.js": {
+   "sha512": "51e082aadfd28218a3e55e13849501dc134d9f0f4416be61b39ebf4a3a82e31d",
+   "size": 1365
+  },
+  "assets/lib/core/zeronet/zerochat.js": {
    "sha512": "ee2130e7f7e72216a6f03d1d614c9ce80945115411ae57517ba3e65fdb5999a6",
    "size": 615
   },
-  "assets/lib/core/zeronet/ZeroFrame.coffee": {
-   "sha512": "96a11e88429e2fa26c47f5d24bf52d030d506f1dfecb2a4e2c5e034cc5d07e31",
-   "size": 1335
-  },
-  "assets/lib/core/zeronet/ZeroFrame.js": {
-   "sha512": "bc65f2262c309aa44e0c0a28789725fb847a3ec20a043c28fb4a29cd9973c31e",
-   "size": 2976
+  "assets/lib/core/zeronet/zeroframe.js": {
+   "sha512": "f2ef1097b6627c3622f076829cfb5410d9967a79302d6e7a99df79640e2b9d5c",
+   "size": 4590
   },
   "assets/lib/games/js-dos/js-dos.js": {
    "sha512": "ca81983761560d3c83c2acab20c4bec543f1af1bb4188113887a29cf522346db",
@@ -1422,20 +1434,20 @@
    "size": 51
   },
   "data/channel.json": {
-   "sha512": "7cefdb491b6219b081c90f7bc2ebb78f76bb8c8abab77dbf9ce78e6083f7613e",
-   "size": 2231
+   "sha512": "0f3a45e92197628f4a5b9b5a8c37192cd6a6561a7b597b2a8f64feae2af65402",
+   "size": 2236
   },
   "edit.html": {
-   "sha512": "23f49073e18cf5ef783a58a3d7f931c5d9589b4db9123a235fe5fb54fbb544ff",
-   "size": 6888
+   "sha512": "b74b9d5b30ad5a2ad806568e2b9418f8e1d863f2802ff567a28d39b2e6c682ad",
+   "size": 6973
   },
   "index.html": {
-   "sha512": "d50c49d366509e862b72761974cc07704239ce8eb084032bee4c555fa2ac7523",
-   "size": 7433
+   "sha512": "34986e672d8a9d8de71fce12e2cba0ca56dba1bd1db1969d4c79c477058454cc",
+   "size": 7444
   },
   "upload.html": {
-   "sha512": "75a2a61236bec6b3a3b915c1eecf65fe4aee1487acd10a4c167731b549fd6c7f",
-   "size": 7276
+   "sha512": "e37e1da50fd189040628cc6b16358d01ede57a0e73c95f9fadfb06f6f78e6a81",
+   "size": 7359
   }
  },
  "files_optional": {
@@ -1450,18 +1462,6 @@
   "uploads/games/amberstar.zip": {
    "sha512": "764a5aba72b3250b531a22d7916b060de6db2df77db7bb6154f70c4dd9169108",
    "size": 1210170
-  },
-  "uploads/games/undefined": {
-   "sha512": "c2eb66533f2bfec61f15793884777b1c711aebd74533cd33bd5774112a038123",
-   "size": 40976
-  },
-  "uploads/items/dangerous-dave.zip": {
-   "sha512": "f0bd20339935f0022729cef321e655e4d0cf93048d6ba37618f57d46841587f3",
-   "size": 74289
-  },
-  "uploads/items/muds-mean-ugly-dirty-sport.zip": {
-   "sha512": "63c21eef01ed8994721e7665951ed589740fcdeecbaa103f1edc2d513af78447",
-   "size": 1280089
   },
   "uploads/posters/Super_Mario_Bros._Original_Theme_by_Nintendo.png": {
    "sha512": "2d38e1c4a0e6858895a36b6918ef20b975237456b527df57419c50d2829c7592",
@@ -1491,15 +1491,16 @@
  "ignore": "(.git)",
  "inner_path": "content.json",
  "merged_type": "PPLOAD",
- "modified": 1480048195.883038,
- "optional": "(uploads/.*)",
+ "modified": 1480412810.905791,
+ "optional": "(uploads)",
+ "postmessage_nonce_security": true,
  "sign": [
-  43199326059943750885395675676239845566115751453750346057633016598783605291077,
-  57795423160731446042012275252640178900278785320457410699345266650664123979235
+  50192971387873054723573616055131004855343511094592257186647519794114815942987,
+  39182068259452004999099782952383561123650348082166488168794309584638249264271
  ],
  "signers_sign": "G0Ag8qmseCoFyi1In81o7VgikOzhcQby5LHw9r5eGGTpP6zq9drqexKzLNCTX82kGFsd4ToPHwJH5qIkSucGR68=",
  "signs": {
-  "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1": "HCs7Qb1/uHqGDiFe3FEdFmoPOp0x+Edls5Dx5JNEdzwA6o7iEpM3p8GzvDbpLszLbLr2wf8TBkVqZJoHV0uMZ+U="
+  "1LK6eAVVsRscLCTQqEHhrvLXACaDcWUrU1": "G9m+EFuGY2zHzbbvpABL0dOhwhD2hBf4Q1WWRRCEANDYiNXDJpKGQMeLMa9fXGOAvT4PakubQmeI0bHVQY9u3Ms="
  },
  "signs_required": 1,
  "title": "PPLOAD TEST Channel",

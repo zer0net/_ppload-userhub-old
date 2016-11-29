@@ -17,6 +17,8 @@ app.directive('sideBar', [
 								'</li>' +
 							'</ul>' +
 							'<div class="thumb-image-section md-whiteframe-1dp" flex="100">' +
+								'<h3>Image</h3>'+
+								'<hr/>'+
 								'<!-- item image -->' +
 								'<img ng-src="{{item.imgPath}}" ng-if="!item.img" ng-show="item.imgPath" style="margin-bottom:8px;"/>' +
 								'<img ng-src="{{item.img}}" ng-if="item.img" ng-show="item.img" style="margin-bottom:8px;"/>' +
